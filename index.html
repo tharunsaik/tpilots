@@ -7,7 +7,7 @@
 <!-- Bootstrap CSS -->
 <link rel="stylesheet" href="assets/css/svl-global.css">
 <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
 <!-- Add the slick-theme.css if you want default styling -->
 <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
@@ -23,13 +23,13 @@
 <title>T-Pilots SVL</title>
 <link rel="icon" href="assets/img/fav.png" type="image/gif">
 </head>
-<body>
+<body data-spy="scroll" data-target="#navbar-sub" data-offset="100" class="position-relative">
 <!--
 Sign Up Modal
 -->
 <div class="modal fade" id="signUpModal" tabindex="-1" role="dialog" aria-labelledby="signUpModalLabel" aria-hidden="true">
-	<div class="modal-dialog modal-dialog-centered modal-sm" role="document">
-		<div class="modal-content rounded-0 border-2 border-primary">
+	<div class="modal-dialog modal-dialog-centered" role="document">
+		<div class="modal-content">
 		  <div class="modal-header">
 			<h5 class="modal-title" id="signUpModalLabel">Sign Up</h5>
 			<button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -74,7 +74,7 @@ Sign In Modal
 -->
 <div class="modal fade" id="signInModal" tabindex="-1" role="dialog" aria-labelledby="signInModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered" role="document">
-    <div class="modal-content rounded-0 border-2 border-primary">
+    <div class="modal-content">
       <div class="modal-header">
         <h5 class="modal-title" id="signInModalLabel">Sign In</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -118,8 +118,8 @@ Sign In Modal
 Forgot Password Modal
 -->
 <div class="modal fade" id="forgotPassModal" tabindex="-1" role="dialog" aria-labelledby="forgotPassModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered modal-sm" role="document">
-    <div class="modal-content rounded-0 border-2 border-primary">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
       <div class="modal-header">
         <h5 class="modal-title" id="forgotPassModalLabel">Forgot Password</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -190,7 +190,7 @@ Map Share
 Vehicle Details Modal
 -->
 <div class="modal fade" id="vehicleDetailsModal" tabindex="-1" role="dialog" aria-labelledby="vehicleDetailsModalLabel" aria-hidden="true">
-	<div class="modal-dialog modal-xl" role="document">
+	<div class="modal-dialog modal-dialog-centered modal-xl" role="document">
 		<div class="modal-content rounded-0 border-2 border-primary">
 		  <div class="modal-header">
 			<h5 class="modal-title" id="vehicleDetailsModalLabel">Vehicle Details</h5>
@@ -259,31 +259,20 @@ Navbar
 	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHome" aria-controls="navbarHome" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
 	<div class="collapse navbar-collapse" id="navbarHome">
 		<div class="navbar-nav ml-auto align-items-center">
-			<a class="nav-item nav-link" href="http://staging.tpilots.com/">Driver</a>
-			<a class="nav-item nav-link" href="http://staging.tpilots.com/">Rider</a>
-			<a class="nav-item nav-link" href="http://staging.tpilots.com/">Business</a>
-			<a class="nav-item nav-link" href="http://staging.tpilots.com/">Features</a>
-			<a class="nav-item nav-link" href="http://staging.tpilots.com/">Guide</a>
+			<a class="nav-item nav-link" href="#">Driver</a>
+			<a class="nav-item nav-link" href="#">Rider</a>
+			<a class="nav-item nav-link" href="#">Business</a>
+			<a class="nav-item nav-link" href="#">Features</a>
+			<a class="nav-item nav-link" href="#">Guide</a>
+			<a class="nav-item nav-link" href="#"><i class="fas fa-th"></i></a>
 		</div>
 	</div>
 </nav>
 <!--
-Sub Navbar
--->
-<div class="nav-scroller bg-black shadow-sm sticky-top d-none" id="navbar-sub">
-	<nav class="nav align-items-center justify-content-center nav-fill">
-		<a class="nav-item nav-link" href="http://staging.tpilots.com/">City Trips</a>
-		<a class="nav-item nav-link" href="http://staging.tpilots.com/">Airport</a>
-		<a class="nav-item nav-link" href="http://staging.tpilots.com/">Outstation</a>
-		<a class="nav-item nav-link" href="http://staging.tpilots.com/">Rentals</a>
-		<a class="nav-item nav-link" href="http://staging.tpilots.com/">Truck</a>
-	</nav>
-</div>
-<!--
 Main Banner
 -->
-<section class="bg-grad hero w-100 pattern-overlay-1">
-	<div class="container-fluid pt-5">
+<section class="bg-grad hero w-100 pattern-overlay-1 d-flex align-items-center">
+	<div class="container-fluid">
 		<div class="row align-items-center">
 			<div class="col-sm-7 text-center position-relative">
 				<h2 class="text-white">Get our 5G App from the Store</h2>
@@ -320,7 +309,7 @@ Main Banner
 				<div class="card shadow-8dp bg-grey-200">
 					<div class="card-header bg-white p-0 border-light">
 						<nav class="nav justify-content-center fweight-500 travel-fleet nav-fill font-size-3" id="fleet-tab" role="tablist">
-							<a class="nav-item nav-link active" id="city-taxi-tab" data-toggle="tab" href="#city-taxi" role="tab" aria-controls="city-taxi" aria-selected="true">City Trips</a>
+							<a class="nav-item nav-link active" id="city-taxi-tab" data-toggle="tab" href="#city-taxi" role="tab" aria-controls="city-taxi" aria-selected="true">City Ride</a>
 							<a class="nav-item nav-link" id="airport-tab" data-toggle="tab" href="#airport" role="tab" aria-controls="airport" aria-selected="false">Airport</a>
 							<a class="nav-item nav-link" id="outstation-tab" data-toggle="tab" href="#outstation" role="tab" aria-controls="outstation" aria-selected="false">Outstation</a>
 							<a class="nav-item nav-link" id="rentals-tab" data-toggle="tab" href="#rentals" role="tab" aria-controls="rentals" aria-selected="false">Rentals</a>
@@ -330,7 +319,7 @@ Main Banner
 					<div class="tab-content px-2 pb-2" id="fleet-tabContent">
 						<div class="tab-pane fade show active" id="city-taxi" role="tabpanel" aria-labelledby="city-taxi-tab">
 							<div class="my-4">
-								<h6 class="text-center mb-1 font-size-3 fweight-400 pt-2">Safety Integrated & Trusted Travel Partner</h6>
+								<h6 class="text-center mb-1 font-size-3 fweight-400 pt-2">Safety Integrated &amp; Trusted Travel Partner</h6>
 								<p class="text-center mb-1 font-size-2">Cool Solurtion for City Travel</p>
 							</div>
 							<form class="booking-form">
@@ -384,7 +373,7 @@ Main Banner
 										</div>
 									</div>
 								</div>
-								<a class="btn btn-primary btn-block btn-lg" href="#navbarHome" rel="PageScroll2id">Search Daily Cabs</a>
+								<a class="btn btn-primary btn-block btn-lg" href="http://book.tpilots.com/" rel="PageScroll2id">Search Daily Cabs</a>
 							</form>
 						</div>
 					  	<div class="tab-pane fade" id="airport" role="tabpanel" aria-labelledby="airport-tab">
@@ -657,98 +646,169 @@ Main Banner
 	</div>
 </section>
 <!--
+Sub Navbar
+-->
+<div class="nav-scroller bg-white shadow-sm sticky-top border-y-1" id="navbar-sub">
+	<nav class="nav align-items-center justify-content-around">
+		<a class="nav-item nav-link" href="#HowItWorksSection" rel="PageScroll2id" data-ps2id-offset="50">How It Works</a>
+		<a class="nav-item nav-link" href="#WhyTPilotsSection" rel="PageScroll2id" data-ps2id-offset="60">Why T-Pilots</a>
+		<a class="nav-item nav-link" href="#CityRideSection" rel="PageScroll2id" data-ps2id-offset="40">City Ride</a>
+		<a class="nav-item nav-link" href="#AiportSection" rel="PageScroll2id" data-ps2id-offset="40">Aiport</a>
+		<a class="nav-item nav-link" href="#OutstationSection" rel="PageScroll2id" data-ps2id-offset="40">Outstation</a>
+		<a class="nav-item nav-link" href="#RentalsSection" rel="PageScroll2id" data-ps2id-offset="40">Rentals</a>
+		<a class="nav-item nav-link" href="#TruckSection" rel="PageScroll2id" data-ps2id-offset="40">Truck</a>
+		<a class="nav-item nav-link" href="#VehiclesSection" rel="PageScroll2id" data-ps2id-offset="70">Vehicles</a>
+		<a class="nav-item nav-link" href="#DownloadAppSection" rel="PageScroll2id" data-ps2id-offset="50">Download App</a>
+		<a class="nav-item nav-link" href="#FeedbackSection" rel="PageScroll2id" data-ps2id-offset="80">Feedback</a>
+		<a class="nav-item nav-link" href="#ContactSection" rel="PageScroll2id" data-ps2id-offset="70">Contact Us</a>
+		<a class="nav-item nav-link" href="#EmailSection" rel="PageScroll2id" data-ps2id-offset="60">Mail Us</a>
+	</nav>
+</div>
+<main>
+<!--
 How It Works
 -->
-<section class="bg-grey-100 py-5">
-	<div class="container-fluid my-lg-5">
-		<div class="row">
-			<div class="col">
-				<h2 class="heading text-uppercase text-center mb-5 position-relative">How It Works</h2>
+<section class="min-vh-100 d-flex align-items-center justify-content-center py-5" id="HowItWorksSection">
+	<div>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col">
+					<h2 class="heading text-uppercase text-center mb-5 position-relative text-primary">How It Works</h2>
+				</div>
+			</div>
+			<div class="row">
+				<!--Process Block-->
+				<div class="col-sm-2 process-block">
+					<div class="inner-box">
+						<div class="upper-box">
+							<div class="icon-box">
+								<i class="fas fa-car"></i>
+								<div class="block-number wow zoomInStable animated" data-wow-delay="0ms" data-wow-duration="2000ms" style="visibility: visible; animation-duration: 2000ms; animation-delay: 0ms; animation-name: zoomInStable;">1</div>
+							</div>
+						</div>
+						<div class="lower-box">
+							<h3><a href="#">DISCOVER</a></h3>
+							<div class="text">Intgrating clients with partners is the focus of everyday business the focus of everyday business</div>
+						</div>
+					</div>
+				</div>
+				<!--Process Block-->
+				<div class="col-sm-2 process-block">
+					<div class="inner-box">
+						<div class="upper-box">
+							<div class="icon-box">
+								<i class="fas fa-car"></i>
+								<div class="block-number wow zoomInStable animated" data-wow-delay="0ms" data-wow-duration="2000ms" style="visibility: visible; animation-duration: 2000ms; animation-delay: 0ms; animation-name: zoomInStable;">2</div>
+							</div>
+						</div>
+						<div class="lower-box">
+							<h3><a href="#">BUILD</a></h3>
+							<div class="text">Intgrating clients with partners is the focus of everyday business the focus of everyday business</div>
+						</div>
+					</div>
+				</div>
+				<!--Process Block-->
+				<div class="col-sm-2 process-block">
+					<div class="inner-box">
+						<div class="upper-box">
+							<div class="icon-box">
+								<i class="fas fa-car"></i>
+								<div class="block-number wow zoomInStable animated" data-wow-delay="0ms" data-wow-duration="2000ms" style="visibility: visible; animation-duration: 2000ms; animation-delay: 0ms; animation-name: zoomInStable;">3</div>
+							</div>
+						</div>
+						<div class="lower-box">
+							<h3><a href="#">CONNECT</a></h3>
+							<div class="text">Intgrating clients with partners is the focus of everyday business the focus of everyday business</div>
+						</div>
+					</div>
+				</div>
+				<!--Process Block-->
+				<div class="col-sm-2 process-block">
+					<div class="inner-box">
+						<div class="upper-box">
+							<div class="icon-box">
+								<i class="fas fa-car"></i>
+								<div class="block-number wow zoomInStable animated" data-wow-delay="0ms" data-wow-duration="2000ms" style="visibility: visible; animation-duration: 2000ms; animation-delay: 0ms; animation-name: zoomInStable;">4</div>
+							</div>
+						</div>
+						<div class="lower-box">
+							<h3><a href="#">Step 4</a></h3>
+							<div class="text">Intgrating clients with partners is the focus of everyday business the focus of everyday business</div>
+						</div>
+					</div>
+				</div>
+				<!--Process Block-->
+				<div class="col-sm-2 process-block">
+					<div class="inner-box">
+						<div class="upper-box">
+							<div class="icon-box">
+								<i class="fas fa-car"></i>
+								<div class="block-number wow zoomInStable animated" data-wow-delay="0ms" data-wow-duration="2000ms" style="visibility: visible; animation-duration: 2000ms; animation-delay: 0ms; animation-name: zoomInStable;">5</div>
+							</div>
+						</div>
+						<div class="lower-box">
+							<h3><a href="#">LANCH</a></h3>
+							<div class="text">Intgrating clients with partners is the focus of everyday business the focus of everyday business</div>
+						</div>
+					</div>
+				</div>
 			</div>
 		</div>
-		<div class="row">
-			<!--Process Block-->
-			<div class="col-sm-2 process-block">
-				<div class="inner-box">
-					<div class="upper-box">
-						<div class="icon-box">
-							<i class="fas fa-car"></i>
-							<div class="block-number wow zoomInStable animated" data-wow-delay="0ms" data-wow-duration="2000ms" style="visibility: visible; animation-duration: 2000ms; animation-delay: 0ms; animation-name: zoomInStable;">1</div>
+		<div class="container-fluid">
+			<div class="row justify-content-center">
+				<div class="col-sm-auto">
+					<div class="card card-body shadow-1 mt-3">
+						<div class="row justify-content-center align-items-center">
+							<div class="col-sm-auto">
+								<h5 class="text-center my-2 position-relative text-muted">Pay as Your Convenience</h5>
+							</div>
+							<!--Process Block-->
+							<div class="col-sm-auto text-center">
+								<div class="d-flex align-items-center">
+									<i class="fas fa-money-bill-alt fa-2x icon-grad mr-2"></i>
+									<a href="#" class="card-link font-size-4 stretched-link text-dark">Cash</a>
+								</div>
+							</div>
+							<!--Process Block-->
+							<div class="col-sm-auto">
+								<div class="d-flex align-items-center">
+									<i class="fab fa-cc-visa fa-2x text-primary icon-grad mr-2"></i>
+									<a href="#" class="card-link font-size-4 stretched-link text-dark">Card</a>
+								</div>
+							</div>
+							<!--Process Block-->
+							<div class="col-sm-auto">
+								<div class="d-flex align-items-center">
+									<i class="fas fa-wallet fa-2x text-primary icon-grad mr-2"></i>
+									<a href="#" class="card-link font-size-4 stretched-link text-dark">Wallet</a>
+								</div>
+							</div>
+							<!--Process Block-->
+							<div class="col-sm-auto">
+								<div class="d-flex align-items-center">
+									<i class="fas fa-money-check fa-2x text-primary icon-grad mr-2"></i>
+									<a href="#" class="card-link font-size-4 stretched-link text-dark">Netbanking</a>
+								</div>
+							</div>
+							<!--Process Block-->
+							<div class="col-sm-auto">
+								<div class="d-flex align-items-center">
+									<i class="fas fa-qrcode fa-2x text-primary icon-grad mr-2"></i>
+									<a href="#" class="card-link font-size-4 stretched-link text-dark">UPI</a>
+								</div>
+							</div>
+						</div>
 						</div>
 					</div>
-					<div class="lower-box">
-						<h3><a href="#">DISCOVER</a></h3>
-						<div class="text">People with ideas and experience to develop a vision for the future</div>
-					</div>
 				</div>
-			</div>
-			<!--Process Block-->
-			<div class="col-sm-2 process-block">
-				<div class="inner-box">
-					<div class="upper-box">
-						<div class="icon-box">
-							<i class="fas fa-car"></i>
-							<div class="block-number wow zoomInStable animated" data-wow-delay="0ms" data-wow-duration="2000ms" style="visibility: visible; animation-duration: 2000ms; animation-delay: 0ms; animation-name: zoomInStable;">2</div>
-						</div>
-					</div>
-					<div class="lower-box">
-						<h3><a href="#">BUILD</a></h3>
-						<div class="text">The right tools at the right time enhances the shard economy</div>
-					</div>
-				</div>
-			</div>
-			<!--Process Block-->
-			<div class="col-sm-2 process-block">
-				<div class="inner-box">
-					<div class="upper-box">
-						<div class="icon-box">
-							<i class="fas fa-car"></i>
-							<div class="block-number wow zoomInStable animated" data-wow-delay="0ms" data-wow-duration="2000ms" style="visibility: visible; animation-duration: 2000ms; animation-delay: 0ms; animation-name: zoomInStable;">3</div>
-						</div>
-					</div>
-					<div class="lower-box">
-						<h3><a href="#">CONNECT</a></h3>
-						<div class="text">Intgrating clients with partners is the focus of everyday business</div>
-					</div>
-				</div>
-			</div>
-			<!--Process Block-->
-			<div class="col-sm-2 process-block">
-				<div class="inner-box">
-					<div class="upper-box">
-						<div class="icon-box">
-							<i class="fas fa-car"></i>
-							<div class="block-number wow zoomInStable animated" data-wow-delay="0ms" data-wow-duration="2000ms" style="visibility: visible; animation-duration: 2000ms; animation-delay: 0ms; animation-name: zoomInStable;">4</div>
-						</div>
-					</div>
-					<div class="lower-box">
-						<h3><a href="#">Step 4</a></h3>
-						<div class="text">People with ideas and experience to develop a vision for the future</div>
-					</div>
-				</div>
-			</div>
-			<!--Process Block-->
-			<div class="col-sm-2 process-block">
-				<div class="inner-box">
-					<div class="upper-box">
-						<div class="icon-box">
-							<i class="fas fa-car"></i>
-							<div class="block-number wow zoomInStable animated" data-wow-delay="0ms" data-wow-duration="2000ms" style="visibility: visible; animation-duration: 2000ms; animation-delay: 0ms; animation-name: zoomInStable;">5</div>
-						</div>
-					</div>
-					<div class="lower-box">
-						<h3><a href="#">LANCH</a></h3>
-						<div class="text">People with ideas and experience to develop a vision for the future</div>
-					</div>
-				</div>
-			</div>
+
 		</div>
 	</div>
 </section>
 <!--
 Offers
 -->
-<div class="container position-relative mt-n5" style="z-index:1;">
+<div class="container position-relative mt-n5 d-none" style="z-index:1;">
     <div class="row">
         <div class="col">
             <div class="list-group list-group-horizontal shadow offers-slider">
@@ -787,53 +847,57 @@ Offers
 <!--
 Why with Us
 -->
-<section class="py-5">
+<section class="min-vh-100 d-flex align-items-center py-5 bg-light" id="WhyTPilotsSection">
 	<div class="container-fluid">
 		<div class="row">
 			<div class="col-sm-4">
-				<div class="section-title wow  fadeInUp  animated mt-4" data-wow-duration="0.6s" data-wow-delay="0.1s">
-					<h1 class="title animated fadeInUp text-primary" data-wow-duration="0.6s" data-wow-delay="0.1s">Why <br> with <span class="text-warning">T-Pilots</span></h1>
-					<p class="text-muted animated fadeInUp fweight-400" data-wow-duration="0.6s" data-wow-delay="0.2s">Our support team will get assistance from AI-powered <br> suggestions, making it quicker than ever to handle <br> support requests. Our support team will get assistance <br> from AI-powered suggestions, making it quicker than <br> ever to handle support requests.</p>
-					<a class="read-more" href="#" target="_self">View Details <i class="la la-long-arrow-right"></i></a>
+				<div class="card border-0 single-feature border-radius-1 mb-4 match-height overflow-hidden">
+					<div class="media align-items-center">
+						<img class="media-left" src="https://picsum.photos/85/180?random=1" alt="Customizable">
+						<div class="media-body">
+							<h6>Customizable</h6>
+							<p class="card-text">Our support team will get assistance from AI-powered suggestions, making.Our support team will get assistance</p>
+						</div>
+					</div>
+				</div>
+				<div class="card border-0 single-feature border-radius-2 mb-4 overflow-hidden">
+					<div class="media align-items-center">
+						<img class="media-left" src="https://picsum.photos/85/180?random=1" alt="Customizable">
+						<div class="media-body">
+							<h6>Customizable</h6>
+							<p class="card-text">Our support team will get assistance from AI-powered suggestions, making.Our support team will get assistance</p>
+						</div>
+					</div>
 				</div>
 			</div>
 			<div class="col-sm-4">
-				<div class="card card-body border-0 single-feature mb-4">
-					<div class="media">
-						<img class="media-left" src="/assets/img/3.png" alt="Customizable">
-						<div class="media-body">
-							<h6>Customizable</h6>
-							<p>Our support team will get assistance from AI-powered suggestions, making it quicker than ever to handle.</p>
-						</div>
+				<div class="card bg-transparent border-0 mb-4 d-flex align-items-center">
+					<div class="text-center wow fadeInUp animated fweight-500" data-wow-duration="0.6s" data-wow-delay="0.1s">
+						<p class="text-primary font-size-8 mb-1">Why Customers Choose</p>
+						<h1 class="text-warning font-size-10 mb-0">T-Pilots</h1>
 					</div>
 				</div>
-				<div class="card card-body border-0 single-feature mb-4 border-radius-2">
-					<div class="media">
-						<img class="media-left" src="/assets/img/3.png" alt="Customizable">
-						<div class="media-body">
-							<h6>Customizable</h6>
-							<p>Our support team will get assistance from AI-powered suggestions, making it quicker than ever to handle.</p>
-						</div>
-					</div>
+				<div class="card border-0 single-feature mb-4 overflow-hidden">
+					<img src="https://picsum.photos/450/270?random=1" alt="Customizable">
 				</div>
 			</div>
-			<div class="col-sm-4 pt-5">
-				<div class="card card-body border-0 single-feature mb-4 border-radius-3">
-					<div class="media">
-						<img class="media-left" src="/assets/img/3.png" alt="Customizable">
+			<div class="col-sm-4">
+				<div class="card border-0 single-feature mb-4 border-radius-3 match-height overflow-hidden">
+					<div class="media align-items-center">
 						<div class="media-body">
 							<h6>Customizable</h6>
-							<p>Our support team will get assistance from AI-powered suggestions, making it quicker than ever to handle.</p>
+							<p class="card-text">Our support team will get assistance from AI-powered suggestions, making.Our support team will get assistance</p>
 						</div>
+						<img src="https://picsum.photos/85/180?random=1" alt="Customizable">
 					</div>
 				</div>
-				<div class="card card-body border-0 single-feature mb-4 border-radius-4">
-					<div class="media">
-						<img class="media-left" src="/assets/img/3.png" alt="Customizable">
+				<div class="card border-0 single-feature mb-4 border-radius-4 overflow-hidden">
+					<div class="media align-items-center">
 						<div class="media-body">
 							<h6>Customizable</h6>
-							<p>Our support team will get assistance from AI-powered suggestions, making it quicker than ever to handle.</p>
+							<p class="card-text">Our support team will get assistance from AI-powered suggestions, making.Our support team will get assistance</p>
 						</div>
+						<img src="https://picsum.photos/85/180?random=1" alt="Customizable">
 					</div>
 				</div>
 			</div>
@@ -841,26 +905,52 @@ Why with Us
 	</div>
 </section>
 <!--
-SVL Economy
+SVL City Ride
 -->
-<section class="bg-light py-5">
-	<div class="container my-5">
-		<div class="row">
-			<div class="col">
-				<img src="/assets/img/UberX.webp" alt="">
+<section class="min-vh-100 d-flex align-items-center py-5" id="CityRideSection">
+	<div class="container">
+		<div class="row align-items-center">
+			<div class="col-sm-6">
+				<div class="vehicle-type">
+				  <div><img class="mx-auto" src="/assets/img/UberX.webp" alt="" height="260"></div>
+				  <div><img class="mx-auto" src="/assets/img/Select.webp" alt="" height="260"></div>
+				  <div><img class="mx-auto" src="/assets/img/Pool.webp" alt="" height="260"></div>
+				  <div><img class="mx-auto" src="/assets/img/XL.webp" alt="" height="260"></div>
+				  <div><img class="mx-auto" src="/assets/img/Black.webp" alt="" height="260"></div>
+				  <div><img class="mx-auto" src="/assets/img/BlackSUV.webp" alt="" height="260"></div>
+				  <div><img class="mx-auto" src="/assets/img/Lux.webp" alt="" height="260"></div>
+				</div>
+				
+				<nav class="nav vehicle-type-nav">
+					<a class="nav-item nav-link text-center"><img src="/assets/img/UberX.webp" alt="" class="img-fluid"> Sedan</a>
+					<a class="nav-item nav-link text-center"><img src="/assets/img/Select.webp" alt="" class="img-fluid"> Select</a>
+					<a class="nav-item nav-link text-center"><img src="/assets/img/Pool.webp" alt="" class="img-fluid"> Pool</a>
+					<a class="nav-item nav-link text-center"><img src="/assets/img/XL.webp" alt="" class="img-fluid"> SUV</a>
+					<a class="nav-item nav-link text-center"><img src="/assets/img/Black.webp" alt="" class="img-fluid"> Prime</a>
+					<a class="nav-item nav-link text-center"><img src="/assets/img/BlackSUV.webp" alt="" class="img-fluid"> SUV Prime</a>
+					<a class="nav-item nav-link text-center"><img src="/assets/img/Lux.webp" alt="" class="img-fluid"> Luxury</a>
+				</nav>
 			</div>
-			<div class="col">
-				<h1 class="text-primary">SVL <span class="text-warning">City Taxi</span></h1>
+			<div class="col-sm-6 vehicle-features">
+				<h1 class="text-primary">SVL <span class="text-warning">City Ride</span></h1>
 				<p><strong>Lorem ipsum dolor sit amet</strong></p>
 				<hr>
-				<p>Consectetur adipisicing elit. Minima veniam ipsa asperiores architecto</p>
-				<p><strong>•</strong>Nihil error Vero at ad. Facere a nihil vitae</p>
-				<p><strong>•</strong>Expedita temporibus sed aliquam</p>
-				<p><strong>•</strong>Quasi doloribus, iusto aut!</p>
-				<div class="tq">
-					<a href="#" class="btn btn-primary btn-lg rounded-0">Sign up to ride</a>
-					<a href="#" class="btn btn-warning btn-lg rounded-0">Schedule for later</a>
-				</div>
+				<ul>
+					<li>Nihil error Vero at ad. Facere a nihil vitae Nihil error Vero at ad.</li>
+					<li>Expedita temporibus sed aliquam Facere a nihil vitae</li>
+					<li>Quasi doloribus, iusto aut! Expedita temporibus sed aliquam</li>
+				</ul>
+				<nav class="nav vehicle-features-nav">
+					<a class="nav-item nav-link"><i class="far fa-snowflake"></i></a>
+					<a class="nav-item nav-link"><i class="fab fa-cc-visa"></i></a>
+					<a class="nav-item nav-link"><i class="fas fa-map-marked-alt"></i></a>
+					<a class="nav-item nav-link"><i class="far fa-snowflake"></i></a>
+					<a class="nav-item nav-link"><i class="fab fa-cc-visa"></i></a>
+				</nav>
+				<nav class="nav a-mx-2 nav-justified">
+					<a href="#" class="nav-item nav-link btn btn-primary btn-lg shadow fweight-500">Book Now</a>
+					<a href="#" class="nav-item nav-link btn btn-warning btn-lg shadow text-white fweight-500">Estimate Ride</a>
+				</nav>
 			</div>
 		</div>
 	</div>
@@ -868,24 +958,50 @@ SVL Economy
 <!--
 SVL Airport
 -->
-<section class="py-5">
-	<div class="container my-5">
-		<div class="row">
-			<div class="col">
+<section class="min-vh-100 d-flex align-items-center py-5 bg-grey-100" id="AiportSection">
+	<div class="container">
+		<div class="row align-items-center">
+			<div class="col-sm-6 vehicle-features">
 				<h1 class="text-primary">SVL <span class="text-warning">Airport</span></h1>
 				<p><strong>Lorem ipsum dolor sit amet</strong></p>
 				<hr>
-				<p>Consectetur adipisicing elit. Minima veniam ipsa asperiores architecto</p>
-				<p><strong>•</strong>Nihil error Vero at ad. Facere a nihil vitae</p>
-				<p><strong>•</strong>Expedita temporibus sed aliquam</p>
-				<p><strong>•</strong>Quasi doloribus, iusto aut!</p>
-				<div class="tq">
-					<a href="#" class="btn btn-primary btn-lg rounded-0">Sign up to ride</a>
-					<a href="#" class="btn btn-warning btn-lg rounded-0">Schedule for later</a>
-				</div>
+				<ul>
+					<li>Nihil error Vero at ad. Facere a nihil vitae Nihil error Vero at ad.</li>
+					<li>Expedita temporibus sed aliquam Facere a nihil vitae</li>
+					<li>Quasi doloribus, iusto aut! Expedita temporibus sed aliquam</li>
+				</ul>
+				<nav class="nav vehicle-features-nav">
+					<a class="nav-item nav-link"><i class="far fa-snowflake"></i></a>
+					<a class="nav-item nav-link"><i class="fab fa-cc-visa"></i></a>
+					<a class="nav-item nav-link"><i class="fas fa-map-marked-alt"></i></a>
+					<a class="nav-item nav-link"><i class="far fa-snowflake"></i></a>
+					<a class="nav-item nav-link"><i class="fab fa-cc-visa"></i></a>
+				</nav>
+				<nav class="nav a-mx-2 nav-justified">
+					<a href="#" class="nav-item nav-link btn btn-primary btn-lg shadow fweight-500">Find a Ride</a>
+					<a href="#" class="nav-item nav-link btn btn-warning btn-lg shadow text-white fweight-500">Estimate a Ride</a>
+				</nav>
 			</div>
-			<div class="col">
-				<img src="/assets/img/Select.webp" alt="">
+			<div class="col-sm-6">
+				<div class="vehicle-type">
+				  <div><img class="mx-auto" src="/assets/img/UberX.webp" alt="" height="260"></div>
+				  <div><img class="mx-auto" src="/assets/img/Select.webp" alt="" height="260"></div>
+				  <div><img class="mx-auto" src="/assets/img/Pool.webp" alt="" height="260"></div>
+				  <div><img class="mx-auto" src="/assets/img/XL.webp" alt="" height="260"></div>
+				  <div><img class="mx-auto" src="/assets/img/Black.webp" alt="" height="260"></div>
+				  <div><img class="mx-auto" src="/assets/img/BlackSUV.webp" alt="" height="260"></div>
+				  <div><img class="mx-auto" src="/assets/img/Lux.webp" alt="" height="260"></div>
+				</div>
+				
+				<nav class="nav vehicle-type-nav">
+					<a class="nav-item nav-link text-center"><img src="/assets/img/UberX.webp" alt="" class="img-fluid"> Sedan</a>
+					<a class="nav-item nav-link text-center"><img src="/assets/img/Select.webp" alt="" class="img-fluid"> Select</a>
+					<a class="nav-item nav-link text-center"><img src="/assets/img/Pool.webp" alt="" class="img-fluid"> Pool</a>
+					<a class="nav-item nav-link text-center"><img src="/assets/img/XL.webp" alt="" class="img-fluid"> SUV</a>
+					<a class="nav-item nav-link text-center"><img src="/assets/img/Black.webp" alt="" class="img-fluid"> Prime</a>
+					<a class="nav-item nav-link text-center"><img src="/assets/img/BlackSUV.webp" alt="" class="img-fluid"> SUV Prime</a>
+					<a class="nav-item nav-link text-center"><img src="/assets/img/Lux.webp" alt="" class="img-fluid"> Luxury</a>
+				</nav>
 			</div>
 		</div>
 	</div>
@@ -893,24 +1009,50 @@ SVL Airport
 <!--
 SVL Outstation
 -->
-<section class="bg-light py-5">
-	<div class="container my-5">
-		<div class="row">
-			<div class="col">
-				<img src="/assets/img/XL.webp" alt="">
+<section class="min-vh-100 d-flex align-items-center py-5" id="OutstationSection">
+	<div class="container">
+		<div class="row align-items-center">
+			<div class="col-sm-6">
+				<div class="vehicle-type">
+				  <div><img class="mx-auto" src="/assets/img/UberX.webp" alt="" height="260"></div>
+				  <div><img class="mx-auto" src="/assets/img/Select.webp" alt="" height="260"></div>
+				  <div><img class="mx-auto" src="/assets/img/Pool.webp" alt="" height="260"></div>
+				  <div><img class="mx-auto" src="/assets/img/XL.webp" alt="" height="260"></div>
+				  <div><img class="mx-auto" src="/assets/img/Black.webp" alt="" height="260"></div>
+				  <div><img class="mx-auto" src="/assets/img/BlackSUV.webp" alt="" height="260"></div>
+				  <div><img class="mx-auto" src="/assets/img/Lux.webp" alt="" height="260"></div>
+				</div>
+				
+				<nav class="nav vehicle-type-nav">
+					<a class="nav-item nav-link text-center"><img src="/assets/img/UberX.webp" alt="" class="img-fluid"> Sedan</a>
+					<a class="nav-item nav-link text-center"><img src="/assets/img/Select.webp" alt="" class="img-fluid"> Select</a>
+					<a class="nav-item nav-link text-center"><img src="/assets/img/Pool.webp" alt="" class="img-fluid"> Pool</a>
+					<a class="nav-item nav-link text-center"><img src="/assets/img/XL.webp" alt="" class="img-fluid"> SUV</a>
+					<a class="nav-item nav-link text-center"><img src="/assets/img/Black.webp" alt="" class="img-fluid"> Prime</a>
+					<a class="nav-item nav-link text-center"><img src="/assets/img/BlackSUV.webp" alt="" class="img-fluid"> SUV Prime</a>
+					<a class="nav-item nav-link text-center"><img src="/assets/img/Lux.webp" alt="" class="img-fluid"> Luxury</a>
+				</nav>
 			</div>
-			<div class="col">
+			<div class="col-sm-6 vehicle-features">
 				<h1 class="text-primary">SVL <span class="text-warning">Outstation</span></h1>
 				<p><strong>Lorem ipsum dolor sit amet</strong></p>
 				<hr>
-				<p>Consectetur adipisicing elit. Minima veniam ipsa asperiores architecto</p>
-				<p><strong>•</strong>Nihil error Vero at ad. Facere a nihil vitae</p>
-				<p><strong>•</strong>Expedita temporibus sed aliquam</p>
-				<p><strong>•</strong>Quasi doloribus, iusto aut!</p>
-				<div class="tq">
-					<a href="#" class="btn btn-primary btn-lg rounded-0">Sign up to ride</a>
-					<a href="#" class="btn btn-warning btn-lg rounded-0">Schedule for later</a>
-				</div>
+				<ul>
+					<li>Nihil error Vero at ad. Facere a nihil vitae Nihil error Vero at ad.</li>
+					<li>Expedita temporibus sed aliquam Facere a nihil vitae</li>
+					<li>Quasi doloribus, iusto aut! Expedita temporibus sed aliquam</li>
+				</ul>
+				<nav class="nav vehicle-features-nav">
+					<a class="nav-item nav-link"><i class="far fa-snowflake"></i></a>
+					<a class="nav-item nav-link"><i class="fab fa-cc-visa"></i></a>
+					<a class="nav-item nav-link"><i class="fas fa-map-marked-alt"></i></a>
+					<a class="nav-item nav-link"><i class="far fa-snowflake"></i></a>
+					<a class="nav-item nav-link"><i class="fab fa-cc-visa"></i></a>
+				</nav>
+				<nav class="nav a-mx-2 nav-justified">
+					<a href="#" class="nav-item nav-link btn btn-primary btn-lg shadow fweight-500">Find a Ride</a>
+					<a href="#" class="nav-item nav-link btn btn-warning btn-lg shadow text-white fweight-500">Estimate a Ride</a>
+				</nav>
 			</div>
 		</div>
 	</div>
@@ -918,24 +1060,50 @@ SVL Outstation
 <!--
 SVL Rentals
 -->
-<section class="py-5">
-	<div class="container my-5">
-		<div class="row">
-			<div class="col">
+<section class="min-vh-100 d-flex align-items-center py-5 bg-grey-100" id="RentalsSection">
+	<div class="container">
+		<div class="row align-items-center">
+			<div class="col-sm-6 vehicle-features">
 				<h1 class="text-primary">SVL <span class="text-warning">Rentals</span></h1>
-				<p><strong>Affordable, everyday rides</strong></p>
+				<p><strong>Lorem ipsum dolor sit amet</strong></p>
 				<hr>
-				<p>Need a private ride at an everyday price? SVL Micro is your go-to option.</p>
-				<p><strong>•</strong> Private rides for 1 to 4 people</p>
-				<p><strong>•</strong> Comfortable sedans</p>
-				<p><strong>•</strong> Affordable prices</p>
-				<div class="tq">
-					<a href="#" class="btn btn-primary btn-lg rounded-0">Sign up to ride</a>
-					<a href="#" class="btn btn-warning btn-lg rounded-0">Schedule for later</a>
-				</div>
+				<ul>
+					<li>Nihil error Vero at ad. Facere a nihil vitae Nihil error Vero at ad.</li>
+					<li>Expedita temporibus sed aliquam Facere a nihil vitae</li>
+					<li>Quasi doloribus, iusto aut! Expedita temporibus sed aliquam</li>
+				</ul>
+				<nav class="nav vehicle-features-nav">
+					<a class="nav-item nav-link"><i class="far fa-snowflake"></i></a>
+					<a class="nav-item nav-link"><i class="fab fa-cc-visa"></i></a>
+					<a class="nav-item nav-link"><i class="fas fa-map-marked-alt"></i></a>
+					<a class="nav-item nav-link"><i class="far fa-snowflake"></i></a>
+					<a class="nav-item nav-link"><i class="fab fa-cc-visa"></i></a>
+				</nav>
+				<nav class="nav a-mx-2 nav-justified">
+					<a href="#" class="nav-item nav-link btn btn-primary btn-lg shadow fweight-500">Find a Ride</a>
+					<a href="#" class="nav-item nav-link btn btn-warning btn-lg shadow text-white fweight-500">Estimate a Ride</a>
+				</nav>
 			</div>
-			<div class="col">
-				<img src="/assets/img/BlackSUV.webp" alt="">
+			<div class="col-sm-6">
+				<div class="vehicle-type">
+				  <div><img class="mx-auto" src="/assets/img/UberX.webp" alt="" height="260"></div>
+				  <div><img class="mx-auto" src="/assets/img/Select.webp" alt="" height="260"></div>
+				  <div><img class="mx-auto" src="/assets/img/Pool.webp" alt="" height="260"></div>
+				  <div><img class="mx-auto" src="/assets/img/XL.webp" alt="" height="260"></div>
+				  <div><img class="mx-auto" src="/assets/img/Black.webp" alt="" height="260"></div>
+				  <div><img class="mx-auto" src="/assets/img/BlackSUV.webp" alt="" height="260"></div>
+				  <div><img class="mx-auto" src="/assets/img/Lux.webp" alt="" height="260"></div>
+				</div>
+				
+				<nav class="nav vehicle-type-nav">
+					<a class="nav-item nav-link text-center"><img src="/assets/img/UberX.webp" alt="" class="img-fluid"> Sedan</a>
+					<a class="nav-item nav-link text-center"><img src="/assets/img/Select.webp" alt="" class="img-fluid"> Select</a>
+					<a class="nav-item nav-link text-center"><img src="/assets/img/Pool.webp" alt="" class="img-fluid"> Pool</a>
+					<a class="nav-item nav-link text-center"><img src="/assets/img/XL.webp" alt="" class="img-fluid"> SUV</a>
+					<a class="nav-item nav-link text-center"><img src="/assets/img/Black.webp" alt="" class="img-fluid"> Prime</a>
+					<a class="nav-item nav-link text-center"><img src="/assets/img/BlackSUV.webp" alt="" class="img-fluid"> SUV Prime</a>
+					<a class="nav-item nav-link text-center"><img src="/assets/img/Lux.webp" alt="" class="img-fluid"> Luxury</a>
+				</nav>
 			</div>
 		</div>
 	</div>
@@ -943,24 +1111,50 @@ SVL Rentals
 <!--
 SVL Truck
 -->
-<section class="bg-light py-5">
-	<div class="container my-5">
-		<div class="row">
-			<div class="col">
-				<img src="/assets/img/Lux.webp" alt="">
-			</div>
-			<div class="col">
-				<h1 class="text-primary">SVL <span class="text-warning">Truck</span></h1>
-				<p><strong>Affordable, everyday rides</strong></p>
-				<hr>
-				<p>Need a private ride at an everyday price? SVL Micro is your go-to option.</p>
-				<p><strong>•</strong> Private rides for 1 to 4 people</p>
-				<p><strong>•</strong> Comfortable sedans</p>
-				<p><strong>•</strong> Affordable prices</p>
-				<div class="tq">
-					<a href="#" class="btn btn-primary btn-lg rounded-0">Sign up to ride</a>
-					<a href="#" class="btn btn-warning btn-lg rounded-0">Schedule for later</a>
+<section class="min-vh-100 d-flex align-items-center py-5" id="TruckSection">
+	<div class="container">
+		<div class="row align-items-center">
+			<div class="col-sm-6">
+				<div class="vehicle-type">
+				  <div><img class="mx-auto" src="/assets/img/UberX.webp" alt="" height="260"></div>
+				  <div><img class="mx-auto" src="/assets/img/Select.webp" alt="" height="260"></div>
+				  <div><img class="mx-auto" src="/assets/img/Pool.webp" alt="" height="260"></div>
+				  <div><img class="mx-auto" src="/assets/img/XL.webp" alt="" height="260"></div>
+				  <div><img class="mx-auto" src="/assets/img/Black.webp" alt="" height="260"></div>
+				  <div><img class="mx-auto" src="/assets/img/BlackSUV.webp" alt="" height="260"></div>
+				  <div><img class="mx-auto" src="/assets/img/Lux.webp" alt="" height="260"></div>
 				</div>
+				
+				<nav class="nav vehicle-type-nav">
+					<a class="nav-item nav-link text-center"><img src="/assets/img/UberX.webp" alt="" class="img-fluid"> Sedan</a>
+					<a class="nav-item nav-link text-center"><img src="/assets/img/Select.webp" alt="" class="img-fluid"> Select</a>
+					<a class="nav-item nav-link text-center"><img src="/assets/img/Pool.webp" alt="" class="img-fluid"> Pool</a>
+					<a class="nav-item nav-link text-center"><img src="/assets/img/XL.webp" alt="" class="img-fluid"> SUV</a>
+					<a class="nav-item nav-link text-center"><img src="/assets/img/Black.webp" alt="" class="img-fluid"> Prime</a>
+					<a class="nav-item nav-link text-center"><img src="/assets/img/BlackSUV.webp" alt="" class="img-fluid"> SUV Prime</a>
+					<a class="nav-item nav-link text-center"><img src="/assets/img/Lux.webp" alt="" class="img-fluid"> Luxury</a>
+				</nav>
+			</div>
+			<div class="col-sm-6 vehicle-features">
+				<h1 class="text-primary">SVL <span class="text-warning">Truck</span></h1>
+				<p><strong>Lorem ipsum dolor sit amet</strong></p>
+				<hr>
+				<ul>
+					<li>Nihil error Vero at ad. Facere a nihil vitae Nihil error Vero at ad.</li>
+					<li>Expedita temporibus sed aliquam Facere a nihil vitae</li>
+					<li>Quasi doloribus, iusto aut! Expedita temporibus sed aliquam</li>
+				</ul>
+				<nav class="nav vehicle-features-nav">
+					<a class="nav-item nav-link"><i class="far fa-snowflake"></i></a>
+					<a class="nav-item nav-link"><i class="fab fa-cc-visa"></i></a>
+					<a class="nav-item nav-link"><i class="fas fa-map-marked-alt"></i></a>
+					<a class="nav-item nav-link"><i class="far fa-snowflake"></i></a>
+					<a class="nav-item nav-link"><i class="fab fa-cc-visa"></i></a>
+				</nav>
+				<nav class="nav a-mx-2 nav-justified">
+					<a href="#" class="nav-item nav-link btn btn-primary btn-lg shadow fweight-500">Find a Ride</a>
+					<a href="#" class="nav-item nav-link btn btn-warning btn-lg shadow text-white fweight-500">Estimate a Ride</a>
+				</nav>
 			</div>
 		</div>
 	</div>
@@ -968,13 +1162,13 @@ SVL Truck
 <!--
 Services
 -->
-<section class="py-5">
+<section class="min-vh-100 d-flex align-items-center py-5 bg-grey-100" id="VehiclesSection">
     <div class="container">
         <div class="row">
             <div class="col-12 animated fadeIn">
 				<h2 class="heading text-uppercase text-center mb-5 position-relative">Vehicles</h2>
 							
-                <div class="btn-group my-5 d-flex justify-content-between mixitup-controls flex-wrap overflow-hidden" role="group" aria-label="ServicesFilter">
+                <div class="btn-group mb-4 d-flex justify-content-between mixitup-controls flex-wrap overflow-hidden" role="group" aria-label="ServicesFilter">
                     <button type="button" class="btn btn-link" data-mixitup-control data-filter="all">All</button>
                     <button type="button" class="btn btn-link" data-mixitup-control data-filter=".CityTrips">City Trips</button>
                     <button type="button" class="btn btn-link" data-mixitup-control data-filter=".Airport">Airport</button>
@@ -982,7 +1176,7 @@ Services
                     <button type="button" class="btn btn-link" data-mixitup-control data-filter=".Rentals">Rentals</button>
                     <button type="button" class="btn btn-link" data-mixitup-control data-filter=".Truck">Truck</button>
                 </div>
-                <div class="row mixitup-container" data-ref="mixitup-container">
+                <div class="row mixitup-container pt-2" data-ref="mixitup-container">
                     <div class="col-sm-3 mix CityTrips" data-ref="mixitup-target">
                         <div class="card border-0 mb-4">
 							<a class="hover-effect" href="details.html" data-toggle="modal" data-target="#vehicleDetailsModal">
@@ -1211,57 +1405,39 @@ Services
 <!--
 Download App
 -->
-<section class="bg-grey-100 py-5">
+<section class="min-vh-100 d-flex align-items-center py-5 bg-dark text-white" id="DownloadAppSection">
 	<div class="container">
 		<div class="row align-items-center">
 			<div class="col-sm wow fadeInRight">
-				<h2 class="text-primary">Get our <span class="text-warning">5G App</span> from the Store</h2>
-				<p class="fweight-400 text-muted">Download the app for exclusive deals and ease of booking </p>
-				<nav class="nav a-pl-0 mb-4">
-					<a href="#" class="nav-link">
+				<h1 class="text-white font-size-10">Get our <span class="text-warning">5G App</span> from the Store</h1>
+				<p class="fweight-400 grey-500">Download the app for exclusive deals and ease of booking </p>
+				<nav class="nav a-mx-2 a-px-0 mb-4">
+					<a href="#" class="nav-item nav-link">
 						<img src="assets/img/badge-apple.svg" alt="" height="50">
 					</a>
-					<a href="#" class="nav-link">
+					<a href="#" class="nav-item nav-link">
 						<img src="assets/img/badge-google.svg" alt="" height="50">
 					</a>
-					<a href="#" class="nav-link">
+					<a href="#" class="nav-item nav-link">
 						<img src="assets/img/badge-microsoft.svg" alt="" height="50">
 					</a>
 				</nav>
 				<div class="row">
 					<div class="col-sm-6">
 						<div class="media mb-3">
-							<i class="fas fa-bullseye fa-2x mr-3"></i>
+							<i class="fas fa-bullseye fa-2x mr-3 grey-400"></i>
 							<div class="media-body">
-								<h6 class="mt-0 fweight-400">24/7 Customer Support</h6>
-								<p class="font-size-2 fweight-400 text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam, corporis, accusantium? Tempore itaque cupiditate</p>
+								<h6 class="mt-0 fweight-400 grey-400">Absolute Convenience</h6>
+								<p class="font-size-2 fweight-400 grey-500">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam, corporis, accusantium? Tempore itaque cupiditate Lorem ipsum dolor sit amet</p>
 							</div>
 						</div>
 					</div>
 					<div class="col-sm-6">
 						<div class="media mb-3">
-							<i class="fas fa-bullseye fa-2x mr-3"></i>
+							<i class="fas fa-bullseye fa-2x mr-3 grey-400"></i>
 							<div class="media-body">
-								<h6 class="mt-0 fweight-400">Absolute Convenience</h6>
-								<p class="font-size-2 fweight-400 text-muted">recusandae facere amet optio, officia accusantium ad at similique illo corporis eius nostrum, blanditiis deserunt alias.</p>
-							</div>
-						</div>
-					</div>
-					<div class="col-sm-6">
-						<div class="media mb-3">
-							<i class="fas fa-bullseye fa-2x mr-3"></i>
-							<div class="media-body">
-								<h6 class="mt-0 fweight-400">Time & Cost Savings</h6>
-								<p class="font-size-2 fweight-400 text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam, corporis, accusantium? Tempore itaque cupiditate</p>
-							</div>
-						</div>
-					</div>
-					<div class="col-sm-6">
-						<div class="media mb-3">
-							<i class="fas fa-bullseye fa-2x mr-3"></i>
-							<div class="media-body">
-								<h6 class="mt-0 fweight-400">Total Transparent Billing</h6>
-								<p class="font-size-2 fweight-400 text-muted">recusandae facere amet optio, officia accusantium ad at similique illo corporis eius nostrum, blanditiis deserunt alias.</p>
+								<h6 class="mt-0 fweight-400 grey-400">Total Transparent Billing</h6>
+								<p class="font-size-2 fweight-400 grey-500">accusantium? Tempore itaque cupiditate recusandae facere amet optio, officia accusantium ad at similique illo corporis eius nostrum, blanditiis deserunt alias.</p>
 							</div>
 						</div>
 					</div>
@@ -1276,7 +1452,7 @@ Download App
 <!--
 Testimonials
 -->
-<section class="py-5 testimonials bg-blue-50">
+<section class="min-vh-100 d-flex align-items-center py-5 testimonials bg-blue-50 position-relative" id="FeedbackSection">
 	<div class="container py-5">
 		<div class="row align-items-center">
 			<div class="col-sm-8">
@@ -1328,10 +1504,10 @@ Testimonials
 						</div>
 					</div>
 				</div>
-			</div>
-			<div class="col-sm-3 text-center">
-				<a href="#" class="btn btn-warning rounded-pill shadow my-4">Feedback</a><br>
-				<a href="#" class="btn btn-primary rounded-pill shadow my-4">Reviews - Dashboard</a>
+				<nav class="nav justify-content-center a-mx-2">
+					<a href="#" class="nav-item nav-link btn btn-primary shadow my-5 fweight-500">Reviews - Dashboard</a>
+					<a href="#" class="nav-item nav-link btn btn-warning shadow my-5 text-white fweight-500">Feedback</a>
+				</nav>
 			</div>
 		</div>
 	</div>
@@ -1339,13 +1515,12 @@ Testimonials
 <!--
 Contact Us
 -->
-<section class="contact-us">
-	<header class="bg-light py-5" id="contact-us">
+<section class="contact-us" id="ContactSection">
+	<header class="min-vh-100 d-flex align-items-center bg-light py-5" id="contact-us">
 		<div class="container">
 			<div class="row">
 				<div class="col">
-					<h2 class="heading text-uppercase text-center mb-5 position-relative">Contact Us</h2>
-					<p class=" text-center font-size-2 fweight-400 text-muted mb-3">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+					<h2 class="heading text-uppercase text-center mb-3 position-relative">Contact Us</h2>
 				</div>
 			</div>
 			<div class="row py-4">
@@ -1370,282 +1545,287 @@ Contact Us
 				</div>
 				<div class="col-sm position-relative">
 					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d243647.31698248573!2d78.26795853991645!3d17.4122998009489!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb99daeaebd2c7%3A0xae93b78392bafbc2!2sHyderabad%2C%20Telangana!5e0!3m2!1sen!2sin!4v1581677103531!5m2!1sen!2sin" width="100%" height="100%" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
-					<a class="btn btn-warning position-absolute map-share-btn rounded-pill" href="#" role="button" data-toggle="modal" data-target="#shareMapModal">Get Location Info <i class="fas fa-share"></i></a>
+					<a class="btn btn-primary position-absolute map-share-btn fweight-500" href="#" role="button" data-toggle="modal" data-target="#shareMapModal">Get Location Info <i class="fas fa-share"></i></a>
 				</div>
 			</div>
 		</div>
 	</header>
-	<div class="container">
-		
-		<div class="row pt-5" id="mail-us">
-			<div class="col-sm-3 hidden-xs">
-				<div class="nav flex-column nav-pills nav-fill contact-us-tabs" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-					<a class="nav-link active" id="feed-on-info-list" data-toggle="pill" href="#feed-on-info" role="tab" aria-controls="FeedbackOnInfo" aria-selected="true">Feedback on T-Pilots APP Accessibility</a>
-					<a class="nav-link" id="feed-on-staff-list" data-toggle="pill" href="#feed-on-staff" role="tab" aria-controls="FeedbackOnStaff">Feedback on T-Pilots</a>
-					<a class="nav-link" id="online-services-list" data-toggle="pill" href="#online-services" role="tab" aria-controls="OnlineServices">Issues with Web Access</a>
-					<a class="nav-link" id="new-tie-up-list" data-toggle="pill" href="#new-tie-up" role="tab" aria-controls="NewTieUp">Corporate Tie-up with T-Pilots</a>
-					<a class="nav-link" id="suggestions-on-ui-list" data-toggle="pill" href="#suggestions-on-ui" role="tab" aria-controls="SuggestionsOnUI">Suggestions on User Interface?</a>
-					<a class="nav-link" id="other-issue-list" data-toggle="pill" href="#other-issue" role="tab" aria-controls="OtherIssue">Any Other Issue</a>
+	<div class="min-vh-100 d-flex align-items-center" id="EmailSection">
+		<div class="container">
+			<div class="row" id="mail-us">
+				<div class="col-sm-3 hidden-xs">
+					<div class="nav flex-column nav-pills nav-fill contact-us-tabs" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+						<a class="nav-link active" id="feed-on-info-list" data-toggle="pill" href="#feed-on-info" role="tab" aria-controls="FeedbackOnInfo" aria-selected="true">Feedback on T-Pilots APP Accessibility</a>
+						<a class="nav-link" id="feed-on-staff-list" data-toggle="pill" href="#feed-on-staff" role="tab" aria-controls="FeedbackOnStaff">Feedback on T-Pilots</a>
+						<a class="nav-link" id="online-services-list" data-toggle="pill" href="#online-services" role="tab" aria-controls="OnlineServices">Issues with Web Access</a>
+						<a class="nav-link" id="new-tie-up-list" data-toggle="pill" href="#new-tie-up" role="tab" aria-controls="NewTieUp">Corporate Tie-up with T-Pilots</a>
+						<a class="nav-link" id="suggestions-on-ui-list" data-toggle="pill" href="#suggestions-on-ui" role="tab" aria-controls="SuggestionsOnUI">Suggestions on User Interface?</a>
+						<a class="nav-link" id="other-issue-list" data-toggle="pill" href="#other-issue" role="tab" aria-controls="OtherIssue">Any Other Issue</a>
+					</div>
 				</div>
-			</div>
-			<div class="col-sm-9">
-				<div class="tab-content" id="v-pills-tabContent">
-					<div class="tab-pane fade show active" id="feed-on-info" role="tabpanel" aria-labelledby="feed-on-info-list">
-						<h4 class="fweight-400 border-bottom pb-2 mb-3">Feedback on T-Pilots APP Accessibility</h4>
-						<p class="text-muted">Your feedback will help us improve</p>
-						<form>
-									<div class="form-group">
-											<input type="text" class="form-control" id="" placeholder="Select City Name*" value="">    
+				<div class="col-sm-9">
+					<div class="tab-content" id="v-pills-tabContent">
+						<div class="tab-pane fade show active" id="feed-on-info" role="tabpanel" aria-labelledby="feed-on-info-list">
+							<h4 class="fweight-400 border-bottom pb-2 mb-3">Feedback on T-Pilots APP Accessibility</h4>
+							<p class="text-muted">Your feedback will help us improve</p>
+							<form>
+								<div class="form-group">
+										<input type="text" class="form-control" id="" placeholder="Select City Name*" value="">    
+								</div>
+								<div class="form-group">
+										<input type="text" class="form-control" id="fbnamid" placeholder="Name*" value="">
+								</div>
+								<div class="form-group dt">
+									<div class="input-group">
+										<div class="input-group-prepend"><span class="input-group-text" id="">+91</span></div>
+										<input type="number" onkeypress="return isNumber(event,this.id)" class="form-control form-control-bdr-nn" maxlength="10" id="fbmobile" placeholder="Mobile Number*" value="">
 									</div>
-									<div class="form-group">
-											<input type="text" class="form-control" id="fbnamid" placeholder="Name*" value="">
+								</div>
+								<div class="form-group">
+									<input type="email" class="form-control" id="fbemail" placeholder="Email" value="">
+								</div>
+								<div class="form-group">
+									<textarea class="form-control" id="fbcomment" rows="4" placeholder="Message*"></textarea>
+								</div>
+								<div class="form-row justify-content-between align-items-center">
+									<div class="form-group col-sm-auto">
+										<span class="smltx tcon">* Marked Fields Mandatory</span>
 									</div>
-									<div class="form-group dt">
-										<div class="input-group">
-											<div class="input-group-prepend"><span class="input-group-text" id="">+91</span></div>
-											<input type="number" onkeypress="return isNumber(event,this.id)" class="form-control form-control-bdr-nn" maxlength="10" id="fbmobile" placeholder="Mobile Number*" value="">
+									<div class="form-group col-sm-3">
+										<img src="/assets/img/newCaptchaAnchor.gif" alt="" class="img-fluid">
+									</div>
+									<div class="form-group col-sm-auto">
+										<div class="text-right text-left-xs">
+											<button type="button" class="btn btn-primary btn-lg">Submit</button>
 										</div>
 									</div>
-									<div class="form-group">
-										<input type="email" class="form-control" id="fbemail" placeholder="Email" value="">
-									</div>
-									<div class="form-group">
-										<textarea class="form-control" id="fbcomment" rows="4" placeholder="Message*"></textarea>
-									</div>
-									<div class="form-row justify-content-between align-items-center">
-										<div class="form-group col-sm-auto">
-											<span class="smltx tcon">* Marked Fields Mandatory</span>
-										</div>
-										<div class="form-group col-sm-auto">
-											<div class="text-right text-left-xs">
-													<button type="button" onclick="feedbackresult('Other Issues');" class="btn btn-primary btn-lg" id="feedBtnId"><span class="tcon">Submit</span> <span class="white_lodr" style="display:none;"></span></button>
-											</div>
-										</div>
-									</div>
+								</div>
 							</form>
-					</div>
-					<div class="tab-pane fade" id="feed-on-staff" role="tabpanel" aria-labelledby="feed-on-staff-list">
-						<h4 class="fweight-400 border-bottom pb-2 mb-3">Feedback on T-Pilots</h4>
-						<p class="text-muted">Your feedback will help us improve</p>
-						<form>
-									<div class="form-group">
-											<input type="text" class="form-control" id="" placeholder="Select City Name*" value="">    
-									</div>
-									<div class="form-group">
-											<input type="text" class="form-control" id="fbnamid" placeholder="Name*" value="">
-									</div>
-									<div class="form-group dt">
-										<div class="input-group">
-											<div class="input-group-prepend"><span class="input-group-text" id="">+91</span></div>
-											<input type="number" onkeypress="return isNumber(event,this.id)" class="form-control form-control-bdr-nn" maxlength="10" id="fbmobile" placeholder="Mobile Number*" value="">
+						</div>
+						<div class="tab-pane fade" id="feed-on-staff" role="tabpanel" aria-labelledby="feed-on-staff-list">
+							<h4 class="fweight-400 border-bottom pb-2 mb-3">Feedback on T-Pilots</h4>
+							<p class="text-muted">Your feedback will help us improve</p>
+							<form>
+										<div class="form-group">
+												<input type="text" class="form-control" id="" placeholder="Select City Name*" value="">    
 										</div>
-									</div>
-									<div class="form-group">
-										<input type="email" class="form-control" id="fbemail" placeholder="Email" value="">
-									</div>
-									<div class="form-group">
-										<textarea class="form-control" id="fbcomment" rows="4" placeholder="Message*"></textarea>
-									</div>
-									<div class="form-row justify-content-between align-items-center">
-										<div class="form-group col-sm-auto">
-											<span class="smltx tcon">* Marked Fields Mandatory</span>
+										<div class="form-group">
+												<input type="text" class="form-control" id="fbnamid" placeholder="Name*" value="">
 										</div>
-										<div class="form-group col-sm-auto">
-											<div class="text-right text-left-xs">
-													<button type="button" onclick="feedbackresult('Other Issues');" class="btn btn-primary btn-lg" id="feedBtnId"><span class="tcon">Submit</span> <span class="white_lodr" style="display:none;"></span></button>
+										<div class="form-group dt">
+											<div class="input-group">
+												<div class="input-group-prepend"><span class="input-group-text" id="">+91</span></div>
+												<input type="number" onkeypress="return isNumber(event,this.id)" class="form-control form-control-bdr-nn" maxlength="10" id="fbmobile" placeholder="Mobile Number*" value="">
 											</div>
 										</div>
-									</div>
-							</form>
-					</div>
-					<div class="tab-pane fade" id="online-services" role="tabpanel" aria-labelledby="online-services-list">
-						<h4 class="fweight-400 border-bottom pb-2 mb-3">Issues with Web Access</h4>
-						<p class="text-muted">Your feedback will help us improve</p>
-						<form>
-									<div class="form-group">
-											<input type="text" class="form-control" id="" placeholder="Select City Name*" value="">    
-									</div>
-									<div class="form-group">
-											<input type="text" class="form-control" id="fbnamid" placeholder="Name*" value="">
-									</div>
-									<div class="form-group dt">
-										<div class="input-group">
-											<div class="input-group-prepend"><span class="input-group-text" id="">+91</span></div>
-											<input type="number" onkeypress="return isNumber(event,this.id)" class="form-control form-control-bdr-nn" maxlength="10" id="fbmobile" placeholder="Mobile Number*" value="">
+										<div class="form-group">
+											<input type="email" class="form-control" id="fbemail" placeholder="Email" value="">
 										</div>
-									</div>
-									<div class="form-group">
-										<input type="email" class="form-control" id="fbemail" placeholder="Email" value="">
-									</div>
-									<div class="form-group">
-										<textarea class="form-control" id="fbcomment" rows="4" placeholder="Message*"></textarea>
-									</div>
-									<div class="form-row justify-content-between align-items-center">
-										<div class="form-group col-sm-auto">
-											<span class="smltx tcon">* Marked Fields Mandatory</span>
+										<div class="form-group">
+											<textarea class="form-control" id="fbcomment" rows="4" placeholder="Message*"></textarea>
 										</div>
-										<div class="form-group col-sm-auto">
-											<div class="text-right text-left-xs">
-													<button type="button" onclick="feedbackresult('Other Issues');" class="btn btn-primary btn-lg" id="feedBtnId"><span class="tcon">Submit</span> <span class="white_lodr" style="display:none;"></span></button>
+										<div class="form-row justify-content-between align-items-center">
+											<div class="form-group col-sm-auto">
+												<span class="smltx tcon">* Marked Fields Mandatory</span>
+											</div>
+											<div class="form-group col-sm-auto">
+												<div class="text-right text-left-xs">
+														<button type="button" onclick="feedbackresult('Other Issues');" class="btn btn-primary btn-lg" id="feedBtnId"><span class="tcon">Submit</span> <span class="white_lodr" style="display:none;"></span></button>
+												</div>
 											</div>
 										</div>
+								</form>
+						</div>
+						<div class="tab-pane fade" id="online-services" role="tabpanel" aria-labelledby="online-services-list">
+							<h4 class="fweight-400 border-bottom pb-2 mb-3">Issues with Web Access</h4>
+							<p class="text-muted">Your feedback will help us improve</p>
+							<form>
+										<div class="form-group">
+												<input type="text" class="form-control" id="" placeholder="Select City Name*" value="">    
+										</div>
+										<div class="form-group">
+												<input type="text" class="form-control" id="fbnamid" placeholder="Name*" value="">
+										</div>
+										<div class="form-group dt">
+											<div class="input-group">
+												<div class="input-group-prepend"><span class="input-group-text" id="">+91</span></div>
+												<input type="number" onkeypress="return isNumber(event,this.id)" class="form-control form-control-bdr-nn" maxlength="10" id="fbmobile" placeholder="Mobile Number*" value="">
+											</div>
+										</div>
+										<div class="form-group">
+											<input type="email" class="form-control" id="fbemail" placeholder="Email" value="">
+										</div>
+										<div class="form-group">
+											<textarea class="form-control" id="fbcomment" rows="4" placeholder="Message*"></textarea>
+										</div>
+										<div class="form-row justify-content-between align-items-center">
+											<div class="form-group col-sm-auto">
+												<span class="smltx tcon">* Marked Fields Mandatory</span>
+											</div>
+											<div class="form-group col-sm-auto">
+												<div class="text-right text-left-xs">
+														<button type="button" onclick="feedbackresult('Other Issues');" class="btn btn-primary btn-lg" id="feedBtnId"><span class="tcon">Submit</span> <span class="white_lodr" style="display:none;"></span></button>
+												</div>
+											</div>
+										</div>
+
+								</form>
+						</div>
+						<div class="tab-pane fade" id="new-tie-up" role="tabpanel" aria-labelledby="new-tie-up-list">
+							<h4 class="fweight-400 border-bottom pb-2 mb-3">Corporate Tie-up with T-Pilots</h4>
+							<p class="text-muted">We are Happy to associate with you for Growing Together</p>
+							<form>
+								<div class="form-row">
+									<div class="form-group col-sm-9">
+										<input type="text" class="form-control" placeholder="Company Name" value="">    
 									</div>
+									<div class="form-group col-sm-3">
+										<input type="text" class="form-control" placeholder="Hyderabad" value="">    
+									</div>
+								</div>
+								<div class="form-row">
+									<div class="form-group col-sm-2">
+										<select class="form-control">
+										  <option selected>Title</option>
+										  <option value="1">One</option>
+										  <option value="2">Two</option>
+										  <option value="3">Three</option>
+										</select>  
+									</div>
+									<div class="form-group col-sm-5">
+										<input type="text" class="form-control" placeholder="First Name" value="">    
+									</div>
+									<div class="form-group col-sm-5">
+										<input type="text" class="form-control" placeholder="Last Name" value="">    
+									</div>
+								</div>
+								<div class="form-row">
+									<div class="form-group col-sm">
+										<div class="input-group">
+											<div class="input-group-prepend">
+												<span class="input-group-text" id="">+91</span>
+											</div>
+											<input type="number" class="form-control" placeholder="Mobile Number*" value="">
+										</div>
+									</div>
+									<div class="form-group col-sm">
+										<input type="email" class="form-control" placeholder="Email" value="">
+									</div>
+								</div>
+								<div class="form-row">
+									<div class="form-group col-sm">
+										<select class="form-control">
+										  <option selected>Service Category*</option>
+										  <option value="1">One</option>
+										  <option value="2">Two</option>
+										  <option value="3">Three</option>
+										</select>  
+									</div>
+									<div class="form-group col-sm">
+										<select class="form-control">
+										  <option selected>Services List*</option>
+										  <option value="1">One</option>
+										  <option value="2">Two</option>
+										  <option value="3">Three</option>
+										</select>    
+									</div>
+								</div>
+								<div class="form-group">
+									<textarea class="form-control" id="fbcomment" rows="4" placeholder="Message*"></textarea>
+								</div>
+								<div class="form-row justify-content-between align-items-center">
+									<div class="form-group col-sm-auto">
+										<span class="smltx tcon">* Marked Fields Mandatory</span>
+									</div>
+									<div class="form-group col-sm-auto">
+										<div class="text-right text-left-xs">
+											<button type="button" class="btn btn-primary btn-lg">Submit</button>
+										</div>
+									</div>
+								</div>
 
 							</form>
-					</div>
-					<div class="tab-pane fade" id="new-tie-up" role="tabpanel" aria-labelledby="new-tie-up-list">
-						<h4 class="fweight-400 border-bottom pb-2 mb-3">Corporate Tie-up with T-Pilots</h4>
-						<p class="text-muted">We are Happy to associate with you for Growing Together</p>
-						<form>
-							<div class="form-row">
-								<div class="form-group col-sm-9">
-									<input type="text" class="form-control" placeholder="Company Name" value="">    
+						</div>
+						<div class="tab-pane fade" id="suggestions-on-ui" role="tabpanel" aria-labelledby="suggestions-on-ui-list">
+							<h4 class="fweight-400 border-bottom pb-2 mb-3">Suggestions on User Interface?</h4>
+							<p class="text-muted">Your feedback will help us improve</p>
+							<form>
+								<div class="form-group">
+									<input type="text" class="form-control" id="" placeholder="URL*" value="" required>    
 								</div>
-								<div class="form-group col-sm-3">
-									<input type="text" class="form-control" placeholder="Hyderabad" value="">    
+								<div class="form-group">
+									<input type="text" class="form-control" placeholder="Reference URL" value="">
 								</div>
-							</div>
-							<div class="form-row">
-								<div class="form-group col-sm-2">
-									<select class="form-control">
-									  <option selected>Title</option>
-									  <option value="1">One</option>
-									  <option value="2">Two</option>
-									  <option value="3">Three</option>
-									</select>  
+								<div class="form-group">
+									<input type="text" class="form-control" placeholder="Enter Email Id or Phone Number" value="">
 								</div>
-								<div class="form-group col-sm-5">
-									<input type="text" class="form-control" placeholder="First Name" value="">    
+								<div class="form-group">
+									<textarea class="form-control" rows="4" placeholder="Message*"></textarea>
 								</div>
-								<div class="form-group col-sm-5">
-									<input type="text" class="form-control" placeholder="Last Name" value="">    
+								<div class="custom-file mb-3">
+									<input type="file" class="custom-file-input" id="customFile">
+									<label class="custom-file-label" for="customFile">Add File</label>
 								</div>
-							</div>
-							<div class="form-row">
-								<div class="form-group col-sm">
-									<div class="input-group">
-										<div class="input-group-prepend">
-											<span class="input-group-text" id="">+91</span>
+								<div class="form-row justify-content-between align-items-center">
+									<div class="form-group col-sm-auto">
+										<span class="smltx tcon">* Marked Fields Mandatory</span>
+									</div>
+									<div class="form-group col-sm-3">
+										<img src="/assets/img/newCaptchaAnchor.gif" alt="" class="img-fluid">
+									</div>
+									<div class="form-group col-sm-auto">
+										<div class="text-right text-left-xs">
+											<button type="button" class="btn btn-primary btn-lg">Submit</button>
 										</div>
-										<input type="number" class="form-control" placeholder="Mobile Number*" value="">
 									</div>
 								</div>
-								<div class="form-group col-sm">
-									<input type="email" class="form-control" placeholder="Email" value="">
+							</form>
+						</div>
+						<div class="tab-pane fade" id="other-issue" role="tabpanel" aria-labelledby="other-issue-list">
+							<h4 class="fweight-400 border-bottom pb-2 mb-3">Any other issue? </h4>
+							<p class="text-muted">Your feedback will help us improve</p>
+							<form>
+								<div class="form-group">
+									<input type="text" class="form-control" id="" placeholder="Select City Name*" value="">    
 								</div>
-							</div>
-							<div class="form-row">
-								<div class="form-group col-sm">
-									<select class="form-control">
-									  <option selected>Service Category*</option>
-									  <option value="1">One</option>
-									  <option value="2">Two</option>
-									  <option value="3">Three</option>
-									</select>  
+								<div class="form-group">
+									<input type="text" class="form-control" id="fbnamid" placeholder="Name*" value="">
 								</div>
-								<div class="form-group col-sm">
-									<select class="form-control">
-									  <option selected>Services List*</option>
-									  <option value="1">One</option>
-									  <option value="2">Two</option>
-									  <option value="3">Three</option>
-									</select>    
-								</div>
-							</div>
-							<div class="form-group">
-								<textarea class="form-control" id="fbcomment" rows="4" placeholder="Message*"></textarea>
-							</div>
-							<div class="form-row justify-content-between align-items-center">
-								<div class="form-group col-sm-auto">
-									<span class="smltx tcon">* Marked Fields Mandatory</span>
-								</div>
-								<div class="form-group col-sm-auto">
-									<div class="text-right text-left-xs">
-										<button type="button" class="btn btn-primary btn-lg">Submit</button>
+								<div class="form-group dt">
+									<div class="input-group">
+										<div class="input-group-prepend"><span class="input-group-text" id="">+91</span></div>
+										<input type="number" onkeypress="return isNumber(event,this.id)" class="form-control form-control-bdr-nn" maxlength="10" id="fbmobile" placeholder="Mobile Number*" value="">
 									</div>
 								</div>
-							</div>
-							
-						</form>
-					</div>
-					<div class="tab-pane fade" id="suggestions-on-ui" role="tabpanel" aria-labelledby="suggestions-on-ui-list">
-						<h4 class="fweight-400 border-bottom pb-2 mb-3">Suggestions on User Interface?</h4>
-						<p class="text-muted">Your feedback will help us improve</p>
-						<form>
-							<div class="form-group">
-								<input type="text" class="form-control" id="" placeholder="URL*" value="" required>    
-							</div>
-							<div class="form-group">
-								<input type="text" class="form-control" placeholder="Reference URL" value="">
-							</div>
-							<div class="form-group">
-								<input type="text" class="form-control" placeholder="Enter Email Id or Phone Number" value="">
-							</div>
-							<div class="form-group">
-								<textarea class="form-control" rows="4" placeholder="Message*"></textarea>
-							</div>
-							<div class="custom-file mb-3">
-								<input type="file" class="custom-file-input" id="customFile">
-								<label class="custom-file-label" for="customFile">Add File</label>
-							</div>
-							<div class="form-row justify-content-between align-items-center">
-								<div class="form-group col-sm-auto">
-									<span class="smltx tcon">* Marked Fields Mandatory</span>
+								<div class="form-group">
+									<input type="email" class="form-control" id="fbemail" placeholder="Email ID" value="">
 								</div>
-								<div class="form-group col-sm-3">
-									<img src="/assets/img/newCaptchaAnchor.gif" alt="" class="img-fluid">
+								<div class="form-group">
+									<textarea class="form-control" id="fbcomment" rows="4" placeholder="Message*"></textarea>
 								</div>
-								<div class="form-group col-sm-auto">
-									<div class="text-right text-left-xs">
-										<button type="button" class="btn btn-primary btn-lg">Submit</button>
+								<div class="form-row justify-content-between align-items-center">
+									<div class="form-group col-sm-auto">
+										<span class="smltx tcon">* Marked Fields Mandatory</span>
+									</div>
+									<div class="form-group col-sm-auto">
+										<div class="text-right text-left-xs">
+											<button type="button" class="btn btn-primary btn-lg">Submit</button>
+										</div>
 									</div>
 								</div>
-							</div>
-						</form>
-					</div>
-					<div class="tab-pane fade" id="other-issue" role="tabpanel" aria-labelledby="other-issue-list">
-						<h4 class="fweight-400 border-bottom pb-2 mb-3">Any other issue? </h4>
-						<p class="text-muted">Your feedback will help us improve</p>
-						<form>
-							<div class="form-group">
-								<input type="text" class="form-control" id="" placeholder="Select City Name*" value="">    
-							</div>
-							<div class="form-group">
-								<input type="text" class="form-control" id="fbnamid" placeholder="Name*" value="">
-							</div>
-							<div class="form-group dt">
-								<div class="input-group">
-									<div class="input-group-prepend"><span class="input-group-text" id="">+91</span></div>
-									<input type="number" onkeypress="return isNumber(event,this.id)" class="form-control form-control-bdr-nn" maxlength="10" id="fbmobile" placeholder="Mobile Number*" value="">
-								</div>
-							</div>
-							<div class="form-group">
-								<input type="email" class="form-control" id="fbemail" placeholder="Email ID" value="">
-							</div>
-							<div class="form-group">
-								<textarea class="form-control" id="fbcomment" rows="4" placeholder="Message*"></textarea>
-							</div>
-							<div class="form-row justify-content-between align-items-center">
-								<div class="form-group col-sm-auto">
-									<span class="smltx tcon">* Marked Fields Mandatory</span>
-								</div>
-								<div class="form-group col-sm-auto">
-									<div class="text-right text-left-xs">
-										<button type="button" class="btn btn-primary btn-lg">Submit</button>
-									</div>
-								</div>
-							</div>
-						</form>
-					</div>
-				</div><!--end of How are we doing?-->
+							</form>
+						</div>
+					</div><!--end of How are we doing?-->
+				</div>
 			</div>
 		</div>
 	</div>
 </section>
+</main>
 <!--
 Footer
 -->
-<a href="#" class="cd-top js-cd-top text-uppercase"><i class="fas fa-car"></i><br>Top</a>
+<a href="#" class="cd-top js-cd-top text-uppercase"><i class="fas fa-chevron-up"></i></a>
 <div w3-include-html="footer.html"></div>
 <!-- Optional JavaScript --> 
 <!-- jQuery first, then Popper.js, then Bootstrap JS --> 
@@ -1667,11 +1847,46 @@ $(document).ready(function(){
 		slidesToShow: 3,
 		infinite: false,
 	});
+	
+	$('.vehicle-type').slick({
+	  slidesToShow: 1,
+	  slidesToScroll: 1,
+	  arrows: false,
+	  fade: true,
+	  asNavFor: '.vehicle-type-nav'
+	});
+	$('.vehicle-type-nav').slick({
+		slidesToShow: 3,
+		slidesToScroll: 1,
+		arrows: true,
+		asNavFor: '.vehicle-type',
+		focusOnSelect: true,
+		centerMode: true,
+		centerPadding: '40px',
+	});
 });
 </script>
 <script src="assets/js/animated-headlines.js"></script> 
 <script src="assets/js/back-to-top.js"></script>
 <script>document.getElementsByTagName("html")[0].className += " js";</script>
+<script src="assets/js/jquery.matchHeight-min.js"></script>
+<script>
+
+	$(function() {
+
+		$('.match-height').matchHeight({
+
+			byRow: true,
+
+			property: 'height',
+
+			target: null,
+
+		});
+
+	});
+
+</script>
 <script src="assets/js/wow.min.js"></script>
 <script>
 	new WOW().init();
@@ -1730,12 +1945,14 @@ var mixer = mixitup('[data-ref~="mixitup-container"]', {
 	});
 </script> 
 <script>
-	$(window).scroll(function() {
-		if ($(".navbar").offset().top > 40) {
-			$(".navbar").addClass("shadow");
-		} else {
-			$(".navbar").removeClass("shadow");
-		}   
+$(window).scroll(function() {
+	if ($(".navbar").offset().top > 40) {
+		$(".navbar").addClass("shadow");
+		$(".navbar").addClass("navbarFixed");
+	} else {
+		$(".navbar").removeClass("shadow");
+		$(".navbar").removeClass("navbarFixed");
+	}   
 });
 </script>
 <script>

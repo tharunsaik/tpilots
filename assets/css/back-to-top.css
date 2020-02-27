@@ -8,7 +8,10 @@
 	background-color: #0674ED;
 	z-index: 1;
 	text-align: center;
-	padding: .4rem 1rem;
+	padding: .5rem;
+	width: 2.5rem;
+	height: 2.5rem;
+	border-radius: 50rem;
 }
 .js .cd-top {
 	visibility: hidden;
@@ -24,7 +27,7 @@
 }
 .js .cd-top:hover {
 	color: #fff;
-	background-color: #E89400;
+	background-color: #0D47A1;
 	opacity: 1;
 	text-decoration: none;
 }
