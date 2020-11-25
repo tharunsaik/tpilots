@@ -1,19 +1,20 @@
 <?php include 'header.php';?>
 <!-- Breadcrumbs -->
-<section class="breadcrumbs bg-grad pattern-overlay-2 overflow-hidden">
-	<div class="container">
-		<div class="row text-white">
-			<div class="col pt-3">
-				<nav aria-label="breadcrumb" class="nav justify-content-end">
-				  <ol class="breadcrumb bg-transparent">
-					<li class="breadcrumb-item"><a href="#">Home</a></li>
-					<li class="breadcrumb-item active" aria-current="page">Features</li>
-				  </ol>
-				</nav>
-				<h1 class="font-weight-bold display-1 mb-md-n4 mt-4 pt-4 text-white">Features</h1>
+<section class="uk-section-default bg-grad-1">
+	<div class="uk-section py-1 pt-5 breadcrumbs uk-light uk-background-cover" style="background-image: url(assets/img/01.png)">
+		<div class="container">
+			<div class="row justify-content-center text-white text-center align-items-center">
+				<div class="col">
+					<small class="lead font-weight-bold mb-0">SVL T-Pilots</small>
+					<h1 class="font-weight-bold display-1 mt-n3">Services</h1>
+					<ul class="uk-breadcrumb justify-content-center">
+						<li><a href="#"><i class="fas fa-home pr-2"></i> Home</a></li>
+						<li><span>Services</span></li>
+					</ul>
+				</div>
 			</div>
-		</div>
-	</div>	
+		</div>	
+	</div>
 </section>
 <!--
 Why SVL Global
@@ -22,15 +23,16 @@ Why SVL Global
 	<div class="row no-gutters">
 		<div class="col-sm-2">
 			<nav id="pagenav" class="position-sticky">
-				<nav class="nav flex-column">
-					<a class="nav-item nav-link" href="#WhySVL" uk-scroll offset="50">Why S V L</a>
-					<a class="nav-item nav-link" href="#LifeSVL" uk-scroll offset="50">Life @ S V L</a>
-					<a class="nav-item nav-link" href="#OurCoreValues" uk-scroll offset="50">Our Core Values</a>
-					<a class="nav-item nav-link" href="#VisionMission" uk-scroll offset="50">Vision &amp; Mission</a>
-					<a class="nav-item nav-link" href="#KeyFactors" uk-scroll offset="50">Key Factors</a>
-					<a class="nav-item nav-link" href="#Quality" uk-scroll offset="50">Quality</a>
-					<a class="nav-item nav-link" href="#CSR" uk-scroll offset="50">CSR</a>
-				</nav>
+				<ul class="uk-nav uk-nav-default" uk-scrollspy-nav="closest: li; scroll: true; offset: 60">
+					<li><a href="#WhyChooseTPilots">Taxi Service</a></li>
+					<li><a href="#SignUpBenefits">Truck Service</a></li>
+					<li><a href="#SelectAsYouNeed">Bike ride</a></li>
+					<li><a href="#EarnAndSave">Auto booking</a></li>
+					<li><a href="#IntegratedFeatures">Holiday booking</a></li>
+					<li><a href="#SafetyIsOurPriority">Flight tickets</a></li>
+					<li><a href="#OtherDelights">Bus tickets</a></li>
+					<li><a href="#OtherDelights">Train tickets</a></li>
+				</ul>
 			</nav>
 		</div>
 		<main class="col border-left-2 overflow-hidden">

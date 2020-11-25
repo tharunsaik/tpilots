@@ -2,380 +2,265 @@
 <!--
 Main Banner
 -->
-<section class="bg-grad pt-1 pb-5 py-sm-5 hero pattern-overlay-1 d-flex align-items-center">
-	<div class="container-fluid">
-		<div class="row align-items-center">
-			<div class="col col-sm-7 text-center position-relative" uk-scrollspy="cls:uk-animation-slide-left; repeat: true;">
-				<h2 class="text-white d-none d-sm-block">Get our 5G App from the Store</h2>
-				<p class="fweight-400 d-none d-sm-block">Download the app for exclusive deals and ease of booking </p>
-				<nav class="nav a-p-0 a-mx-2 mt-4 justify-content-center d-none d-sm-flex">
-					<a href="#" class="nav-item nav-link">
-						<img src="assets/img/badge-apple.svg" width="170px" alt="">
-					</a>
-					<a href="#" class="nav-item nav-link">
-						<img src="assets/img/badge-google.svg" alt="" width="170px">
-					</a>
-					<a href="#" class="nav-item nav-link">
-						<img src="assets/img/badge-microsoft.svg" alt="" width="170px">
-					</a>
-				</nav>
-				<!-- Car -->
-				<div class="animation d-flex justify-content-center align-items-center mt-sm-4">
-					<div class="car">
-						<div class="body">
-							<div class="upperbody">
-								<div class="window">
-									<div class="line"></div>
-								</div>
-							</div>
-							<div class="backwheel"></div>
-							<div class="frontwheel"></div>
+<section class="uk-section-default bg-grad-2">
+	<div class="uk-section uk-inline uk-width-1-1 pt-1 pb-5 pb-sm-5 justify-content-center uk-flex uk-flex-middle uk-background-fixed uk-background-center-center uk-background-norepeat" style="background-image: url(assets/img/01.png)" uk-height-viewport="offset-top: true; offset-bottom: 11" >
+		<div class="uk-width-1-1">
+			<div class="uk-container uk-container-small">
+				<h2 class="uk-text-center text-white mb-4 fweight-700">Book a Ride to Your Destination in India</h2>
+				<div class="uk-card uk-card-default uk-card-small uk-card-body rounded-10 z-index-1 py-1">
+					<div uk-slider>
+						<div class="uk-position-relative uk-visible-toggle" tabindex="-1">
+
+							<ul class="nav travel-header uk-slider-items uk-child-width-expand uk-grid-small uk-grid">
+								<li class="nav-item">
+									<a href class="nav-link active text-center">
+										<i class="fas fa-taxi fa-lg"></i>
+										Taxi
+									</a> 
+								</li>
+								<li class="nav-item">
+									<a href class="nav-link text-center">
+										<i class="fas fa-truck fa-lg"></i>
+										Auto
+									</a>
+								</li>
+								<li class="nav-item">
+									<a href class="nav-link text-center">
+										<i class="fas fa-motorcycle fa-lg"></i>
+										Bike
+									</a>
+								</li>
+								<li class="nav-item">
+									<a href class="nav-link text-center">
+										<i class="fas fa-truck fa-lg"></i>
+										Truck
+									</a>
+								</li>
+								<li class="nav-item">
+									<a href class="nav-link text-center">
+										<i class="fas fa-umbrella-beach "></i>
+										Holidays
+									</a>
+								</li>
+								<li class="nav-item">
+									<a href class="nav-link text-center">
+										<i class="fas fa-hotel fa-lg"></i>
+										Hotels
+									</a>
+								</li>
+								<li class="nav-item">
+									<a href class="nav-link text-center">
+										<i class="fas fa-plane fa-lg"></i>
+										Flights
+									</a>
+								</li>
+								<li class="nav-item">
+									<a href class="nav-link text-center">
+										<i class="fas fa-train fa-lg"></i>
+										Trains
+									</a>
+								</li>
+								<li class="nav-item">
+									<a href class="nav-link text-center">
+										<i class="fas fa-bus fa-lg"></i>
+										Buses
+									</a>
+								</li>
+							</ul>
+
+							<a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slider-item="previous"></a>
+							<a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slider-item="next"></a>
+
 						</div>
-						<div class="road"></div>
 					</div>
 				</div>
-				<!-- Car -->
 			</div>
-			<div class="col-12 col-sm-4">
-				<div class="card shadow-8dp bg-grey-200">
-					<div class="card-header bg-white p-0 border-light">
-						<nav class="nav justify-content-center fweight-500 travel-fleet nav-fill" id="fleet-tab" role="tablist">
-							<a class="nav-item nav-link active" id="city-taxi-tab" data-toggle="tab" href="#city-taxi" role="tab" aria-controls="city-taxi" aria-selected="true">City Ride</a>
-							<a class="nav-item nav-link" id="airport-tab" data-toggle="tab" href="#airport" role="tab" aria-controls="airport" aria-selected="false">Airport</a>
-							<a class="nav-item nav-link" id="outstation-tab" data-toggle="tab" href="#outstation" role="tab" aria-controls="outstation" aria-selected="false">Outstation</a>
-							<a class="nav-item nav-link" id="rentals-tab" data-toggle="tab" href="#rentals" role="tab" aria-controls="rentals" aria-selected="false">Rentals</a>
-							<a class="nav-item nav-link" id="truck-tab" data-toggle="tab" href="#truck" role="tab" aria-controls="truck" aria-selected="false">Truck</a>
-						</nav>
-					</div>
-					<div class="tab-content px-2 pb-2" id="fleet-tabContent">
-						<div class="tab-pane fade show active" id="city-taxi" role="tabpanel" aria-labelledby="city-taxi-tab">
-							<div class="my-4">
-								<h6 class="text-center mb-1 font-size-3 fweight-400">Safety Integrated &amp; Trusted Travel Partner</h6>
-								<p class="text-center mb-1 font-size-2 d-none d-sm-block">Cool Solurtion for City Travel</p>
+			<div class="container uk-container-small">
+				<div class="uk-inline uk-width-1-1 uk-card uk-card-default uk-card-body uk-card-small rounded-10 pt-6" style="margin-top: -2rem;">
+					<div class="row travel-type-selector">
+						<div class="col-7 ml-4">
+							<div class="uk-grid-small uk-child-width-auto uk-grid mb-1 ">
+								<label class="font-size-2"><input class="uk-radio" type="radio" name="radio1" checked> City Ride</label>
+								<label class="font-size-2"><input class="uk-radio" type="radio" name="radio1"> Airport</label>
+								<label class="font-size-2"><input class="uk-radio" type="radio" name="radio1"> Outstation</label>
+								<label class="font-size-2"><input class="uk-radio" type="radio" name="radio1"> Rentals</label>
 							</div>
-							<form class="booking-form">
-								<div class="form-group">
-									<label for="" class="sr-only">Pickup Location</label>
-									<div class="input-group">
-										<div class="input-group-prepend">
-											<span class="input-group-text" id="">Pickup</span>
-										</div>
-										<input type="text" class="form-control form-control-lg" id="" aria-describedby="" placeholder="Enter Pickup Location">
-										<div class="input-group-append">
-											<span class="input-group-text"><i class="fas fa-crosshairs mx-auto"></i></span>
-										</div>
-									</div>
-								</div>
-								<div class="form-group">
-									<label for="" class="sr-only">Drop Location</label>
-									<div class="input-group">
-										<div class="input-group-prepend">
-											<span class="input-group-text" id="">Drop</span>
-										</div>
-										<input type="text" class="form-control form-control-lg" id="" aria-describedby="" placeholder="Enter Drop Location">
-									</div>
-								</div>
-								<div class="form-group">
-									<label for="" class="sr-only">When</label>
-									<div class="input-group">
-										<div class="input-group-prepend">
-											<span class="input-group-text" id="">When</span>
-										</div>
-										<input type="text" class="form-control form-control-lg" id="" aria-describedby="" placeholder="Now">
-									</div>
-								</div>
-								<div class="row no-gutters mb-3">
-									<div class="form-group col-sm">
-										<label for="" class="sr-only">Date</label>
-										<div class="input-group">
-											<div class="input-group-prepend">
-												<span class="input-group-text" id=""><i class="fas fa-calendar-alt mx-auto"></i></span>
-											</div>
-											<input type="text" class="form-control rounded-right-0 form-control-lg" id="" aria-describedby="" placeholder="Date">
-										</div>
-									</div>
-									<div class="form-group col-sm">
-										<label for="" class="sr-only">Time</label>
-										<div class="input-group">
-											<div class="input-group-prepend">
-												<span class="input-group-text" id=""><i class="fas fa-clock mx-auto"></i></span>
-											</div>
-											<input type="text" class="form-control form-control-lg rounded-left-0" id="" aria-describedby="" placeholder="Time">
-										</div>
-									</div>
-								</div>
-								<a class="btn btn-primary btn-block btn-lg" href="#">Search Daily Cabs</a>
-							</form>
 						</div>
-					  	<div class="tab-pane fade" id="airport" role="tabpanel" aria-labelledby="airport-tab">
-							<div class="my-4">
-								<h6 class="text-center mb-1 font-size-3 fweight-400 pt-2">Professional Pilots with On-Time Reporting</h6>
-								<p class="text-center mb-1 font-size-2">Hygienic Cabs for Airport Trips</p>
+						<div class="col ml-4">
+							<div class="uk-grid-small uk-child-width-auto uk-grid mb-2 pl-2">
+								<label class="font-size-2"><input class="uk-radio" type="radio" name="radio2" checked> Ride Now</label>
+								<label class="font-size-2"><input class="uk-radio" type="radio" name="radio2"> Ride Later</label>
 							</div>
-							<form class="booking-form">
-								<div class="form-group">
-									<label for="" class="sr-only">Pickup Location</label>
-									<div class="input-group">
-										<div class="input-group-prepend">
-											<span class="input-group-text" id="">Pickup</span>
-										</div>
-										<input type="text" class="form-control" id="" aria-describedby="" placeholder="Enter Pickup Location">
-										<div class="input-group-append">
-											<span class="input-group-text"><i class="fas fa-crosshairs mx-auto"></i></span>
-										</div>
-									</div>
-								</div>
-								<div class="form-group">
-									<label for="" class="sr-only">Drop Location</label>
-									<div class="input-group">
-										<div class="input-group-prepend">
-											<span class="input-group-text" id="">Drop</span>
-										</div>
-										<input type="text" class="form-control" id="" aria-describedby="" placeholder="Enter Drop Location">
-									</div>
-								</div>
-								<div class="form-group">
-									<label for="" class="sr-only">When</label>
-									<div class="input-group">
-										<div class="input-group-prepend">
-											<span class="input-group-text" id="">When</span>
-										</div>
-										<input type="text" class="form-control" id="" aria-describedby="" placeholder="Now">
-									</div>
-								</div>
-								<div class="row no-gutters mb-3">
-									<div class="form-group col-sm">
-										<label for="" class="sr-only">Date</label>
-										<div class="input-group">
-											<div class="input-group-prepend">
-												<span class="input-group-text" id=""><i class="fas fa-calendar-alt mx-auto"></i></span>
-											</div>
-											<input type="text" class="form-control rounded-right-0" id="" aria-describedby="" placeholder="Date">
-										</div>
-									</div>
-									<div class="form-group col-sm">
-										<label for="" class="sr-only">Time</label>
-										<div class="input-group">
-											<div class="input-group-prepend">
-												<span class="input-group-text" id=""><i class="fas fa-clock mx-auto"></i></span>
-											</div>
-											<input type="text" class="form-control rounded-left-0" id="" aria-describedby="" placeholder="Time">
-										</div>
-									</div>
-								</div>
-								<button type="submit" class="btn btn-primary rounded btn-block btn-lg">Search Airport Cabs</button>
-							</form>
-						</div>
-					  	<div class="tab-pane fade" id="outstation" role="tabpanel" aria-labelledby="outstation-tab">
-							<div class="my-4">
-								<h6 class="text-center mb-1 font-size-3 fweight-400 pt-2">Experienced Pilots with Well Manner</h6>
-								<p class="text-center mb-1 font-size-2">Happy with Tailor Made Packages</p>
-							</div>
-							<form class="booking-form">
-								<div class="form-group">
-									<label for="" class="sr-only">Pickup Location</label>
-									<div class="input-group">
-										<div class="input-group-prepend">
-											<span class="input-group-text" id="">Pickup</span>
-										</div>
-										<input type="text" class="form-control" id="" aria-describedby="" placeholder="Enter Pickup Location">
-										<div class="input-group-append">
-											<span class="input-group-text"><i class="fas fa-crosshairs mx-auto"></i></span>
-										</div>
-									</div>
-								</div>
-								<div class="form-group">
-									<label for="" class="sr-only">Drop Location</label>
-									<div class="input-group">
-										<div class="input-group-prepend">
-											<span class="input-group-text" id="">Drop</span>
-										</div>
-										<input type="text" class="form-control" id="" aria-describedby="" placeholder="Enter Destination">
-									</div>
-								</div>
-								<div class="form-group">
-									<label for="" class="sr-only">When</label>
-									<div class="input-group">
-										<div class="input-group-prepend">
-											<span class="input-group-text" id="">When</span>
-										</div>
-										<input type="text" class="form-control" id="" aria-describedby="" placeholder="Now">
-									</div>
-								</div>
-								<div class="row no-gutters mb-3">
-									<div class="form-group col-sm">
-										<label for="" class="sr-only">Date</label>
-										<div class="input-group">
-											<div class="input-group-prepend">
-												<span class="input-group-text" id=""><i class="fas fa-calendar-alt mx-auto"></i></span>
-											</div>
-											<input type="text" class="form-control rounded-right-0" id="" aria-describedby="" placeholder="Date">
-										</div>
-									</div>
-									<div class="form-group col-sm">
-										<label for="" class="sr-only">Time</label>
-										<div class="input-group">
-											<div class="input-group-prepend">
-												<span class="input-group-text" id=""><i class="fas fa-clock mx-auto"></i></span>
-											</div>
-											<input type="text" class="form-control rounded-left-0" id="" aria-describedby="" placeholder="Time">
-										</div>
-									</div>
-								</div>
-								<button type="submit" class="btn btn-primary rounded btn-block btn-lg">Search Outstation Cabs</button>
-							</form>
-						</div>
-						<div class="tab-pane fade" id="rentals" role="tabpanel" aria-labelledby="rentals-tab">
-							<div class="my-4">
-								<h6 class="text-center mb-1 font-size-3 fweight-400 pt-2">Experienced Pilots with Well Root Knowledge</h6>
-								<p class="text-center mb-1 font-size-2">Happy with Affordable Price</p>
-							</div>
-							<form class="booking-form">
-								<div class="form-group">
-									<label for="" class="sr-only">Pickup Location</label>
-									<div class="input-group">
-										<div class="input-group-prepend">
-											<span class="input-group-text" id="">Pickup</span>
-										</div>
-										<input type="text" class="form-control" id="" aria-describedby="" placeholder="Enter Pickup Location">
-										<div class="input-group-append">
-											<span class="input-group-text"><i class="fas fa-crosshairs mx-auto"></i></span>
-										</div>
-									</div>
-								</div>
-								<div class="form-group">
-									<label for="" class="sr-only">Drop Location</label>
-									<div class="input-group">
-										<div class="input-group-prepend">
-											<span class="input-group-text" id="">Drop</span>
-										</div>
-										<input type="text" class="form-control" id="" aria-describedby="" placeholder="Enter Drop Location">
-									</div>
-								</div>
-								<div class="form-group">
-									<label for="" class="sr-only">When</label>
-									<div class="input-group">
-										<div class="input-group-prepend">
-											<span class="input-group-text" id="">When</span>
-										</div>
-										<input type="text" class="form-control" id="" aria-describedby="" placeholder="Now">
-									</div>
-								</div>
-								<div class="row no-gutters mb-3">
-									<div class="form-group col-sm">
-										<label for="" class="sr-only">Date</label>
-										<div class="input-group">
-											<div class="input-group-prepend">
-												<span class="input-group-text" id=""><i class="fas fa-calendar-alt mx-auto"></i></span>
-											</div>
-											<input type="text" class="form-control rounded-right-0" id="" aria-describedby="" placeholder="Date">
-										</div>
-									</div>
-									<div class="form-group col-sm">
-										<label for="" class="sr-only">Time</label>
-										<div class="input-group">
-											<div class="input-group-prepend">
-												<span class="input-group-text" id=""><i class="fas fa-clock mx-auto"></i></span>
-											</div>
-											<input type="text" class="form-control rounded-left-0" id="" aria-describedby="" placeholder="Time">
-										</div>
-									</div>
-								</div>
-								<button type="submit" class="btn btn-primary rounded btn-block btn-lg">Search Rental Cabs</button>
-							</form>
-						</div>
-						<div class="tab-pane fade" id="truck" role="tabpanel" aria-labelledby="truck-tab">
-							<div class="my-4">
-								<h6 class="text-center mb-1 font-size-3 fweight-400 pt-2">Get Your Goods Safely with Live Status Tracking</h6>
-								<p class="text-center mb-1 font-size-2">Geo Taged Trusted & Professional Partners</p>
-							</div>
-							<form class="booking-form">
-								<div class="form-group">
-									<label for="" class="sr-only">Pickup Location</label>
-									<div class="input-group">
-										<div class="input-group-prepend">
-											<span class="input-group-text" id="">Pickup</span>
-										</div>
-										<input type="text" class="form-control" id="" aria-describedby="" placeholder="Enter Pickup Location">
-										<div class="input-group-append">
-											<span class="input-group-text"><i class="fas fa-crosshairs mx-auto"></i></span>
-										</div>
-									</div>
-								</div>
-								<div class="form-group">
-									<label for="" class="sr-only">Drop Location</label>
-									<div class="input-group">
-										<div class="input-group-prepend">
-											<span class="input-group-text" id="">Drop</span>
-										</div>
-										<input type="text" class="form-control" id="" aria-describedby="" placeholder="Enter Drop Location">
-									</div>
-								</div>
-								<div class="form-group">
-									<label for="" class="sr-only">When</label>
-									<div class="input-group">
-										<div class="input-group-prepend">
-											<span class="input-group-text" id="">When</span>
-										</div>
-										<input type="text" class="form-control" id="" aria-describedby="" placeholder="Now">
-									</div>
-								</div>
-								<div class="row no-gutters mb-3">
-									<div class="form-group col-sm">
-										<label for="" class="sr-only">Date</label>
-										<div class="input-group">
-											<div class="input-group-prepend">
-												<span class="input-group-text" id=""><i class="fas fa-calendar-alt mx-auto"></i></span>
-											</div>
-											<input type="text" class="form-control rounded-right-0" id="" aria-describedby="" placeholder="Date">
-										</div>
-									</div>
-									<div class="form-group col-sm">
-										<label for="" class="sr-only">Time</label>
-										<div class="input-group">
-											<div class="input-group-prepend">
-												<span class="input-group-text" id=""><i class="fas fa-clock mx-auto"></i></span>
-											</div>
-											<input type="text" class="form-control rounded-left-0" id="" aria-describedby="" placeholder="Time">
-										</div>
-									</div>
-								</div>
-								<button type="submit" class="btn btn-primary rounded btn-block btn-lg">Search Trusted Trucks</button>
-							</form>
 						</div>
 					</div>
-				</div>					
+
+					<form class="d-flex align-items-center mb-4 booking-form">
+						<div class="px-0 flt-input gws-flights-form__input-container gws-flights__flex-box gws-flights-form__airport-input gws-flights-form__swapper-right">
+							<div class="gws-flights-form__location-text gws-flights__flex-filler gws-flights__ellipsize gws-flights-form__input-target" aria-hidden="true">
+								<div class="uk-inline uk-width-1-1">
+									<a class="uk-form-icon" href="#">
+										<span class="gws-flights-form__location-icon gws-flights-form__origin-icon">
+											<span style="height:16px;line-height:16px;width:16px" class="z1asCe y6ox5">
+												<svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+													<path d="M2 12C2 6.48 6.48 2 12 2s10 4.48 10 10-4.48 10-10 10S2 17.52 2 12zm10 6c3.31 0 6-2.69 6-6s-2.69-6-6-6-6 2.69-6 6 2.69 6 6 6z"></path>
+												</svg>
+											</span>
+										</span>
+									</a>
+									<input class="uk-input uk-form-large font-size-4 uk-border-rounded" type="text" placeholder="Hyderabad">
+								</div>
+							</div>
+							<div class="gws-flights-form__swapper-half-circle"></div>
+						</div>
+						<span class="gws-flights-form__swapper z1asCe lA8Tgb btn" button="button" tabindex="0">
+							<svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+								<path d="M6.99 11L3 15l3.99 4v-3H14v-2H6.99v-3zM21 9l-3.99-4v3H10v2h7.01v3L21 9z"></path>
+							</svg>
+						</span>
+						<div class="px-0 d-flex flt-input gws-flights-form__input-container gws-flights__flex-box gws-flights-form__airport-input gws-flights-form__empty gws-flights-form__swapper-left" role="presentation">
+							<div class="gws-flights-form__location-text gws-flights__flex-filler gws-flights__ellipsize gws-flights-form__input-target gws-flights-form__empty">
+								<div class="uk-inline uk-width-1-1">
+									<a class="uk-form-icon text-primary pl-4" href="#">
+										<span class="gws-flights-form__location-icon">
+											<span class="z1asCe hzb2N">
+												<svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+													<path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"></path>
+												</svg>
+											</span>
+										</span>
+									</a>
+									<input class="uk-input uk-form-large font-size-4 uk-border-rounded" type="text" placeholder="Home" style="padding-left: 3.25rem !important">
+								</div>
+							</div>
+							<div class="gws-flights-form__swapper-half-circle"></div>
+						</div>
+						<div class="gws-flights-form__field-spacer"></div>
+						<div class="d-flex gws-flights-form__input-container gws-flights__flex-box gws-flights__flex-filler gws-flights-form__calendar-input flt-body2">
+							<div class="px-0 flt-input gws-flights__flex-box gws-flights__flex-filler gws-flights-form__departure-input gws-flights-form__round-trip">
+								<div class="gws-flights__flex-filler gws-flights__ellipsize gws-flights-form__input-target" aria-hidden="true">
+									<div class="uk-inline uk-width-1-1">
+										<a class="uk-form-icon text-primary" href="#">
+											<span class="gws-flights-form__calendar-icon">
+												<span class="z1asCe zKp81c">
+													<svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 11H7v2h2v-2zm4 0h-2v2h2v-2zm4 0h-2v2h2v-2zm2-7h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V9h14v11z"></path></svg>
+												</span>
+											</span>
+										</a>
+										<input class="uk-input uk-form-large font-size-4 uk-border-rounded rounded-right-0" type="text" placeholder="Wed, 3 Jun" style="border-right-color: white">
+										<a class="uk-form-icon uk-form-icon-flip text-primary mr-3" href="#">
+											<div style="" class="gws-flights-form__flipper d-flex">
+												<span class="gws-flights-form__prev" aria-hidden="true" role="presentation" tabindex="-1">
+													<span class="z1asCe u3p1Tb">
+														<svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15.41 16.59L10.83 12l4.58-4.59L14 6l-6 6 6 6 1.41-1.41z"></path>
+														</svg>
+													</span>
+												</span>
+												<span class="gws-flights-form__next" aria-hidden="true" role="presentation" tabindex="-1">
+													<span class="z1asCe LV6CSb">
+														<svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"></path>
+														</svg>
+													</span>
+												</span>
+											</div>
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="gws-flights-form__field-divider-wrapper">
+								<div class="gws-flights-form__field-divider" jstcache="0"></div>
+							</div>
+							<div class="flt-input gws-flights__flex-box gws-flights__flex-filler gws-flights-form__return-input" data-flt-ve="return_date" role="presentation">
+								<div class="gws-flights__flex-filler gws-flights__ellipsize gws-flights-form__input-target" aria-hidden="true">
+									<div class="uk-inline uk-width-1-1">
+										<a class="uk-form-icon text-primary" href="#">
+											<i class="fas fa-clock fa-lg"></i>
+										</a>
+										<input class="uk-input uk-form-large font-size-4 uk-border-rounded rounded-left-0" type="text" placeholder="08:00 AM" style="border-left-color: white">
+										<a class="uk-form-icon uk-form-icon-flip text-primary mr-3" href="#">
+											<div style="" class="gws-flights-form__flipper d-flex">
+												<span class="gws-flights-form__prev" aria-hidden="true" role="presentation" tabindex="-1">
+													<span class="z1asCe u3p1Tb">
+														<svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15.41 16.59L10.83 12l4.58-4.59L14 6l-6 6 6 6 1.41-1.41z"></path>
+														</svg>
+													</span>
+												</span>
+												<span class="gws-flights-form__next" aria-hidden="true" role="presentation" tabindex="-1">
+													<span class="z1asCe LV6CSb">
+														<svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z"></path>
+														</svg>
+													</span>
+												</span>
+											</div>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</form>
+
+					<button class="uk-position-bottom-center btn btn-primary rounded-pill shadow-lg px-5" style="bottom: -1rem"><i class="fas fa-search mr-2"></i> Search</button>
+				</div>
 			</div>
 		</div>
-		<!--<div class="row">
-			<div class="col">
-				<div class="card shadow-8dp rounded-6 mt-3">
-					<div class="card-body p-0">
-						<div class="row align-items-center justify-content-around">
-							<div class="col-sm-auto">
-								<i class="fas fa-car border rounded-pill p-3"></i>
-							</div>
-							<div class="col-sm-auto">
-								<p class="lead mb-0 fweight-500">16:10 - 17:25</p>
-								<small>SVL Go</small>
-							</div>
-							<div class="col-sm-auto">
-								<p class="lead mb-0 fweight-500">1 h 15 m</p>
-								<small>Madhapur-Ameerpet</small>
-							</div>
-							<div class="col-sm-auto">
-								<p class="lead mb-0 fweight-500 text-success"><i class="fas fa-rupee-sign"></i> 170</p>
-							</div>
-							<div class="col-sm-auto">
-								<a href="#" class="btn btn-outline-primary">Book This Trip</a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>-->
 	</div>
 </section>
+<div class="container z-index-1" style="margin-top: -2.5rem;">
+	<div class="card card-body shadow-lg">
+		<div class="uk-position-relative uk-visible-toggle uk-dark" tabindex="-1" uk-slider="autoplay: true">
+
+			<ul class="uk-slider-items uk-child-width-1-2 uk-child-width-1-3@m uk-grid uk-grid-divider uk-grid-small">
+				<li>
+					<div class="media">
+					  <img src="https://promos.makemytrip.com/notification/xhdpi/ic_handle_flight_booking18052020.png" class="align-self-center mr-3" alt="..." width="56">
+					  <div class="media-body font-size-3">
+						Booked a flight from 25 Mar to 14 Apr for travel from 25 Mar to 3 May?
+					  </div>
+					</div>
+				</li>
+				<li>
+					<div class="media">
+					  <img src="https://promos.makemytrip.com/notification/xhdpi/ic_credit_vouchers18052020.png" class="align-self-center mr-3" alt="..." width="56">
+					  <div class="media-body font-size-3">
+						Here's how to use Credit Vouchers issued by airlines
+					  </div>
+					</div>
+				</li>
+				<li>
+					<div class="media">
+					  <img src="https://promos.makemytrip.com/notification/xhdpi/ic_flight_suspended18052020.png" class="align-self-center mr-3" alt="..." width="56">
+					  <div class="media-body font-size-3">
+						All flights suspended from 25 Mar to 17 May
+					  </div>
+					</div>
+				</li>
+				<li>
+					<div class="media">
+					  <img src="https://promos.makemytrip.com/notification/xhdpi/ic_handle_flight_booking18052020.png" class="mr-3" alt="..." width="56">
+					  <div class="media-body font-size-3">
+						Booked a flight from 25 Mar to 14 Apr for travel from 25 Mar to 3 May?
+					  </div>
+					</div>
+				</li>
+				<li>
+					<div class="media">
+					  <img src="https://promos.makemytrip.com/notification/xhdpi/ic_credit_vouchers18052020.png" class="mr-3" alt="..." width="56">
+					  <div class="media-body font-size-3">
+						Here's how to use Credit Vouchers issued by airlines
+					  </div>
+					</div>
+				</li>
+				<li>
+					<div class="media">
+					  <img src="https://promos.makemytrip.com/notification/xhdpi/ic_flight_suspended18052020.png" class="mr-3" alt="..." width="56">
+					  <div class="media-body font-size-3">
+						All flights suspended from 25 Mar to 17 May
+					  </div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
 <!--
 Sub Navbar
 -->
@@ -396,147 +281,47 @@ Sub Navbar
 	</nav>
 </div>
 <!--
+About SVL Global
+-->
+<section id="AboutSection" class="uk-section uk-section-default uk-flex uk-flex-middle" uk-height-viewport="offset-top: true">
+    <div class="container">
+		<div class="row">
+			<div class="col">
+				<h1 class="heading text-center mb-5 position-relative">About <span class="text-warning">T-Pilots</span></h1>
+			</div>
+		</div>
+        <div class="row align-items-center">
+            <div class="col-sm">
+				<img src="assets/img/technolabs-way.jpg" alt="" class="img-fluid">
+			</div>
+            <div class="col-sm">
+                <p class="mb-5">AI &amp; ML Driven Custom-Application-Development Company having 5 products to ensure guaranteed Customer satisfaction.</p>
+                <ul class="list-unstyled">
+                    <li class="media mb-5"> <img src="assets/img/pencil.png" class="mr-3" alt="...">
+                        <div class="media-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi praesentium aliquid voluptas corporis.</div>
+                    </li>
+                    <li class="media mb-5"> <img src="assets/img/search.png" class="mr-3" alt="...">
+                        <div class="media-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi praesentium aliquid voluptas corporis.</div>
+                    </li>
+                    <li class="media mb-5"> <img src="assets/img/settings.png" class="mr-3" alt="...">
+                        <div class="media-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi praesentium aliquid voluptas corporis.</div>
+                    </li>
+					<li class="media"> <img src="assets/img/pencil.png" class="mr-3" alt="...">
+                        <div class="media-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi praesentium aliquid voluptas corporis.</div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+<!--
 How It Works
 -->
-<section class="min-vh-100 align-items-center justify-content-center py-5 d-none" id="HowItWorksSection">
-	<div>
-		<div class="container-fluid">
-			<div class="row">
-				<div class="col">
-					<h2 class="heading text-uppercase text-center mb-5 position-relative text-primary">How It Works</h2>
-				</div>
-			</div>
-		</div>
-		<div class="row">
-			<!--Process Block-->
-			<div class="col-sm-2 process-block">
-				<div class="inner-box">
-					<div class="upper-box">
-						<div class="icon-box">
-							<i class="fas fa-car"></i>
-							<div class="block-number wow zoomInStable animated" data-wow-delay="0ms" data-wow-duration="2000ms" style="visibility: visible; animation-duration: 2000ms; animation-delay: 0ms; animation-name: zoomInStable;">1</div>
-						</div>
-					</div>
-					<div class="lower-box">
-						<h3><a href="#">DISCOVER</a></h3>
-						<div class="text">Intgrating clients with partners is the focus of everyday business the focus of everyday business</div>
-					</div>
-				</div>
-			</div>
-			<!--Process Block-->
-			<div class="col-sm-2 process-block">
-				<div class="inner-box">
-					<div class="upper-box">
-						<div class="icon-box">
-							<i class="fas fa-car"></i>
-							<div class="block-number wow zoomInStable animated" data-wow-delay="0ms" data-wow-duration="2000ms" style="visibility: visible; animation-duration: 2000ms; animation-delay: 0ms; animation-name: zoomInStable;">2</div>
-						</div>
-					</div>
-					<div class="lower-box">
-						<h3><a href="#">BUILD</a></h3>
-						<div class="text">Intgrating clients with partners is the focus of everyday business the focus of everyday business</div>
-					</div>
-				</div>
-			</div>
-			<!--Process Block-->
-			<div class="col-sm-2 process-block">
-				<div class="inner-box">
-					<div class="upper-box">
-						<div class="icon-box">
-							<i class="fas fa-car"></i>
-							<div class="block-number wow zoomInStable animated" data-wow-delay="0ms" data-wow-duration="2000ms" style="visibility: visible; animation-duration: 2000ms; animation-delay: 0ms; animation-name: zoomInStable;">3</div>
-						</div>
-					</div>
-					<div class="lower-box">
-						<h3><a href="#">CONNECT</a></h3>
-						<div class="text">Intgrating clients with partners is the focus of everyday business the focus of everyday business</div>
-					</div>
-				</div>
-			</div>
-			<!--Process Block-->
-			<div class="col-sm-2 process-block">
-				<div class="inner-box">
-					<div class="upper-box">
-						<div class="icon-box">
-							<i class="fas fa-car"></i>
-							<div class="block-number wow zoomInStable animated" data-wow-delay="0ms" data-wow-duration="2000ms" style="visibility: visible; animation-duration: 2000ms; animation-delay: 0ms; animation-name: zoomInStable;">4</div>
-						</div>
-					</div>
-					<div class="lower-box">
-						<h3><a href="#">Step 4</a></h3>
-						<div class="text">Intgrating clients with partners is the focus of everyday business the focus of everyday business</div>
-					</div>
-				</div>
-			</div>
-			<!--Process Block-->
-			<div class="col-sm-2 process-block">
-				<div class="inner-box">
-					<div class="upper-box">
-						<div class="icon-box">
-							<i class="fas fa-car"></i>
-							<div class="block-number wow zoomInStable animated" data-wow-delay="0ms" data-wow-duration="2000ms" style="visibility: visible; animation-duration: 2000ms; animation-delay: 0ms; animation-name: zoomInStable;">5</div>
-						</div>
-					</div>
-					<div class="lower-box">
-						<h3><a href="#">LANCH</a></h3>
-						<div class="text">Intgrating clients with partners is the focus of everyday business the focus of everyday business</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="row justify-content-center">
-			<div class="col-sm-auto">
-				<div class="card card-body shadow-1 mt-3">
-					<div class="row justify-content-center align-items-center">
-						<div class="col-sm-auto">
-							<h5 class="text-center my-2 position-relative text-muted">Pay as Your Convenience</h5>
-						</div>
-						<!--Process Block-->
-						<div class="col-sm-auto text-center">
-							<div class="d-flex align-items-center">
-								<i class="fas fa-money-bill-alt fa-2x icon-grad mr-2"></i>
-								<a href="#" class="card-link font-size-4 stretched-link text-dark">Cash</a>
-							</div>
-						</div>
-						<!--Process Block-->
-						<div class="col-sm-auto">
-							<div class="d-flex align-items-center">
-								<i class="fab fa-cc-visa fa-2x text-primary icon-grad mr-2"></i>
-								<a href="#" class="card-link font-size-4 stretched-link text-dark">Card</a>
-							</div>
-						</div>
-						<!--Process Block-->
-						<div class="col-sm-auto">
-							<div class="d-flex align-items-center">
-								<i class="fas fa-wallet fa-2x text-primary icon-grad mr-2"></i>
-								<a href="#" class="card-link font-size-4 stretched-link text-dark">Wallet</a>
-							</div>
-						</div>
-						<!--Process Block-->
-						<div class="col-sm-auto">
-							<div class="d-flex align-items-center">
-								<i class="fas fa-money-check fa-2x text-primary icon-grad mr-2"></i>
-								<a href="#" class="card-link font-size-4 stretched-link text-dark">Netbanking</a>
-							</div>
-						</div>
-						<!--Process Block-->
-						<div class="col-sm-auto">
-							<div class="d-flex align-items-center">
-								<i class="fas fa-qrcode fa-2x text-primary icon-grad mr-2"></i>
-								<a href="#" class="card-link font-size-4 stretched-link text-dark">UPI</a>
-							</div>
-						</div>
-					</div>
-					</div>
-				</div>
-			</div>
-	</div>
-</section>
-<section class="how-it-works overflow-hidden uk-flex uk-flex-middle py-2" uk-height-viewport uk-parallax="bgy: -300" style="background-image: url('https://picsum.photos/id/1019/1920/1080');">
+<section class="uk-section how-it-works overflow-hidden uk-flex uk-flex-middle uk-flex-center uk-dark d-none" uk-height-viewport uk-parallax="bgy: -300">
 	<div class="container text-center description">
 		<div class="row">
 			<div class="col">
-				<h2 class="text-uppercase text-center mb-2 position-relative text-white">How T-Pilots Works ?</h2>
+				<h2 class="text-uppercase text-center mb-5 position-relative">How T-Pilots Works ?</h2>
 			</div>
 		</div>
 		<div class="row justify-content-center travelo-process">
@@ -583,225 +368,117 @@ How It Works
 	</div>
 </section>
 <!--
-Offers
--->
-<div class="container position-relative mt-n5 d-none" style="z-index:1;">
-    <div class="row">
-        <div class="col">
-            <div class="list-group list-group-horizontal shadow offers-slider">
-				<a href="#" class="list-group-item list-group-item-action d-flex align-items-center">
-					<img src="/assets/img/icon-1.svg" class="mr-3" alt="..." width="50px">
-					<div class="media-body fweight-300">
-						<h5 class="mt-0 fweight-400">Media heading</h5>
-						Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque.
-					</div>
-				</a>
-				<a href="#" class="list-group-item list-group-item-action d-flex align-items-center">
-					<img src="/assets/img/icon-2.svg" class="mr-3" alt="..." width="50px">
-					<div class="media-body fweight-300">
-						<h5 class="mt-0 fweight-400">Media heading</h5>
-						Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque.
-					</div>
-				</a>
-				<a href="#" class="list-group-item list-group-item-action d-flex align-items-center">
-					<img src="/assets/img/icon-3.svg" class="mr-3" alt="..." width="50px">
-					<div class="media-body fweight-300">
-						<h5 class="mt-0 fweight-400">Media heading</h5>
-						Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque.
-					</div>
-				</a>
-				<a href="#" class="list-group-item list-group-item-action d-flex align-items-center">
-					<img src="/assets/img/icon-4.svg" class="mr-3" alt="..." width="50px">
-					<div class="media-body fweight-300">
-						<h5 class="mt-0 fweight-400">Media heading</h5>
-						Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque.
-					</div>
-				</a>
-			</div>
-        </div>
-    </div>
-</div>
-<!--
 Why with Us
 -->
-<section class="min-vh-100 d-flex align-items-center py-5" id="WhyTPilotsSection">
-	<div class="container-fluid">
-		<div class="row">
-			<div class="col-sm-4">
-				<div class="card border-0 single-feature border-radius-1 mb-4 match-height overflow-hidden">
-					<div class="media align-items-center">
-						<img class="media-left" src="https://picsum.photos/85/180?random=1" alt="Customizable">
-						<div class="media-body">
-							<h6>Customizable</h6>
-							<p class="card-text">Our support team will get assistance from AI-powered suggestions, making.Our support team will get assistance</p>
-						</div>
-					</div>
-				</div>
-				<div class="card border-0 single-feature border-radius-2 mb-4 overflow-hidden">
-					<div class="media align-items-center">
-						<img class="media-left" src="https://picsum.photos/85/180?random=1" alt="Customizable">
-						<div class="media-body">
-							<h6>Customizable</h6>
-							<p class="card-text">Our support team will get assistance from AI-powered suggestions, making.Our support team will get assistance</p>
-						</div>
-					</div>
+<section class="uk-section uk-section-muted uk-flex uk-flex-middle uk-flex-center grey-700 font-size-3" id="WhyTPilotsSection" uk-height-viewport="offset-top: true">
+	<div>
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<h1 class="heading text-center mb-4 position-relative">Why Customers Choose</h1>
+					<p class="font-size-4 mb-4"><em class="text-dark">Would you like to be a piece of an option that could be greater than anything you have known up until this point? At that point this is your chance to go along with us, with our T-PIlots.</em></p>
 				</div>
 			</div>
-			<div class="col-sm-4">
-				<div class="card bg-transparent border-0 mb-4 d-flex align-items-center">
-					<div class="text-center wow fadeInUp animated fweight-500" data-wow-duration="0.6s" data-wow-delay="0.1s">
-						<p class="text-primary font-size-8 mb-1">Why Customers Choose</p>
-						<h1 class="text-warning font-size-10 mb-0">T-Pilots</h1>
+		</div>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-sm-4">
+					<div class="uk-card uk-card-default uk-card-small uk-grid-collapse uk-child-width-expand@s uk-margin single-feature border-radius-1 overflow-hidden mb-4" uk-grid>
+						<div class="uk-card-media-left uk-cover-container uk-width-1-5">
+							<img src="https://picsum.photos/100/200?random=1" alt="" uk-cover>
+							<canvas width="100" height="200"></canvas>
+						</div>
+						<div>
+							<div class="uk-card-body">
+								<h4 class="uk-heading-bullet border-orange-500-before uk-margin-small-left text-primary mb-3">General Goods</h4>
+								<ul class="list-unstyled text-left icon-list icon-list-check">
+									<li class="orange-500-before">Lorem ipsum dolor sit amet.</li>
+									<li class="orange-500-before">Obcaecati magnam quas fuga.</li>
+									<li class="orange-500-before">Aperiam molestias voluptatem.</li>
+									<li class="orange-500-before">Debitis iste velit vitae dignissimos.</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="uk-card uk-card-default uk-card-small uk-grid-collapse uk-child-width-expand@s uk-margin single-feature border-radius-2 overflow-hidden mb-4" uk-grid>
+						<div class="uk-card-media-left uk-cover-container uk-width-1-5">
+							<img src="https://picsum.photos/100/200?random=2" alt="" uk-cover>
+							<canvas width="100" height="200"></canvas>
+						</div>
+						<div>
+							<div class="uk-card-body">
+								<h4 class="uk-heading-bullet border-orange-500-before uk-margin-small-left text-primary mb-3">General Goods</h4>
+								<ul class="list-unstyled text-left icon-list icon-list-check">
+									<li class="orange-500-before">Lorem ipsum dolor sit amet.</li>
+									<li class="orange-500-before">Obcaecati magnam quas fuga.</li>
+									<li class="orange-500-before">Aperiam molestias voluptatem.</li>
+									<li class="orange-500-before">Debitis iste velit vitae dignissimos.</li>
+								</ul>
+							</div>
+						</div>
 					</div>
 				</div>
-				<div class="card border-0 single-feature mb-4 overflow-hidden" uk-scrollspy="cls:uk-animation-scale-up; repeat: true;">
-					<img src="https://picsum.photos/450/270?random=1" alt="Customizable">
-				</div>
-			</div>
-			<div class="col-sm-4">
-				<div class="card border-0 single-feature mb-4 border-radius-3 match-height overflow-hidden">
-					<div class="media align-items-center">
-						<div class="media-body">
-							<h6>Customizable</h6>
-							<p class="card-text">Our support team will get assistance from AI-powered suggestions, making.Our support team will get assistance</p>
+				<div class="col-sm-4">
+					<div class="card bg-transparent border-0 mb-4 d-flex align-items-center">
+						<div class="text-center wow fadeInUp animated fweight-500" data-wow-duration="0.6s" data-wow-delay="0.1s">
+							<p class="text-warning font-size-10 mb-0">T-Pilots</p>
 						</div>
-						<img src="https://picsum.photos/85/180?random=1" alt="Customizable">
+					</div>
+					<div class="card border-0 single-feature mb-4 overflow-hidden" uk-scrollspy="cls:uk-animation-scale-up; repeat: true;">
+						<img src="https://picsum.photos/450/350?random=1" alt="Customizable">
 					</div>
 				</div>
-				<div class="card border-0 single-feature mb-4 border-radius-4 overflow-hidden">
-					<div class="media align-items-center">
-						<div class="media-body">
-							<h6>Customizable</h6>
-							<p class="card-text">Our support team will get assistance from AI-powered suggestions, making.Our support team will get assistance</p>
+				<div class="col-sm-4">
+					<div class="uk-card uk-card-default uk-card-small uk-grid-collapse uk-child-width-expand@s uk-margin single-feature border-radius-3 overflow-hidden mb-4" uk-grid>
+						<div class="uk-flex-last@s uk-card-media-right uk-cover-container uk-width-1-5">
+							<img src="https://picsum.photos/100/200?random=3" alt="" uk-cover>
+							<canvas width="100" height="200"></canvas>
 						</div>
-						<img src="https://picsum.photos/85/180?random=1" alt="Customizable">
+						<div>
+							<div class="uk-card-body">
+								<h4 class="uk-heading-bullet border-orange-500-before uk-margin-small-left text-primary mb-3">General Goods</h4>
+								<ul class="list-unstyled text-left icon-list icon-list-check">
+									<li class="orange-500-before">Lorem ipsum dolor sit amet.</li>
+									<li class="orange-500-before">Obcaecati magnam quas fuga.</li>
+									<li class="orange-500-before">Aperiam molestias voluptatem.</li>
+									<li class="orange-500-before">Debitis iste velit vitae dignissimos.</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="uk-card uk-card-default uk-card-small uk-grid-collapse uk-child-width-expand@s uk-margin single-feature border-radius-4 overflow-hidden mb-4" uk-grid>
+						<div class="uk-flex-last@s uk-card-media-right uk-cover-container uk-width-1-5">
+							<img src="https://picsum.photos/100/200?random=4" alt="" uk-cover>
+							<canvas width="100" height="200"></canvas>
+						</div>
+						<div>
+							<div class="uk-card-body">
+								<h4 class="uk-heading-bullet border-orange-500-before uk-margin-small-left text-primary mb-3">General Goods</h4>
+								<ul class="list-unstyled text-left icon-list icon-list-check">
+									<li class="orange-500-before">Lorem ipsum dolor sit amet.</li>
+									<li class="orange-500-before">Obcaecati magnam quas fuga.</li>
+									<li class="orange-500-before">Aperiam molestias voluptatem.</li>
+									<li class="orange-500-before">Debitis iste velit vitae dignissimos.</li>
+								</ul>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>
 		</div>
-	</div>
-</section>
-<!--
-Category
--->
-<section class="d-flex align-items-center py-5 bg-light" uk-height-viewport>
-	<div class="container-fluid">
-		<div class="row">
-			<div class="col">
-				<h2 class="heading text-uppercase text-center mb-5 position-relative">Destination Deals</h2>
-			</div>
-		</div>
-		<div class="row">
-			<div class="col-12">
-				<div class="tab-content" id="guides-tabContent">
-					<div class="tab-pane fade show active" id="guides-city" role="tabpanel" aria-labelledby="guides-city-tab">
-						<div class="row image-box style5" uk-height-match=".card">
-							<div class="col-sm-3">
-								<article class="box">
-									<figure class="animated" data-animation-type="fadeInDown" data-animation-delay="0">
-										<a title="" href="#">
-											<img width="288" height="162" alt="" src="/assets/img/golconda.jpg">
-										</a>
-										<figcaption>
-											<h3 class="caption-title">Golconda Fort</h3>
-											<span>View Deal</span>
-										</figcaption>
-									</figure>
-								</article>
-							</div>
-							<div class="col-sm-3">
-								<article class="box">
-									<figure class="animated" data-animation-type="fadeInDown" data-animation-delay="0">
-										<a title="" href="#">
-											<img width="288" height="162" alt="" src="/assets/img/charminar.jpg">
-										</a>
-										<figcaption>
-											<h3 class="caption-title">Charminar</h3>
-											<span>View Deal</span>
-										</figcaption>
-									</figure>
-								</article>
-							</div>
-							<div class="col-sm-3">
-								<article class="box">
-									<figure class="animated" data-animation-type="fadeInDown" data-animation-delay="0">
-										<a title="" href="#">
-											<img width="288" height="162" alt="" src="/assets/img/birlamandir.jpeg">
-										</a>
-										<figcaption>
-											<h3 class="caption-title">Birla Mandir</h3>
-											<span>View Deal</span>
-										</figcaption>
-									</figure>
-								</article>
-							</div>
-							<div class="col-sm-3">
-								<article class="box">
-									<figure class="animated" data-animation-type="fadeInDown" data-animation-delay="0">
-										<a title="" href="#">
-											<img width="288" height="162" alt="" src="/assets/img/hussian.jpg">
-										</a>
-										<figcaption>
-											<h3 class="caption-title">Hussain Sagar</h3>
-											<span>View Deal</span>
-										</figcaption>
-									</figure>
-								</article>
-							</div>
-							<div class="col-sm-3">
-								<article class="box">
-									<figure class="animated" data-animation-type="fadeInDown" data-animation-delay="0">
-										<a title="" href="#"><img width="288" height="162" alt="" src="/assets/img/ramoji.png"></a>
-										<figcaption>
-											<h3 class="caption-title">Ramoji Film City</h3>
-											<span>View Deal</span>
-										</figcaption>
-									</figure>
-								</article>
-							</div>
-							<div class="col-sm-3">
-								<article class="box">
-									<figure class="animated" data-animation-type="fadeInDown" data-animation-delay="0">
-										<a title="" href="#">
-											<img width="288" height="162" alt="" src="/assets/img/salarjung.jpg">
-										</a>
-										<figcaption>
-											<h3 class="caption-title">Salar Jung Museum</h3>
-											<span>View Deal</span>
-										</figcaption>
-									</figure>
-								</article>
-							</div>
-							<div class="col-sm-3">
-								<article class="box match-height">
-									<figure class="animated" data-animation-type="fadeInDown" data-animation-delay="0">
-										<a title="" href="#">
-											<img width="288" height="162" alt="" src="/assets/img/nehru.jpg"></a>
-										<figcaption>
-											<h3 class="caption-title">Nehru Zoo Park</h3>
-											<span>View Deal</span>
-										</figcaption>
-									</figure>
-								</article>
-							</div>
-							<div class="col-sm-3">
-								<div class="card card-body py-5 py-sm-0 border-0 rounded-0 bg-primary match-height shadow-10dp-hover">
-									<a href="#" class="card-link stretched-link vertical-center d-flex align-items-center text-white font-size-10">Destinations Guide <i class="far fa-arrow-alt-circle-right mr-3"></i></a>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="tab-pane fade" id="guides-outstation" role="tabpanel" aria-labelledby="guides-outstation-tab">...</div>
-				</div>
-			</div>
-		</div>
-		
 	</div>
 </section>
 <!--
 SVL City Ride
 -->
-<section class="d-flex align-items-center py-5" id="CityRideSection" uk-height-viewport>
+<section class="uk-section uk-section-default uk-flex-middle uk-flex-center" id="CityRideSection" uk-height-viewport="offset-top: true">
+	<div class="container">
+		<div class="row">
+			<div class="col">
+				<h1 class="heading text-center mb-5 position-relative">Fleet-Services</h1>
+			</div>
+		</div>
+	</div>
 	<div class="container">
 		<div class="row">
 			<div class="col">
@@ -1106,213 +783,131 @@ SVL City Ride
 	</div>
 </section>
 <!--
-SVL Airport
+Destinations
 -->
-<section class="min-vh-100 d-none align-items-center py-5 bg-grey-100" id="AiportSection">
+<section class="d-flex align-items-center py-5 bg-light" uk-height-viewport="offset-top: true">
+	<div>
 	<div class="container">
-		<div class="row align-items-center">
-			<div class="col-sm-6 vehicle-features">
-				<h1 class="text-primary">SVL <span class="text-warning">Airport</span></h1>
-				<p><strong>Lorem ipsum dolor sit amet</strong></p>
-				<hr>
-				<ul>
-					<li>Nihil error Vero at ad. Facere a nihil vitae Nihil error Vero at ad.</li>
-					<li>Expedita temporibus sed aliquam Facere a nihil vitae</li>
-					<li>Quasi doloribus, iusto aut! Expedita temporibus sed aliquam</li>
-				</ul>
-				<nav class="nav vehicle-features-nav">
-					<a class="nav-item nav-link"><i class="far fa-snowflake"></i></a>
-					<a class="nav-item nav-link"><i class="fab fa-cc-visa"></i></a>
-					<a class="nav-item nav-link"><i class="fas fa-map-marked-alt"></i></a>
-					<a class="nav-item nav-link"><i class="far fa-snowflake"></i></a>
-					<a class="nav-item nav-link"><i class="fab fa-cc-visa"></i></a>
-				</nav>
-				<nav class="nav a-mx-2 nav-justified">
-					<a href="#" class="nav-item nav-link btn btn-primary btn-lg shadow fweight-500">Find a Ride</a>
-					<a href="#" class="nav-item nav-link btn btn-warning btn-lg shadow text-white fweight-500">Estimate a Ride</a>
-				</nav>
-			</div>
-			<div class="col-sm-6">
-				<div class="vehicle-type">
-				  <div><img class="mx-auto" src="/assets/img/UberX.webp" alt="" height="260"></div>
-				  <div><img class="mx-auto" src="/assets/img/Select.webp" alt="" height="260"></div>
-				  <div><img class="mx-auto" src="/assets/img/Pool.webp" alt="" height="260"></div>
-				  <div><img class="mx-auto" src="/assets/img/XL.webp" alt="" height="260"></div>
-				  <div><img class="mx-auto" src="/assets/img/Black.webp" alt="" height="260"></div>
-				  <div><img class="mx-auto" src="/assets/img/BlackSUV.webp" alt="" height="260"></div>
-				  <div><img class="mx-auto" src="/assets/img/Lux.webp" alt="" height="260"></div>
-				</div>
-				
-				<nav class="nav vehicle-type-nav">
-					<a class="nav-item nav-link text-center"><img src="/assets/img/UberX.webp" alt="" class="img-fluid"> Sedan</a>
-					<a class="nav-item nav-link text-center"><img src="/assets/img/Select.webp" alt="" class="img-fluid"> Select</a>
-					<a class="nav-item nav-link text-center"><img src="/assets/img/Pool.webp" alt="" class="img-fluid"> Pool</a>
-					<a class="nav-item nav-link text-center"><img src="/assets/img/XL.webp" alt="" class="img-fluid"> SUV</a>
-					<a class="nav-item nav-link text-center"><img src="/assets/img/Black.webp" alt="" class="img-fluid"> Prime</a>
-					<a class="nav-item nav-link text-center"><img src="/assets/img/BlackSUV.webp" alt="" class="img-fluid"> SUV Prime</a>
-					<a class="nav-item nav-link text-center"><img src="/assets/img/Lux.webp" alt="" class="img-fluid"> Luxury</a>
-				</nav>
+		<div class="row">
+			<div class="col">
+				<h1 class="heading mb-4 position-relative text-center">Destination Deals</h1>
+				<p class="font-size-4 mb-4"><em class="text-dark">Would you like to be a piece of an option that could be greater than anything you have known up until this point? At that point this is your chance to go along with us, with our T-PIlots.</em></p>
 			</div>
 		</div>
 	</div>
-</section>
-<!--
-SVL Outstation
--->
-<section class="min-vh-100 d-none align-items-center py-5" id="OutstationSection">
-	<div class="container">
-		<div class="row align-items-center">
-			<div class="col-sm-6">
-				<div class="vehicle-type">
-				  <div><img class="mx-auto" src="/assets/img/UberX.webp" alt="" height="260"></div>
-				  <div><img class="mx-auto" src="/assets/img/Select.webp" alt="" height="260"></div>
-				  <div><img class="mx-auto" src="/assets/img/Pool.webp" alt="" height="260"></div>
-				  <div><img class="mx-auto" src="/assets/img/XL.webp" alt="" height="260"></div>
-				  <div><img class="mx-auto" src="/assets/img/Black.webp" alt="" height="260"></div>
-				  <div><img class="mx-auto" src="/assets/img/BlackSUV.webp" alt="" height="260"></div>
-				  <div><img class="mx-auto" src="/assets/img/Lux.webp" alt="" height="260"></div>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-12">
+				<div class="tab-content" id="guides-tabContent">
+					<div class="tab-pane fade show active" id="guides-city" role="tabpanel" aria-labelledby="guides-city-tab">
+						<div class="row image-box style5" uk-height-match=".card">
+							<div class="col-sm-3">
+								<article class="box">
+									<figure class="animated" data-animation-type="fadeInDown" data-animation-delay="0">
+										<a title="" href="#">
+											<img width="288" height="162" alt="" src="/assets/img/golconda.jpg">
+										</a>
+										<figcaption>
+											<h3 class="caption-title">Golconda Fort</h3>
+											<span>View Deal</span>
+										</figcaption>
+									</figure>
+								</article>
+							</div>
+							<div class="col-sm-3">
+								<article class="box">
+									<figure class="animated" data-animation-type="fadeInDown" data-animation-delay="0">
+										<a title="" href="#">
+											<img width="288" height="162" alt="" src="/assets/img/charminar.jpg">
+										</a>
+										<figcaption>
+											<h3 class="caption-title">Charminar</h3>
+											<span>View Deal</span>
+										</figcaption>
+									</figure>
+								</article>
+							</div>
+							<div class="col-sm-3">
+								<article class="box">
+									<figure class="animated" data-animation-type="fadeInDown" data-animation-delay="0">
+										<a title="" href="#">
+											<img width="288" height="162" alt="" src="/assets/img/birlamandir.jpeg">
+										</a>
+										<figcaption>
+											<h3 class="caption-title">Birla Mandir</h3>
+											<span>View Deal</span>
+										</figcaption>
+									</figure>
+								</article>
+							</div>
+							<div class="col-sm-3">
+								<article class="box">
+									<figure class="animated" data-animation-type="fadeInDown" data-animation-delay="0">
+										<a title="" href="#">
+											<img width="288" height="162" alt="" src="/assets/img/hussian.jpg">
+										</a>
+										<figcaption>
+											<h3 class="caption-title">Hussain Sagar</h3>
+											<span>View Deal</span>
+										</figcaption>
+									</figure>
+								</article>
+							</div>
+							<div class="col-sm-3">
+								<article class="box">
+									<figure class="animated" data-animation-type="fadeInDown" data-animation-delay="0">
+										<a title="" href="#"><img width="288" height="162" alt="" src="/assets/img/ramoji.png"></a>
+										<figcaption>
+											<h3 class="caption-title">Ramoji Film City</h3>
+											<span>View Deal</span>
+										</figcaption>
+									</figure>
+								</article>
+							</div>
+							<div class="col-sm-3">
+								<article class="box">
+									<figure class="animated" data-animation-type="fadeInDown" data-animation-delay="0">
+										<a title="" href="#">
+											<img width="288" height="162" alt="" src="/assets/img/salarjung.jpg">
+										</a>
+										<figcaption>
+											<h3 class="caption-title">Salar Jung Museum</h3>
+											<span>View Deal</span>
+										</figcaption>
+									</figure>
+								</article>
+							</div>
+							<div class="col-sm-3">
+								<article class="box match-height">
+									<figure class="animated" data-animation-type="fadeInDown" data-animation-delay="0">
+										<a title="" href="#">
+											<img width="288" height="162" alt="" src="/assets/img/nehru.jpg"></a>
+										<figcaption>
+											<h3 class="caption-title">Nehru Zoo Park</h3>
+											<span>View Deal</span>
+										</figcaption>
+									</figure>
+								</article>
+							</div>
+							<div class="col-sm-3">
+								<div class="card card-body py-5 py-sm-0 border-0 rounded-0 bg-primary match-height shadow-10dp-hover">
+									<a href="#" class="card-link stretched-link vertical-center d-flex align-items-center text-white font-size-10">Destinations Guide <i class="far fa-arrow-alt-circle-right mr-3"></i></a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="tab-pane fade" id="guides-outstation" role="tabpanel" aria-labelledby="guides-outstation-tab">...</div>
 				</div>
-				
-				<nav class="nav vehicle-type-nav">
-					<a class="nav-item nav-link text-center"><img src="/assets/img/UberX.webp" alt="" class="img-fluid"> Sedan</a>
-					<a class="nav-item nav-link text-center"><img src="/assets/img/Select.webp" alt="" class="img-fluid"> Select</a>
-					<a class="nav-item nav-link text-center"><img src="/assets/img/Pool.webp" alt="" class="img-fluid"> Pool</a>
-					<a class="nav-item nav-link text-center"><img src="/assets/img/XL.webp" alt="" class="img-fluid"> SUV</a>
-					<a class="nav-item nav-link text-center"><img src="/assets/img/Black.webp" alt="" class="img-fluid"> Prime</a>
-					<a class="nav-item nav-link text-center"><img src="/assets/img/BlackSUV.webp" alt="" class="img-fluid"> SUV Prime</a>
-					<a class="nav-item nav-link text-center"><img src="/assets/img/Lux.webp" alt="" class="img-fluid"> Luxury</a>
-				</nav>
-			</div>
-			<div class="col-sm-6 vehicle-features">
-				<h1 class="text-primary">SVL <span class="text-warning">Outstation</span></h1>
-				<p><strong>Lorem ipsum dolor sit amet</strong></p>
-				<hr>
-				<ul>
-					<li>Nihil error Vero at ad. Facere a nihil vitae Nihil error Vero at ad.</li>
-					<li>Expedita temporibus sed aliquam Facere a nihil vitae</li>
-					<li>Quasi doloribus, iusto aut! Expedita temporibus sed aliquam</li>
-				</ul>
-				<nav class="nav vehicle-features-nav">
-					<a class="nav-item nav-link"><i class="far fa-snowflake"></i></a>
-					<a class="nav-item nav-link"><i class="fab fa-cc-visa"></i></a>
-					<a class="nav-item nav-link"><i class="fas fa-map-marked-alt"></i></a>
-					<a class="nav-item nav-link"><i class="far fa-snowflake"></i></a>
-					<a class="nav-item nav-link"><i class="fab fa-cc-visa"></i></a>
-				</nav>
-				<nav class="nav a-mx-2 nav-justified">
-					<a href="#" class="nav-item nav-link btn btn-primary btn-lg shadow fweight-500">Find a Ride</a>
-					<a href="#" class="nav-item nav-link btn btn-warning btn-lg shadow text-white fweight-500">Estimate a Ride</a>
-				</nav>
 			</div>
 		</div>
+		
 	</div>
-</section>
-<!--
-SVL Rentals
--->
-<section class="min-vh-100 d-none align-items-center py-5 bg-grey-100" id="RentalsSection">
-	<div class="container">
-		<div class="row align-items-center">
-			<div class="col-sm-6 vehicle-features">
-				<h1 class="text-primary">SVL <span class="text-warning">Rentals</span></h1>
-				<p><strong>Lorem ipsum dolor sit amet</strong></p>
-				<hr>
-				<ul>
-					<li>Nihil error Vero at ad. Facere a nihil vitae Nihil error Vero at ad.</li>
-					<li>Expedita temporibus sed aliquam Facere a nihil vitae</li>
-					<li>Quasi doloribus, iusto aut! Expedita temporibus sed aliquam</li>
-				</ul>
-				<nav class="nav vehicle-features-nav">
-					<a class="nav-item nav-link"><i class="far fa-snowflake"></i></a>
-					<a class="nav-item nav-link"><i class="fab fa-cc-visa"></i></a>
-					<a class="nav-item nav-link"><i class="fas fa-map-marked-alt"></i></a>
-					<a class="nav-item nav-link"><i class="far fa-snowflake"></i></a>
-					<a class="nav-item nav-link"><i class="fab fa-cc-visa"></i></a>
-				</nav>
-				<nav class="nav a-mx-2 nav-justified">
-					<a href="#" class="nav-item nav-link btn btn-primary btn-lg shadow fweight-500">Find a Ride</a>
-					<a href="#" class="nav-item nav-link btn btn-warning btn-lg shadow text-white fweight-500">Estimate a Ride</a>
-				</nav>
-			</div>
-			<div class="col-sm-6">
-				<div class="vehicle-type">
-				  <div><img class="mx-auto" src="/assets/img/UberX.webp" alt="" height="260"></div>
-				  <div><img class="mx-auto" src="/assets/img/Select.webp" alt="" height="260"></div>
-				  <div><img class="mx-auto" src="/assets/img/Pool.webp" alt="" height="260"></div>
-				  <div><img class="mx-auto" src="/assets/img/XL.webp" alt="" height="260"></div>
-				  <div><img class="mx-auto" src="/assets/img/Black.webp" alt="" height="260"></div>
-				  <div><img class="mx-auto" src="/assets/img/BlackSUV.webp" alt="" height="260"></div>
-				  <div><img class="mx-auto" src="/assets/img/Lux.webp" alt="" height="260"></div>
-				</div>
-				
-				<nav class="nav vehicle-type-nav">
-					<a class="nav-item nav-link text-center"><img src="/assets/img/UberX.webp" alt="" class="img-fluid"> Sedan</a>
-					<a class="nav-item nav-link text-center"><img src="/assets/img/Select.webp" alt="" class="img-fluid"> Select</a>
-					<a class="nav-item nav-link text-center"><img src="/assets/img/Pool.webp" alt="" class="img-fluid"> Pool</a>
-					<a class="nav-item nav-link text-center"><img src="/assets/img/XL.webp" alt="" class="img-fluid"> SUV</a>
-					<a class="nav-item nav-link text-center"><img src="/assets/img/Black.webp" alt="" class="img-fluid"> Prime</a>
-					<a class="nav-item nav-link text-center"><img src="/assets/img/BlackSUV.webp" alt="" class="img-fluid"> SUV Prime</a>
-					<a class="nav-item nav-link text-center"><img src="/assets/img/Lux.webp" alt="" class="img-fluid"> Luxury</a>
-				</nav>
-			</div>
-		</div>
-	</div>
-</section>
-<!--
-SVL Truck
--->
-<section class="min-vh-100 d-none align-items-center py-5" id="TruckSection">
-	<div class="container">
-		<div class="row align-items-center">
-			<div class="col-sm-6">
-				<div class="vehicle-type">
-				  <div><img class="mx-auto" src="/assets/img/UberX.webp" alt="" height="260"></div>
-				  <div><img class="mx-auto" src="/assets/img/Select.webp" alt="" height="260"></div>
-				  <div><img class="mx-auto" src="/assets/img/Pool.webp" alt="" height="260"></div>
-				  <div><img class="mx-auto" src="/assets/img/XL.webp" alt="" height="260"></div>
-				  <div><img class="mx-auto" src="/assets/img/Black.webp" alt="" height="260"></div>
-				  <div><img class="mx-auto" src="/assets/img/BlackSUV.webp" alt="" height="260"></div>
-				  <div><img class="mx-auto" src="/assets/img/Lux.webp" alt="" height="260"></div>
-				</div>
-				
-				<nav class="nav vehicle-type-nav">
-					<a class="nav-item nav-link text-center"><img src="/assets/img/UberX.webp" alt="" class="img-fluid"> Sedan</a>
-					<a class="nav-item nav-link text-center"><img src="/assets/img/Select.webp" alt="" class="img-fluid"> Select</a>
-					<a class="nav-item nav-link text-center"><img src="/assets/img/Pool.webp" alt="" class="img-fluid"> Pool</a>
-					<a class="nav-item nav-link text-center"><img src="/assets/img/XL.webp" alt="" class="img-fluid"> SUV</a>
-					<a class="nav-item nav-link text-center"><img src="/assets/img/Black.webp" alt="" class="img-fluid"> Prime</a>
-					<a class="nav-item nav-link text-center"><img src="/assets/img/BlackSUV.webp" alt="" class="img-fluid"> SUV Prime</a>
-					<a class="nav-item nav-link text-center"><img src="/assets/img/Lux.webp" alt="" class="img-fluid"> Luxury</a>
-				</nav>
-			</div>
-			<div class="col-sm-6 vehicle-features">
-				<h1 class="text-primary">SVL <span class="text-warning">Truck</span></h1>
-				<p><strong>Lorem ipsum dolor sit amet</strong></p>
-				<hr>
-				<ul>
-					<li>Nihil error Vero at ad. Facere a nihil vitae Nihil error Vero at ad.</li>
-					<li>Expedita temporibus sed aliquam Facere a nihil vitae</li>
-					<li>Quasi doloribus, iusto aut! Expedita temporibus sed aliquam</li>
-				</ul>
-				<nav class="nav vehicle-features-nav">
-					<a class="nav-item nav-link"><i class="far fa-snowflake"></i></a>
-					<a class="nav-item nav-link"><i class="fab fa-cc-visa"></i></a>
-					<a class="nav-item nav-link"><i class="fas fa-map-marked-alt"></i></a>
-					<a class="nav-item nav-link"><i class="far fa-snowflake"></i></a>
-					<a class="nav-item nav-link"><i class="fab fa-cc-visa"></i></a>
-				</nav>
-				<nav class="nav a-mx-2 nav-justified">
-					<a href="#" class="nav-item nav-link btn btn-primary btn-lg shadow fweight-500">Find a Ride</a>
-					<a href="#" class="nav-item nav-link btn btn-warning btn-lg shadow text-white fweight-500">Estimate a Ride</a>
-				</nav>
-			</div>
-		</div>
 	</div>
 </section>
 <!--
 Services
 -->
-<section class="min-vh-100 d-none align-items-center py-5 bg-grey-100" id="VehiclesSection">
+<section class="d-none align-items-center py-5 bg-grey-100" id="VehiclesSection" uk-height-viewport="offset-top: true">
     <div class="container">
         <div class="row">
             <div class="col-12 animated fadeIn">
@@ -1555,7 +1150,7 @@ Services
 <!--
 Download App
 -->
-<section id="DownloadAppSection" class="d-flex align-items-center py-5 bg-dark text-white" uk-height-viewport>
+<section id="DownloadAppSection" class="d-flex align-items-center py-5 bg-dark text-white" uk-height-viewport="offset-top: true">
 	<div class="container">
 		<div class="row align-items-center">
 			<div class="col-sm-5 order-sm-last" uk-scrollspy="cls:uk-animation-slide-bottom; repeat: true; delay: 500">
@@ -1584,6 +1179,20 @@ Download App
 								<p class="font-size-2 fweight-400 grey-500">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam, corporis</p>
 							</div>
 						</div>
+						<div class="media mb-3">
+							<i class="fas fa-bullseye fa-2x mr-3 grey-400"></i>
+							<div class="media-body">
+								<h6 class="mt-0 fweight-400 grey-400">Time &amp; Cost Savings</h6>
+								<p class="font-size-2 fweight-400 grey-500">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam, corporis</p>
+							</div>
+						</div>
+						<div class="media mb-3">
+							<i class="fas fa-bullseye fa-2x mr-3 grey-400"></i>
+							<div class="media-body">
+								<h6 class="mt-0 fweight-400 grey-400">One Clikc for All Services</h6>
+								<p class="font-size-2 fweight-400 grey-500">accusantium? Tempore itaque cupiditate recusandae facere amet optio, officia</p>
+							</div>
+						</div>
 					</div>
 					<div class="col-sm-6">
 						<div class="media mb-3">
@@ -1593,28 +1202,11 @@ Download App
 								<p class="font-size-2 fweight-400 grey-500">accusantium? Tempore itaque cupiditate recusandae facere amet optio, officia</p>
 							</div>
 						</div>
+						<div class="uk-card uk-card-default uk-card-body uk-card-small uk-width-1-2 mx-auto">
+							<img src="assets/img/qr.svg" alt="" class="img-fluid">
+						</div>
 					</div>
 				</div>
-				<div class="row">
-					<div class="col-sm-6">
-						<div class="media mb-3">
-							<i class="fas fa-bullseye fa-2x mr-3 grey-400"></i>
-							<div class="media-body">
-								<h6 class="mt-0 fweight-400 grey-400">Time &amp; Cost Savings</h6>
-								<p class="font-size-2 fweight-400 grey-500">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam, corporis</p>
-							</div>
-						</div>
-					</div>
-					<div class="col-sm-6">
-						<div class="media mb-3">
-							<i class="fas fa-bullseye fa-2x mr-3 grey-400"></i>
-							<div class="media-body">
-								<h6 class="mt-0 fweight-400 grey-400">One Clikc for All Services</h6>
-								<p class="font-size-2 fweight-400 grey-500">accusantium? Tempore itaque cupiditate recusandae facere amet optio, officia</p>
-							</div>
-						</div>
-					</div>
-				</div>	
 			</div>
 		</div>
 	</div>
@@ -1622,95 +1214,130 @@ Download App
 <!--
 Testimonials
 -->
-<section class="min-vh-100 d-flex align-items-center py-5 testimonials bg-blue-50 position-relative" id="FeedbackSection">
-	<div class="container py-5">
-		<div class="row align-items-center">
-			<div class="col-sm-8">
-				<h2 class="heading text-uppercase text-center mb-5 position-relative">What Our Customer Says!</h2>
-				<div class="testimonials-carousel owl-carousel owl-theme">
-					<div class="item row align-items-center justify-content-center">
-						<div class="col-sm-2">
-							<img src="https://picsum.photos/150/150?random=1" alt="" class="rounded-circle img-fluid w-auto mx-auto">
-						</div>
-						<div class="col-sm">
-							<h6 class="text-primary">Person Name <small class="text-warning">Subtitle</small></h6>
-							<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores nemo optio similique quidem ratione distinctio est sapiente aperiam accusamus consequatur officiis odio, ipsum ipsa earum aliquam sequi esse veniam blanditiis.</p>
-						</div>
-					</div>
-					<div class="item row align-items-center">
-						<div class="col-sm-2">
-							<img src="https://picsum.photos/150/150?random=1" alt="" class="rounded-circle img-fluid w-auto mx-auto">
-						</div>
-						<div class="col-sm">
-							<h6 class="text-primary">Person Name <small class="text-warning">Subtitle</small></h6>
-							<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores nemo optio similique quidem ratione distinctio est sapiente aperiam accusamus consequatur officiis odio, ipsum ipsa earum aliquam sequi esse veniam blanditiis.</p>
-						</div>
-					</div>
-					<div class="item row align-items-center">
-						<div class="col-sm-2">
-							<img src="https://picsum.photos/150/150?random=2" alt="" class="rounded-circle img-fluid w-auto mx-auto">
-						</div>
-						<div class="col-sm">
-							<h6 class="text-primary">Person Name <small class="text-warning">Subtitle</small></h6>
-							<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores nemo optio similique quidem ratione distinctio est sapiente aperiam accusamus consequatur officiis odio, ipsum ipsa earum aliquam sequi esse veniam blanditiis.</p>
-						</div>
-					</div>
-					<div class="item row align-items-center">
-						<div class="col-sm-2">
-							<img src="https://picsum.photos/150/150?random=3" alt="" class="rounded-circle img-fluid w-auto mx-auto">
-						</div>
-						<div class="col-sm">
-							<h6 class="text-primary">Person Name <small class="text-warning">Subtitle</small></h6>
-							<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores nemo optio similique quidem ratione distinctio est sapiente aperiam accusamus consequatur officiis odio, ipsum ipsa earum aliquam sequi esse veniam blanditiis.</p>
-						</div>
-					</div>
-					<div class="item row align-items-center">
-						<div class="col-sm-2">
-							<img src="https://picsum.photos/150/150?random=4" alt="" class="rounded-circle img-fluid w-auto mx-auto">
-						</div>
-						<div class="col-sm">
-							<h6 class="text-primary">Person Name <small class="text-warning">Subtitle</small></h6>
-							<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maiores nemo optio similique quidem ratione distinctio est sapiente aperiam accusamus consequatur officiis odio, ipsum ipsa earum aliquam sequi esse veniam blanditiis.</p>
-						</div>
-					</div>
-				</div>
-				<nav class="nav justify-content-center a-mx-2">
-					<a href="#" class="nav-item nav-link btn btn-primary shadow my-5 fweight-500">Reviews - Dashboard</a>
-					<a href="#" class="nav-item nav-link btn btn-warning shadow my-5 text-white fweight-500">Feedback</a>
-				</nav>
-			</div>
+<section id="FeedbackSection" class="uk-section uk-flex uk-flex-middle bg-blue-50 p-4 grey-700 text-justify uk-text-light testimonials-style-1" uk-height-viewport="offset-top: true">
+	<div class="container-fluid">
+	<h1 class="heading text-center mb-4 position-relative">Testimonials</h1>
+	<div class="uk-flex uk-flex-right uk-flex-middle">
+		<div class="mr-3 mb-3">
+			<span class="uk-text-bold"><i class="fas fa-user"></i> Reviews (1700):</span> 
+			<i class="fas fa-star text-warning"></i>
+			<i class="fas fa-star text-warning"></i>
+			<i class="fas fa-star text-warning"></i>
+			<i class="fas fa-star text-warning"></i>
+			<i class="fas fa-star text-warning"></i>						
 		</div>
+	</div>
+	<div uk-slider="sets: true" class="testimonials-1">
+		<div class="uk-position-relative uk-visible-toggle" tabindex="-1">
+			<ul class="uk-slider-items uk-child-width-1-3 text-center" uk-grid uk-height-match=".uk-card">
+				<li>
+					<div class="uk-card uk-card-default uk-card-body uk-card-small mx-3 my-2">
+						<img class="uk-border-circle" src="https://getuikit.com/docs/images/avatar.jpg" width="100" height="100" alt="Border circle">
+						<p class="pt-4"><em class="text-dark">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus dolor ea, molestias expedita ullam nobis, saepe itaque vitae quidem doloremque quae dolorum totam... <a class="uk-button uk-button-text text-primary uk-text-capitalize" href="#">Read More</a></em></p>
+						<h6 class="text-warning">Name</h6>
+						<p>Driver | Location</p>
+					</div>
+				</li>
+				<li>
+					<div class="uk-card uk-card-default uk-card-body uk-card-small mx-3 my-2">
+						<img class="uk-border-circle" src="https://getuikit.com/docs/images/avatar.jpg" width="100" height="100" alt="Border circle">
+						<p class="pt-4"><i>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus dolor ea, molestias expedita ullam nobis, saepe itaque vitae quidem doloremque quae dolorum totam.</i></p>
+						<h6 class="text-warning">Name</h6>
+						<p>Rider | Location</p>
+					</div>
+				</li>
+				<li>
+					<div class="uk-card uk-card-default uk-card-body uk-card-small mx-3 my-2">
+						<img class="uk-border-circle" src="https://getuikit.com/docs/images/avatar.jpg" width="100" height="100" alt="Border circle">
+						<p class="pt-4"><i>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus dolor ea, molestias expedita ullam nobis, saepe itaque vitae quidem doloremque quae dolorum totam.</i></p>
+						<h6 class="text-warning">Name</h6>
+						<p>Owner | Location</p>
+					</div>
+				</li>
+				<li>
+					<div class="uk-card uk-card-default uk-card-body uk-card-small mx-3 my-2">
+						<img class="uk-border-circle" src="https://getuikit.com/docs/images/avatar.jpg" width="100" height="100" alt="Border circle">
+						<p class="pt-4"><i>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus dolor ea, molestias expedita ullam nobis, saepe itaque vitae quidem doloremque quae dolorum totam.</i></p>
+						<h6 class="text-warning">Name</h6>
+						<p>Partner | Location</p>
+					</div>
+				</li>
+				<li>
+					<div class="uk-card uk-card-default uk-card-body uk-card-small mx-3 my-2">
+						<img class="uk-border-circle" src="https://getuikit.com/docs/images/avatar.jpg" width="100" height="100" alt="Border circle">
+						<p class="pt-4"><i>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus dolor ea, molestias expedita ullam nobis, saepe itaque vitae quidem doloremque quae dolorum totam.</i></p>
+						<h6 class="text-warning">Name</h6>
+						<p>Driver | Location</p>
+					</div>
+				</li>
+				<li>
+					<div class="uk-card uk-card-default uk-card-body uk-card-small mx-3 my-2">
+						<img class="uk-border-circle" src="https://getuikit.com/docs/images/avatar.jpg" width="100" height="100" alt="Border circle">
+						<p class="pt-4"><i>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus dolor ea, molestias expedita ullam nobis, saepe itaque vitae quidem doloremque quae dolorum totam.</i></p>
+						<h6 class="text-warning">Name</h6>
+						<p>Rider | Location</p>
+					</div>
+				</li>
+				<li>
+					<div class="uk-card uk-card-default uk-card-body uk-card-small mx-3 my-2">
+						<img class="uk-border-circle" src="https://getuikit.com/docs/images/avatar.jpg" width="100" height="100" alt="Border circle">
+						<p class="pt-4"><i>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus dolor ea, molestias expedita ullam nobis, saepe itaque vitae quidem doloremque quae dolorum totam.</i></p>
+						<h6 class="text-warning">Name</h6>
+						<p>Owner | Location</p>
+					</div>
+				</li>
+				<li>
+					<div class="uk-card uk-card-default uk-card-body uk-card-small mx-3 my-2">
+						<img class="uk-border-circle" src="https://getuikit.com/docs/images/avatar.jpg" width="100" height="100" alt="Border circle">
+						<p class="pt-4"><i>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus dolor ea, molestias expedita ullam nobis, saepe itaque vitae quidem doloremque quae dolorum totam.</i></p>
+						<h6 class="text-warning">Name</h6>
+						<p>Partner | Location</p>
+					</div>
+				</li>
+			</ul>
+
+		</div>
+		<ul class="uk-slider-nav uk-dotnav uk-flex-center uk-margin"></ul>
+		<div class="uk-flex uk-flex-center uk-margin">
+			<a href="#" class="btn btn-primary shadow fweight-500 mr-3">Reviews - Dashboard</a>
+			<a href="#" class="btn btn-warning shadow text-white fweight-500">Feedback</a>
+		</div>
+	</div>
 	</div>
 </section>
 <!--
 Contact Us
 -->
 <section class="contact-us" id="ContactSection">
-	<header class="min-vh-100 d-flex align-items-center bg-light py-5" id="contact-us">
+	<header class="d-flex align-items-center bg-light py-5" id="contact-us" uk-height-viewport="offset-top: true">
 		<div class="container">
 			<div class="row">
 				<div class="col">
-					<h2 class="heading text-uppercase text-center mb-3 position-relative">Contact Us</h2>
+					<h1 class="heading text-center mb-3 position-relative">Contact Us</h1>
 				</div>
 			</div>
 			<div class="row py-4">
 				<div class="col-sm">
-					<div class="list-group list-group-flush mb-3">
-						<a href="#" class="list-group-item list-group-item-action">
-							<h5>Registered and Corporate Office</h5>
+					<div class="card rounded-8 border-0 shadow-2dp shadow-4dp-hover">
+						<div class="card-body">
+							<h5><a href="#" class="stretched-link">Registered and Corporate Office</a></h5>
 							<h6 class="text-muted my-3">SVL Global</h6>
 							<p class="text-muted font-size-2 mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente ea officiis necessitatibus commodi.</p>
-						</a>
-						<a href="#" class="list-group-item list-group-item-action">
-							<h5>Hyderabad</h5>
+						</div>
+					</div>
+					<div class="card rounded-8 border-0 shadow-2dp shadow-4dp-hover my-3">
+						<div class="card-body">
+							<h5><a href="#" class="stretched-link">Hyderabad</a></h5>
 							<h6 class="text-muted my-3">SVL Global</h6>
 							<p class="text-muted font-size-2 mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente ea officiis necessitatibus commodi.</p>
-						</a>
-						<a href="#" class="list-group-item list-group-item-action border-bottom">
-							<h5>Bangalore</h5>
+						</div>
+					</div>
+					<div class="card rounded-8 border-0 shadow-2dp shadow-4dp-hover">
+						<div class="card-body">
+							<h5><a href="#" class="stretched-link">Bangalore</a></h5>
 							<h6 class="text-muted my-3">SVL Global</h6>
 							<p class="text-muted font-size-2 mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente ea officiis necessitatibus commodi.</p>
-						</a>
+						</div>
 					</div>
 				</div>
 				<div class="col-sm position-relative">
@@ -1720,8 +1347,9 @@ Contact Us
 			</div>
 		</div>
 	</header>
-	<div class="min-vh-100 d-flex align-items-center" id="EmailSection">
+	<div id="EmailSection" class="d-flex align-items-center" uk-height-viewport="offset-top: true">
 		<div class="container">
+			<h1 class="heading text-center mb-5 position-relative">Give Us Feedback</h1>
 			<div class="row" id="mail-us">
 				<div class="col-sm-3 hidden-xs">
 					<div class="nav flex-column nav-pills nav-fill contact-us-tabs mb-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
@@ -1738,18 +1366,104 @@ Contact Us
 						<div class="tab-pane fade show active" id="feed-on-info" role="tabpanel" aria-labelledby="feed-on-info-list">
 							<h4 class="fweight-400 border-bottom pb-2 mb-3">Feedback on T-Pilots APP Accessibility</h4>
 							<p class="text-muted">Your feedback will help us improve</p>
-							<form>
-								<div class="form-group">
-										<input type="text" class="form-control" id="" placeholder="Select City Name*" value="">    
+							<form action="" class="form-divider font-size-3 uk-grid-small uk-child-width-1-2" uk-grid>
+								<div class="uk-width-1-1">
+									<input class="form-control" type="text" placeholder="Name*">
 								</div>
-								<div class="form-group">
-										<input type="text" class="form-control" id="fbnamid" placeholder="Name*" value="">
-								</div>
-								<div class="form-group dt">
-									<div class="input-group">
-										<div class="input-group-prepend"><span class="input-group-text" id="">+91</span></div>
-										<input type="number" onkeypress="return isNumber(event,this.id)" class="form-control form-control-bdr-nn" maxlength="10" id="fbmobile" placeholder="Mobile Number*" value="">
+								<div class="uk-width-1-1">
+									<div class="uk-grid-small uk-child-width-expand" uk-grid>
+										<div class="uk-width-auto">
+											<select class="form-control">
+												<option selected disabled>+91</option>
+												<option>+92</option>
+												<option>+93</option>
+												<option>+94</option>
+											</select>
+										</div>
+										<div>
+											<input class="form-control" type="text" placeholder="Phone Number*">
+										</div>
+										<div>
+											<input class="form-control" type="text" placeholder="Email ID">
+										</div>
 									</div>
+								</div>
+								<div class="uk-width-1-3">
+									<select class="form-control">
+										<option selected disabled>Country</option>
+										<option>Option 02</option>
+									</select>
+								</div>
+								<div class="uk-width-1-3">
+									<select class="form-control">
+										<option selected>State</option>
+										<option>Option 02</option>
+									</select>
+								</div>
+								<div class="uk-width-1-3">
+									<select class="form-control">
+										<option>City</option>
+										<option>Option 02</option>
+									</select>
+								</div>
+								<div>
+									<select class="form-control">
+										<option selected disabled>Category</option>
+										<option>Option 02</option>
+									</select>
+								</div>
+								<div>
+									<select class="form-control">
+										<option selected>Priority</option>
+										<option>Option 02</option>
+									</select>
+								</div>
+								<div class="uk-width-1-1">
+									<div class="form-group">
+										<textarea class="form-control" id="" rows="3" placeholder="Message*"></textarea>
+									</div>
+								</div>
+								<div class="uk-width-1-1 mt-4">
+									<div class="uk-child-width-1-3 uk-flex-center uk-flex-middle uk-flex-between" uk-grid>
+										<div>
+											<label><input class="uk-checkbox" type="checkbox" checked> I agree <a href="#">Terms and Conditions</a></label>
+										</div>
+										<div class="text-center">
+											<img src="/assets/img/newCaptchaAnchor.gif" alt="" uk-img width="200">
+										</div>
+										<div class="text-right">
+											<button type="button" class="btn btn-primary btn-alt-bg" id="">Submit</button>
+										</div>
+									</div>
+								</div>
+							</form>
+						</div>
+						<div class="tab-pane fade" id="feed-on-staff" role="tabpanel" aria-labelledby="feed-on-staff-list">
+							<h4 class="fweight-400 border-bottom pb-2 mb-3">Feedback on T-Pilots</h4>
+							<p class="text-muted">Your feedback will help us improve</p>
+							<form class="form-divider">
+								<div class="form-group">
+									<input type="text" class="form-control" id="" placeholder="Select City Name*" value="">    
+								</div>
+								<div class="form-group">
+									<input type="text" class="form-control" id="fbnamid" placeholder="Name*" value="">
+								</div>
+								<div class="form-group">
+								<div class="uk-width-1-1">
+									<div class="uk-grid-small uk-child-width-expand" uk-grid>
+										<div class="uk-width-auto">
+											<select class="form-control">
+												<option selected disabled>+91</option>
+												<option>+92</option>
+												<option>+93</option>
+												<option>+94</option>
+											</select>
+										</div>
+										<div>
+											<input class="form-control" type="text" placeholder="Phone Number*">
+										</div>
+									</div>
+								</div>
 								</div>
 								<div class="form-group">
 									<input type="email" class="form-control" id="fbemail" placeholder="Email" value="">
@@ -1761,66 +1475,40 @@ Contact Us
 									<div class="form-group col-sm-auto">
 										<span class="smltx tcon">* Marked Fields Mandatory</span>
 									</div>
-									<div class="form-group col-sm-3">
-										<img src="/assets/img/newCaptchaAnchor.gif" alt="" class="img-fluid">
-									</div>
 									<div class="form-group col-sm-auto">
 										<div class="text-right text-left-xs">
-											<button type="button" class="btn btn-primary btn-lg">Submit</button>
+											<button type="button" class="btn btn-primary btn-alt-bg" id="">Submit</button>
 										</div>
 									</div>
 								</div>
 							</form>
 						</div>
-						<div class="tab-pane fade" id="feed-on-staff" role="tabpanel" aria-labelledby="feed-on-staff-list">
-							<h4 class="fweight-400 border-bottom pb-2 mb-3">Feedback on T-Pilots</h4>
-							<p class="text-muted">Your feedback will help us improve</p>
-							<form>
-										<div class="form-group">
-												<input type="text" class="form-control" id="" placeholder="Select City Name*" value="">    
-										</div>
-										<div class="form-group">
-												<input type="text" class="form-control" id="fbnamid" placeholder="Name*" value="">
-										</div>
-										<div class="form-group dt">
-											<div class="input-group">
-												<div class="input-group-prepend"><span class="input-group-text" id="">+91</span></div>
-												<input type="number" onkeypress="return isNumber(event,this.id)" class="form-control form-control-bdr-nn" maxlength="10" id="fbmobile" placeholder="Mobile Number*" value="">
-											</div>
-										</div>
-										<div class="form-group">
-											<input type="email" class="form-control" id="fbemail" placeholder="Email" value="">
-										</div>
-										<div class="form-group">
-											<textarea class="form-control" id="fbcomment" rows="4" placeholder="Message*"></textarea>
-										</div>
-										<div class="form-row justify-content-between align-items-center">
-											<div class="form-group col-sm-auto">
-												<span class="smltx tcon">* Marked Fields Mandatory</span>
-											</div>
-											<div class="form-group col-sm-auto">
-												<div class="text-right text-left-xs">
-														<button type="button" onclick="feedbackresult('Other Issues');" class="btn btn-primary btn-lg" id="feedBtnId"><span class="tcon">Submit</span> <span class="white_lodr" style="display:none;"></span></button>
-												</div>
-											</div>
-										</div>
-								</form>
-						</div>
 						<div class="tab-pane fade" id="online-services" role="tabpanel" aria-labelledby="online-services-list">
 							<h4 class="fweight-400 border-bottom pb-2 mb-3">Issues with Web Access</h4>
 							<p class="text-muted">Your feedback will help us improve</p>
-							<form>
+							<form class="form-divider">
 										<div class="form-group">
 												<input type="text" class="form-control" id="" placeholder="Select City Name*" value="">    
 										</div>
 										<div class="form-group">
 												<input type="text" class="form-control" id="fbnamid" placeholder="Name*" value="">
 										</div>
-										<div class="form-group dt">
-											<div class="input-group">
-												<div class="input-group-prepend"><span class="input-group-text" id="">+91</span></div>
-												<input type="number" onkeypress="return isNumber(event,this.id)" class="form-control form-control-bdr-nn" maxlength="10" id="fbmobile" placeholder="Mobile Number*" value="">
+								<div class="form-group">
+										<div class="uk-width-1-1">
+											<div class="uk-grid-small uk-child-width-expand" uk-grid>
+												<div class="uk-width-auto">
+													<select class="form-control">
+														<option selected disabled>+91</option>
+														<option>+92</option>
+														<option>+93</option>
+														<option>+94</option>
+													</select>
+												</div>
+												<div>
+													<input class="form-control" type="text" placeholder="Phone Number*">
+												</div>
 											</div>
+										</div>
 										</div>
 										<div class="form-group">
 											<input type="email" class="form-control" id="fbemail" placeholder="Email" value="">
@@ -1834,7 +1522,7 @@ Contact Us
 											</div>
 											<div class="form-group col-sm-auto">
 												<div class="text-right text-left-xs">
-														<button type="button" onclick="feedbackresult('Other Issues');" class="btn btn-primary btn-lg" id="feedBtnId"><span class="tcon">Submit</span> <span class="white_lodr" style="display:none;"></span></button>
+													<button type="button" class="btn btn-primary btn-alt-bg" id="">Submit</button>
 												</div>
 											</div>
 										</div>
@@ -1844,7 +1532,7 @@ Contact Us
 						<div class="tab-pane fade" id="new-tie-up" role="tabpanel" aria-labelledby="new-tie-up-list">
 							<h4 class="fweight-400 border-bottom pb-2 mb-3">Corporate Tie-up with T-Pilots</h4>
 							<p class="text-muted">We are Happy to associate with you for Growing Together</p>
-							<form>
+							<form class="form-divider">
 								<div class="form-row">
 									<div class="form-group col-sm-9">
 										<input type="text" class="form-control" placeholder="Company Name" value="">    
@@ -1869,18 +1557,25 @@ Contact Us
 										<input type="text" class="form-control" placeholder="Last Name" value="">    
 									</div>
 								</div>
-								<div class="form-row">
-									<div class="form-group col-sm">
-										<div class="input-group">
-											<div class="input-group-prepend">
-												<span class="input-group-text" id="">+91</span>
-											</div>
-											<input type="number" class="form-control" placeholder="Mobile Number*" value="">
+								<div class="form-group">
+								<div class="uk-width-1-1">
+									<div class="uk-grid-small uk-child-width-expand" uk-grid>
+										<div class="uk-width-auto">
+											<select class="form-control">
+												<option selected disabled>+91</option>
+												<option>+92</option>
+												<option>+93</option>
+												<option>+94</option>
+											</select>
+										</div>
+										<div>
+											<input class="form-control" type="text" placeholder="Phone Number*">
+										</div>
+										<div>
+											<input class="form-control" type="text" placeholder="Email ID">
 										</div>
 									</div>
-									<div class="form-group col-sm">
-										<input type="email" class="form-control" placeholder="Email" value="">
-									</div>
+								</div>
 								</div>
 								<div class="form-row">
 									<div class="form-group col-sm">
@@ -1909,7 +1604,7 @@ Contact Us
 									</div>
 									<div class="form-group col-sm-auto">
 										<div class="text-right text-left-xs">
-											<button type="button" class="btn btn-primary btn-lg">Submit</button>
+											<button type="button" class="btn btn-primary btn-alt-bg" id="">Submit</button>
 										</div>
 									</div>
 								</div>
@@ -1919,7 +1614,7 @@ Contact Us
 						<div class="tab-pane fade" id="suggestions-on-ui" role="tabpanel" aria-labelledby="suggestions-on-ui-list">
 							<h4 class="fweight-400 border-bottom pb-2 mb-3">Suggestions on User Interface?</h4>
 							<p class="text-muted">Your feedback will help us improve</p>
-							<form>
+							<form class="form-divider">
 								<div class="form-group">
 									<input type="text" class="form-control" id="" placeholder="URL*" value="" required>    
 								</div>
@@ -1945,7 +1640,7 @@ Contact Us
 									</div>
 									<div class="form-group col-sm-auto">
 										<div class="text-right text-left-xs">
-											<button type="button" class="btn btn-primary btn-lg">Submit</button>
+											<button type="button" class="btn btn-primary btn-alt-bg" id="">Submit</button>
 										</div>
 									</div>
 								</div>
@@ -1954,18 +1649,29 @@ Contact Us
 						<div class="tab-pane fade" id="other-issue" role="tabpanel" aria-labelledby="other-issue-list">
 							<h4 class="fweight-400 border-bottom pb-2 mb-3">Any other issue? </h4>
 							<p class="text-muted">Your feedback will help us improve</p>
-							<form>
+							<form class="form-divider">
 								<div class="form-group">
 									<input type="text" class="form-control" id="" placeholder="Select City Name*" value="">    
 								</div>
 								<div class="form-group">
 									<input type="text" class="form-control" id="fbnamid" placeholder="Name*" value="">
 								</div>
-								<div class="form-group dt">
-									<div class="input-group">
-										<div class="input-group-prepend"><span class="input-group-text" id="">+91</span></div>
-										<input type="number" onkeypress="return isNumber(event,this.id)" class="form-control form-control-bdr-nn" maxlength="10" id="fbmobile" placeholder="Mobile Number*" value="">
+								<div class="form-group">
+								<div class="uk-width-1-1">
+									<div class="uk-grid-small uk-child-width-expand" uk-grid>
+										<div class="uk-width-auto">
+											<select class="form-control">
+												<option selected disabled>+91</option>
+												<option>+92</option>
+												<option>+93</option>
+												<option>+94</option>
+											</select>
+										</div>
+										<div>
+											<input class="form-control" type="text" placeholder="Phone Number*">
+										</div>
 									</div>
+								</div>
 								</div>
 								<div class="form-group">
 									<input type="email" class="form-control" id="fbemail" placeholder="Email ID" value="">
@@ -1979,7 +1685,7 @@ Contact Us
 									</div>
 									<div class="form-group col-sm-auto">
 										<div class="text-right text-left-xs">
-											<button type="button" class="btn btn-primary btn-lg">Submit</button>
+											<button type="button" class="btn btn-primary btn-alt-bg" id="">Submit</button>
 										</div>
 									</div>
 								</div>
@@ -1991,189 +1697,9 @@ Contact Us
 		</div>
 	</div>
 </section>
-<!--
-Footer
--->
-<a href="#" class="cd-top js-cd-top text-uppercase"><i class="fas fa-chevron-up"></i></a>
-<div w3-include-html="footer.html"></div>
-<!-- Optional JavaScript --> 
-<!-- jQuery first, then Popper.js, then Bootstrap JS --> 
-<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.3/dist/js/uikit.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script> 
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+<?php include 'footer.php';?>
+<script src="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.js"></script>
 <script>
-	UIkit.parallax(element, options);
-	UIkit.heightMatch(element, options);
+mdc.ripple.MDCRipple.attachTo(document.querySelector('.foo-button'));
+const textField = new MDCTextField(document.querySelector('.mdc-text-field'));
 </script>
-<!--
-Nav Scroller
--->
-<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-<script>
-$(document).ready(function(){
-  $('.fleet-slider').slick({
-	  slidesToShow: 4,
-	  infinite: false,
-  });
-	
-	$('.offers-slider').slick({
-		slidesToShow: 3,
-		infinite: false,
-	});
-	
-	$('.vehicle-type').slick({
-	  slidesToShow: 1,
-	  slidesToScroll: 1,
-	  arrows: false,
-	  fade: true,
-	  asNavFor: '.vehicle-type-nav'
-	});
-	$('.vehicle-type-nav').slick({
-		slidesToShow: 7,
-		slidesToScroll: 1,
-		arrows: true,
-		asNavFor: '.vehicle-type',
-		centerMode: true,
-		focusOnSelect: true,
-		responsive: [
-			{
-			  breakpoint: 1024,
-			  settings: {
-				slidesToShow: 3,
-				slidesToScroll: 3,
-				infinite: true,
-				dots: true
-			  }
-			},
-			{
-			  breakpoint: 600,
-			  settings: {
-				slidesToShow: 2,
-				slidesToScroll: 2
-			  }
-			},
-			{
-			  breakpoint: 480,
-			  settings: {
-				slidesToShow: 3,
-				slidesToScroll: 1
-			  }
-			}
-			// You can unslick at a given breakpoint now by adding:
-			// settings: "unslick"
-			// instead of a settings object
-		  ]
-	});
-});
-</script>
-<script src="assets/js/animated-headlines.js"></script> 
-<script src="assets/js/back-to-top.js"></script>
-<script>document.getElementsByTagName("html")[0].className += " js";</script>
-<script src="assets/js/jquery.matchHeight-min.js"></script>
-<script>
-
-	$(function() {
-
-		$('.match-height').matchHeight({
-
-			byRow: true,
-
-			property: 'height',
-
-			target: null,
-
-		});
-
-	});
-
-</script>
-<script src="assets/js/wow.min.js"></script>
-<script>
-	new WOW().init();
-</script>
-<script src="assets/js/mixitup.min.js"></script> 
-<script>
-var mixer = mixitup('[data-ref~="mixitup-container"]', {
-	selectors: {
-		target: '[data-ref~="mixitup-target"]',
-		control: '[data-mixitup-control]'
-	}
-});
-</script> 
-<script src="assets/js/owl.carousel.min.js"></script> 
-<script>
-	$(document).ready(function(){
-    $('.domains-carousel').owlCarousel({
-		margin:10,
-		nav:true,
-		dots:false,
-		loop:true,
-		autoplayHoverPause:true,
-		autoplayTimeout: 5000,
-		responsive:{
-				0:{
-						items:1
-				},
-				600:{
-						items:3
-				},
-				1000:{
-						items:5
-				}
-        }
-    })
-		// Testimonials Carousel
-		$('.testimonials-carousel').owlCarousel({
-				margin:10,
-				dots:true,
-				autoplay:true,
-				loop:true,
-				autoplayHoverPause:true,
-				autoplayTimeout: 2600,
-				responsive:{
-						0:{
-								items:1
-						},
-						600:{
-								items:1
-						},
-						1000:{
-								items:1
-						}
-        }
-    })
-	});
-</script> 
-<script>
-$(window).scroll(function() {
-	if ($(".navbar").offset().top > 40) {
-		$(".navbar").addClass("shadow");
-		$(".navbar").addClass("navbarFixed");
-	} else {
-		$(".navbar").removeClass("shadow");
-		$(".navbar").removeClass("navbarFixed");
-	}   
-});
-</script>
-<script>
-	$(document).ready(function(){
-		$('.domain-link').hover(function(){
-				$(this).addClass('animated bounceIn');
-		});
-	});
-</script>
-<script src="assets/js/jquery.malihu.PageScroll2id.min.js"></script> 
-<script>
-(function($){
-	$(window).on("load",function(){
-		$("a[rel='PageScroll2id']").mPageScroll2id();
-	});
-})(jQuery);
-</script>
-<script src="https://www.w3schools.com/lib/w3.js"></script>
-<script>
-w3.includeHTML();
-</script>
-</body>
-</html>

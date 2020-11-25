@@ -3,6 +3,26 @@
 body{
   font-family: 'Roboto', sans-serif;
 }
+
+/*
+Topbar
+*/
+.top-bar a{
+	font-size: .8rem;
+	color: #fff;
+	font-weight: 500;
+}
+
+.top-bar a i{
+	line-height:inherit;
+}
+.top-bar a:hover{
+	color: #E89400;
+}
+.top-bar .dropdown-menu{
+	z-index: 1021;
+}
+
 .vertical-center {
   margin: 0;
   position: absolute;
@@ -21,18 +41,6 @@ body{
 /*
 Top Bar
 */
-.top-bar a{
-	font-size: .8rem;
-	color: #e89400;
-	font-weight: 500;
-}
-.top-bar a:hover{
-	color: #fff;
-}
-.top-bar .dropdown-menu{
-	z-index: 1021;
-}
-
 .nav-divided .nav-item,.nav-divided .nav-link{
 	position: relative;
 }
@@ -45,7 +53,7 @@ Top Bar
 	transform: translateY(-50%);
 	width: 1px;
 	height: 40%;
-	background-color:#E0E0E0;
+	background-color:#9E9E9E;
 }
 /*
 Modal Backdrop
@@ -89,12 +97,8 @@ Cover Navbar logo bg
 .navbar.navbarFixed .container-fluid:before {
 	opacity: 0;
 }
-.navbar.navbarFixed #navbarHome .navbar-nav .nav-link {
-	color: #000;
-	
-}
 #navbarHome .navbar-nav .nav-link {
-	color: #000;
+	color: #0674ED;
 	font-weight: 500;
 } 
 @media (min-width: 992px){
@@ -106,8 +110,9 @@ Cover Navbar logo bg
 	}
 }
 #navbarHome .navbar-nav .nav-link:hover, #navbarHome .navbar-nav .nav-link:focus {
-  background: #e89400;
-  border-radius:20px;
+	background:#0674ED;
+	border-radius:20px;
+	color: #fff;
 }
 #navbarHome .navbar-nav .nav-link.dropdown-toggle:hover, #navbarHome .navbar-nav .nav-link.dropdown-toggle:focus {
   background:rgba(0,0,0,.1);
@@ -115,17 +120,12 @@ Cover Navbar logo bg
 
 .allServicesDropdown .dropdown-menu {
     position: absolute;
-    height: 468px;
     max-height: calc(-56px + 100vh);
     transition: height 0.3s ease-in-out 0s;
 	background: #fff;
     border: 1px solid rgba(0,0,0,0.2);
     box-shadow: 0 1px 2px 0 rgba(60,64,67,.30), 0 2px 6px 2px rgba(60,64,67,.15);
     overflow-x: hidden;
-}
-.allServicesDropdown .dropdown-menu ul {
-    box-sizing: content-box;
-    width: 300px;
 }
 .allServicesDropdown .dropdown-menu ul li {
     display: inline-block;
@@ -148,14 +148,7 @@ Cover Navbar logo bg
     background-color: #f6fafe !important;
     z-index: 1;
 }
-.allServicesDropdown .services-icon {
-    display: inline-block;
-    height: 64px;
-    vertical-align: top;
-    width: 64px;
-    background-image: url(/assets/img/bg-1.png);
-    background-size: 64px 2686px;
-}
+
 .allServicesDropdown .services-text {
     color: #404040;
     font-size: 14px;
@@ -241,7 +234,6 @@ Cover
 
 .pattern-overlay-1,.pattern-overlay-2 {
     position: relative;
-    z-index: 1;
 }
 
 .pattern-overlay-1::before {
@@ -332,7 +324,6 @@ Fleet Slider Nav
 .vehicle-features-nav .nav-link{
 	color: #9E9E9E;
 	text-align: center;
-    margin-bottom: 10px;
     position: relative;
     vertical-align: middle;
     -webkit-transition: all 0.15s ease;
@@ -351,7 +342,6 @@ Fleet Slider Nav
 	text-align: center;
 	border-radius: 50%;
 	color: #9E9E9E;
-    margin-bottom: 10px;
     position: relative;
     vertical-align: middle;
     overflow: hidden;
@@ -371,7 +361,6 @@ Fleet Slider Nav
 		text-align: center;
 		border-radius: 50%;
 		color: #9E9E9E;
-		margin-bottom: 10px;
 		position: relative;
 		vertical-align: middle;
 		overflow: hidden;
@@ -553,13 +542,7 @@ Fleet Map
 }
 */
 .bg-grad {
-    background: -moz-linear-gradient(180deg, #e89400 0%, #0674ed 100%);
-    background: -webkit-gradient(linear, left top, right top, color-stop(0%, #e89400), color-stop(100%, #0674ed));
-    background: -webkit-linear-gradient(180deg, #e89400 0%, #0674ed 100%);
-    background: -o-linear-gradient(180deg, #e89400 0%, #0674ed 100%);
-    background: -ms-linear-gradient(180deg, #e89400 0%, #0674ed 100%);
-    background: linear-gradient(150deg, #e89400 0%, #0674ed 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$color-one', endColorstr='$color-two',GradientType=1 );
+	background: #00AAFF;
 }
 .icon-grad {
     background: -webkit-linear-gradient(90deg, #e89400, #0674ed);
@@ -717,10 +700,6 @@ How It Works
 .how-it-works .description p {
 	color: #7c9abd;
 	font-size: .8rem;
-}
-.how-it-works h1, .how-it-works h2, .how-it-works h3, .how-it-works h4, .how-it-works h5, .how-it-works h6 {
-  color: #fff;
-	
 }
 .icon-box.style12 > .icon-wrapper > i {
 	background:#0674ED;
@@ -1109,10 +1088,6 @@ Process Block
 /*
 Hero Bacground Pattern
 */
-.pattern-overlay-1,.pattern-overlay-2 {
-    position: relative;
-    z-index: 1;
-}
 .pattern-overlay-2::before {
     content: "";
     background: url("/assets/img/bredcrumb.png");
@@ -1540,7 +1515,7 @@ Contact US
 #footer h1, #footer h2, #footer h3, #footer h4, #footer h5, #footer h6{
 	color: #fff;
 }
-#footer p, #footer a{
+#footer p, .footer-links a{
 	color: #FAFAFA;
 	font-size: .8rem !important;
 }
@@ -1629,21 +1604,28 @@ Social Login
 /*
 Inner Pages
 */
+#pagenav{
+	padding-top: 1rem;
+}
 #pagenav.position-sticky{
 	top: 4rem;
 	z-index: 1020,
 }
-#pagenav .nav-link {
+#pagenav .uk-nav>li>a {
+    padding: 10px 0;
+	padding-left: 1rem;
+}
+#pagenav .uk-active a {
 	font-size: 1vw;
-    color: #757575;
 	border-right: 3px solid #f6f6f6;
 }
-#pagenav .nav-link:hover {
-    color: #000;
-}
-#pagenav .nav-link.active {
+#pagenav a:hover {
 	background: #f6f6f6;
-    border-right: 3px solid #3367d6;
+    color:#E89400;
+}
+#pagenav .uk-active a{
+	background: rgba(6,116,237,.1);
+    border-right: 3px solid #E89400;
 }
 
 /*
@@ -1789,6 +1771,253 @@ Key Factors
     transform: translateX(-50%);
 }
 
+/*
+Travel Header
+*/
+.travel-header a{
+	color: #757575;
+	font-weight: 500;
+}
+.travel-header a:hover {
+    background-color: #f1f3f4;
+}
+.travel-header .nav-link.active:hover, .travel-header .show > .nav-link:hover {
+    background-color: #e8f0fe;
+}
+.travel-header .nav-link.active, .travel-header .show > .nav-link {
+    color: #1a73e8;
+}
+.travel-type-selector label{
+	border-radius: 50px;
+	padding: 2px 5px;
+	cursor: pointer;
+	margin-right: 1rem;
+}
+.travel-type-selector .uk-radio {
+    height: 13px;
+    width: 13px;
+	margin-right: .3rem;
+}
+.travel-type-selector label:hover{
+	background-color: #f8f9fa;
+}
+.travel-type-selector .uk-radio:checked {
+    background-image: url(data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2214%22%20height%3D%2211%22%20viewBox%3D%220%200%2014%2011%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%20%20%20%20%3Cpolygon%20fill%3D%22%23fff%22%20points%3D%2212%201%205%207.5%202%205%201%205.5%205%2010%2013%201.5%22%20%2F%3E%0A%3C%2Fsvg%3E%0A);
+}
+/*
+Booking Switch
+*/
+.flt-body1 {
+    color: #3c4043;
+    font: 400 16px/24px Roboto, HelveticaNeue, Arial, sans-serif;
+    letter-spacing: 0.1px;
+}
+.flt-body2 {
+    color: #3c4043;
+    font: 400 14px/20px Roboto, HelveticaNeue, Arial, sans-serif;
+    letter-spacing: 0.2px;
+}
+.gws-flights__main {
+    line-height: 1;
+}
+.gws-flights__flex-box {
+    display: flex;
+}
+.gws-flights__align-center {
+    align-items: center;
+}
+.gws-flights-form__input-container {
+    align-items: center;
+    height: 56px;
+    overflow: hidden;
+    padding: 0 12px;
+    border-radius: 4px;
+}
+.gws-flights-form__airport-input, .gws-flights-form__departure-input, .gws-flights-form__flexible-dates, .gws-flights-form__return-input, .gws-flights-form__multi-city-calendar-input {
+    position: relative;
+}
+.gws-flights-form__airport-input {
+	flex: 1 1 0px;
+}
+.gws-flights-widgets-inputcapturearea__capture-area-wrapper {
+    height: 0;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    width: 0;
+}
+.gws-flights-widgets-inputcapturearea__capture-area {
+    border: none;
+    margin: 0;
+    outline: none;
+    padding: 0;
+}
+.gws-flights-form__calendar-icon, .gws-flights-form__location-icon {
+    color: #1a73e8;
+    display: block;
+    height: 24px;
+    width: 24px;
+}
+.gws-flights-form__location-icon.gws-flights-form__origin-icon {
+    color: #5f6368;
+    height: 16px;
+    width: 16px;
+}
+.z1asCe {
+    display: inline-block;
+    fill: currentColor;
+    height: 24px;
+    line-height: 24px;
+    position: relative;
+    width: 24px;
+}
+.z1asCe svg {
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+.gws-flights__flex-filler {
+    flex: 1 1 0px;
+    min-width: 0;
+}
+.gws-flights__ellipsize {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.gws-flights-form__input-target {
+    align-items: center;
+    display: flex;
+    height: 56px;
+}
+.gws-flights-form__text-field-placeholder, .gws-flights-form__date-content, .gws-flights-form__location-list {
+    line-height: normal;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}.gws-flights-form__swapper-half-circle {
+    background-color: white;
+    border: 1px solid #dadce0;
+    border-radius: 100%;
+    box-sizing: border-box;
+    height: 40px;
+    position: absolute;
+    top: 8px;
+    width: 40px;
+}
+.gws-flights-form__swapper-right>.gws-flights-form__swapper-half-circle {
+    right: -24px;
+}
+.gws-flights-form__swapper {
+    background-color: #fff;
+    color: #5f6368;
+    margin: auto -13px;
+    padding: 5px;
+    border-radius: 100%;
+    box-sizing: border-box;
+    height: 34px;
+    position: relative;
+    -webkit-transition: background-color 150ms ease 0ms;
+    width: 34px;
+    z-index: 1;
+}
+.gws-flights-form__swapper>svg {
+    display: block;
+    height: 24px;
+    -webkit-transition: transform 150ms ease 0ms;
+    width: 24px;
+}
+.gws-flights-form__swapper.gws-flights-form__disabled>svg {
+    opacity: 0.3;
+}
+.gws-flights-form__input-container.gws-flights-form__airport-input.gws-flights-form__swapper-left {
+    padding-left: 24px;
+}
+.gws-flights-form__text-field-placeholder {
+    color: rgba(0,0,0,.56);
+}
+.gws-flights-form__swapper-left>.gws-flights-form__swapper-half-circle {
+    left: -24px;
+}
+.gws-flights-form__field-spacer {
+    height: 16px;
+    width: 16px;
+}
+.gws-flights-form__calendar-input, .gws-flights-form__multi-city-calendar-input {
+    box-sizing: border-box;
+    flex: 0 1 0px;
+}
+.gws-flights-form__calendar-input {
+    min-width: 400px;
+}
+.gws-flights-form__input-container.gws-flights-form__calendar-input {
+    background: none;
+    overflow: visible;
+    padding: 0;
+}
+.gws-flights-form__departure-input, .gws-flights-form__return-input, .gws-flights-form__multi-city-calendar-input {
+    align-items: center;
+}
+.gws-flights-form__homepage .gws-flights-form__departure-input, .gws-flights-form__slice-search .gws-flights-form__departure-input {
+    flex-grow: 1.21;
+}
+.gws-flights-form__departure-input.gws-flights-form__round-trip {
+    border-radius: 2px 0 0 2px;
+    margin: -1px;
+    padding: 0 13px;
+}
+.gws-flights-form__flipper {
+    width: 48px;
+}
+.gws-flights-form__flipper .gws-flights-form__prev, .gws-flights-form__flipper .gws-flights-form__next {
+    box-sizing: border-box;
+    color: #5f6368;
+    cursor: pointer;
+    display: inline-block;
+    flex: 0 0 auto;
+    height: 40px;
+    padding: 8px 0;
+    width: 24px;
+	outline: none;
+}
+.gws-flights-form__field-divider-wrapper {
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.15);
+    display: flex;
+    height: 35px;
+	z-index: 1;
+}
+.gws-flights-form__field-divider {
+    border-left: 1px solid #dadce0;
+    height: 34px;
+}
+.gws-flights-form__departure-input, .gws-flights-form__return-input, .gws-flights-form__multi-city-calendar-input {
+    box-sizing: border-box;
+    height: 56px;
+    overflow: visible;
+}
+.gws-flights-form__return-input {
+    border-radius: 0 2px 2px 0;
+    margin: -1px;
+}
+.gws-flights-form__homepage .gws-flights-form__departure-input, .gws-flights-form__slice-search .gws-flights-form__departure-input {
+    flex-grow: 1.21;
+}
+.gws-flights-form__airport-input:focus::before{
+	border: 2px solid #1a73e8;
+}
+.booking-form .uk-input:focus, .uk-select:focus, .uk-textarea:focus {
+    outline: 0;
+    background-color: #fff;
+    color: #666;
+    border: 2px solid #1e87f0;
+}
+.booking-form .uk-input:focus .gws-flights-form__swapper-half-circle {
+    border: 2px solid #1e87f0;
+}
+/*
+Gradient Buttons
+*/
 .breadcrumbs .breadcrumb-item a{
 	color: #fff;
 }
@@ -1798,3 +2027,35 @@ Key Factors
 .breadcrumbs .breadcrumb-item, .breadcrumbs .breadcrumb-item::before {
     color: #212121;
 }
+
+.breadcrumbs .uk-breadcrumb{
+	font-weight: 500;
+}
+.breadcrumbs .uk-breadcrumb a{
+	color: rgba(255,255,255,.7);
+}
+.breadcrumbs .uk-breadcrumb>:last-child>a:not([href]), .breadcrumbs .uk-breadcrumb>:last-child>span {
+    color: rgba(255,255,255,1);
+}
+.breadcrumbs .uk-breadcrumb>:nth-child(n+2):not(.uk-first-column)::before {
+	font-family: "Font Awesome 5 Free"; 
+	font-weight: 900; 
+	content: "\f105";
+    display: inline-block;
+    margin: 0 15px;
+    font-size: 1rem;
+    color: #fff;
+}
+/*
+Gradient Buttons
+*/
+.btn-grad {
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    /* text-shadow: 0px 0px 10px rgba(0,0,0,0.2); */
+    box-shadow: 0 0 20px #eee;
+}
+.btn-primary-grad {background-image: linear-gradient(to right, #004394 0%, #008CE0 51%, #94FFF1 100%)}
+.btn-primary-grad:hover { background-position: right center; }

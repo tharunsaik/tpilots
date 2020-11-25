@@ -1,19 +1,20 @@
 <?php include 'header.php';?>
 <!-- Breadcrumbs -->
-<section class="breadcrumbs bg-grad pattern-overlay-2 overflow-hidden">
-	<div class="container">
-		<div class="row text-white">
-			<div class="col pt-3">
-				<nav aria-label="breadcrumb" class="nav justify-content-end">
-				  <ol class="breadcrumb bg-transparent">
-					<li class="breadcrumb-item"><a href="#">Home</a></li>
-					<li class="breadcrumb-item active" aria-current="page">Business</li>
-				  </ol>
-				</nav>
-				<h1 class="font-weight-bold display-1 mb-md-n4 mt-4 pt-4 text-white">Business</h1>
+<section class="uk-section-default bg-grad-1">
+	<div class="uk-section py-1 pt-5 breadcrumbs uk-light uk-background-cover" style="background-image: url(assets/img/01.png)">
+		<div class="container">
+			<div class="row justify-content-center text-white text-center align-items-center">
+				<div class="col">
+					<small class="lead font-weight-bold mb-0">SVL T-Pilots</small>
+					<h1 class="font-weight-bold display-1 mt-n3">Corporate</h1>
+					<ul class="uk-breadcrumb justify-content-center">
+						<li><a href="#"><i class="fas fa-home pr-2"></i> Home</a></li>
+						<li><span>Corporate</span></li>
+					</ul>
+				</div>
 			</div>
-		</div>
-	</div>	
+		</div>	
+	</div>
 </section>
 <!--
 Why SVL Global
@@ -22,15 +23,15 @@ Why SVL Global
 	<div class="row no-gutters">
 		<div class="col-sm-2">
 			<nav id="pagenav" class="position-sticky">
-				<nav class="nav flex-column">
-					<a class="nav-item nav-link" href="#WhySVL" uk-scroll offset="50">Why S V L</a>
-					<a class="nav-item nav-link" href="#LifeSVL" uk-scroll offset="50">Life @ S V L</a>
-					<a class="nav-item nav-link" href="#OurCoreValues" uk-scroll offset="50">Our Core Values</a>
-					<a class="nav-item nav-link" href="#VisionMission" uk-scroll offset="50">Vision &amp; Mission</a>
-					<a class="nav-item nav-link" href="#KeyFactors" uk-scroll offset="50">Key Factors</a>
-					<a class="nav-item nav-link" href="#Quality" uk-scroll offset="50">Quality</a>
-					<a class="nav-item nav-link" href="#CSR" uk-scroll offset="50">CSR</a>
-				</nav>
+				<ul class="uk-nav uk-nav-default" uk-scrollspy-nav="closest: li; scroll: true; offset: 60">
+					<li><a href="#WhyChooseTPilots">Why choose T-pilots</a></li>
+					<li><a href="#SignUpBenefits">Sign-up Benefits</a></li>
+					<li><a href="#SelectAsYouNeed">Select as you need</a></li>
+					<li><a href="#EarnAndSave">Earn and save</a></li>
+					<li><a href="#IntegratedFeatures">Integrated features</a></li>
+					<li><a href="#SafetyIsOurPriority">Safety is our priority</a></li>
+					<li><a href="#OtherDelights">Other delights</a></li>
+				</ul>
 			</nav>
 		</div>
 		<main class="col border-left-2 overflow-hidden">
@@ -455,104 +456,4 @@ Why SVL Global
 <!--
 Footer
 -->
-<a href="#" class="cd-top js-cd-top text-uppercase"><i class="fas fa-chevron-up"></i></a>
-<div w3-include-html="footer.html"></div>
-<!-- Optional JavaScript --> 
-<!-- jQuery first, then Popper.js, then Bootstrap JS --> 
-<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script> 
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script> 
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/uikit@3.3.3/dist/js/uikit.min.js"></script>
-<script src="assets/js/animated-headlines.js"></script> 
-<script src="assets/js/back-to-top.js"></script>
-<script>document.getElementsByTagName("html")[0].className += " js";</script>
-<script src="assets/js/wow.min.js"></script>
-<script>
-	new WOW().init();
-</script>
-<script src="assets/js/mixitup.min.js"></script> 
-<script>
-	var mixer = mixitup('[data-ref~="mixitup-container"]', {
-			selectors: {
-					target: '[data-ref~="mixitup-target"]',
-					control: '[data-mixitup-control]'
-			}
-	});
-</script> 
-<script src="assets/js/owl.carousel.min.js"></script> 
-<script>
-	$(document).ready(function(){
-    $('.domains-carousel').owlCarousel({
-		margin:10,
-		nav:true,
-		dots:false,
-		loop:true,
-		autoplayHoverPause:true,
-		autoplayTimeout: 5000,
-		responsive:{
-			0:{
-				items:1,
-				nav:false
-			},
-			600:{
-					items:3
-			},
-			1000:{
-					items:5
-			}
-        }
-    })
-		// Testimonials Carousel
-		$('.testimonials-carousel').owlCarousel({
-				margin:10,
-				dots:true,
-				autoplay:true,
-				loop:true,
-				autoplayHoverPause:true,
-				autoplayTimeout: 2600,
-				responsive:{
-						0:{
-								items:1
-						},
-						600:{
-								items:1
-						},
-						1000:{
-								items:1
-						}
-        }
-    })
-	});
-</script> 
-<script>
-	$(window).scroll(function() {
-		if ($(".navbar").offset().top > 40) {
-			$(".navbar").addClass("shadow");
-			$(".navbar").addClass("navbarFixed");
-		} else {
-			$(".navbar").removeClass("shadow");
-			$(".navbar").removeClass("navbarFixed");
-		}   
-});
-</script> 
-<script>
-	$(document).ready(function(){
-		$('.domain-link').hover(function(){
-				$(this).addClass('animated bounceIn');
-		});
-	});
-</script>
-<script src="assets/js/jquery.malihu.PageScroll2id.min.js"></script> 
-<script>
-(function($){
-	$(window).on("load",function(){
-		$("a[rel='PageScroll2id']").mPageScroll2id();
-	});
-})(jQuery);
-</script>
-<script src="https://www.w3schools.com/lib/w3.js"></script>
-<script>
-w3.includeHTML();
-</script>
-</body>
-</html>
+<?php include 'footer.php';?>

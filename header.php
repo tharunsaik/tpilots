@@ -5,8 +5,10 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <!-- Bootstrap CSS -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.3.3/dist/css/uikit.min.css" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.4.6/dist/css/uikit.min.css" />
 <link rel="stylesheet" href="assets/css/svl-global.css">
+<link href="https://unpkg.com/material-components-web@latest/dist/material-components-web.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
@@ -14,12 +16,14 @@
 <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
 <!-- Add the slick-theme.css if you want default styling -->
 <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+<link rel="stylesheet" href="assets/css/flag.min.css">
 <link rel="stylesheet" href="assets/css/animated-headlines.css">
 <link rel="stylesheet" href="assets/css/hover-min.css">
 <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
 <link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
 <link rel="stylesheet" href="assets/css/back-to-top.css">
 <link rel="stylesheet" href="assets/css/global.css">
+<link rel="stylesheet" href="http://staging.svlglobal.com/assets/css/styles.css">
 <link rel="stylesheet" href="assets/css/styles.css">
 <title>T-Pilots SVL</title>
 <link rel="icon" href="assets/img/fav.png" type="image/gif">
@@ -231,21 +235,29 @@ Header
 Topbar
 -->
 <section class="bg-black top-bar">
-	<div class="container-fluid">
-		<div class="row justify-content-end">
-			<div class="col-sm-auto">
-				<nav class="nav nav-divided justify-content-center a-py-2 a-px-2 a-px-sm-4">
-					<a href="#" class="nav-link">T-Select</a>
-					<a href="#" class="nav-link">Wallet</a>
-					<a href="#" class="nav-link">Corporate</a>
-					<a href="#" class="nav-link">Training</a>
-					<a href="#" class="nav-link">Offers</a>
-					<a href="#" class="nav-link">Support</a>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm">
+                <nav class="nav nav-divided justify-content-center justify-content-sm-start a-py-2 a-px-2 a-px-sm-4">
+					<a href="#mail-us" class="nav-link" uk-scroll="offset:170;"><i class="fas fa-envelope"></i> Feedback</a>
+					<a href="#contact-us" class="nav-link" rel="PageScroll2id" data-ps2id-offset="20"><i class="fas fa-map-marker-alt"></i> Contact Us</a>
+				</nav>
+            </div>
+            <div class="col-sm-auto">
+                <nav class="nav nav-divided justify-content-center justify-content-sm-end a-py-2 a-px-4">
+					<a href="#" class="nav-link"><i class="fas fa-rupee-sign"></i></a>
+					<a href="#" class="nav-link"><i class="in flag"></i></a>
+					<a href="#" target="_blank" class="nav-link">Download Apps</a>
+					<a href="#" target="_blank" class="nav-link"><i class="fab fa-apple"></i></a>
+					<a href="#" target="_blank" class="nav-link"><i class="fab fa-android"></i></a>
+					<a href="#" target="_blank" class="nav-link"><i class="fab fa-youtube"></i></a>
+					<a href="http://blog.svlglobal.com/" target="_blank" class="nav-link">SVLG Blog</a>
+					<a href="#" class="nav-link" data-toggle="modal" data-target="#signUpModal">Sign-Up</a>
 					<a href="#" class="nav-link" data-toggle="modal" data-target="#signInModal">Sign-In</a>
 				</nav>
-			</div>
-		</div>
-	</div>
+            </div>
+        </div>
+    </div>
 </section>
 <!--
 Navbar
@@ -253,109 +265,114 @@ Navbar
 <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
 	<div class="container-fluid">
 		<a class="navbar-brand" href="http://staging.tpilots.com/">
-			<img src="assets/img/svltpilots.svg" alt="" width="88px">
+			<img src="assets/img/svltpilots.svg" alt="" width="87px">
 		</a>
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHome" aria-controls="navbarHome" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
 		<div class="collapse navbar-collapse" id="navbarHome">
 			<div class="navbar-nav ml-auto align-items-sm-center">
 				<a class="nav-item nav-link" href="index.php"><i class="fas fa-home"></i></a>
+				<a class="nav-item nav-link" href="services.php">Services</a>
 				<a class="nav-item nav-link" href="driver.php">Driver</a>
 				<a class="nav-item nav-link" href="rider.php">Rider</a>
-				<a class="nav-item nav-link" href="business.php">Business</a>
-				<a class="nav-item nav-link" href="features.php">Features</a>
-				<a class="nav-item nav-link" href="guide.php">Guide</a>
-				<div class="nav-item dropdown allServicesDropdown">
-					<a class="nav-link dropdown-toggle" href="#" id="allServicesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-						<i class="fas fa-th"></i>
-					</a>
-					<div class="dropdown-menu dropdown-menu-right" aria-labelledby="allServicesDropdown">
-						<ul class="nav text-center">
-							<li class="nav-item col-sm-4">
-								<a href="#" class="nav-link">
-									<span class="services-icon" style="background-position: 0 -345px;"></span>
-									<span class="services-text">Account</span>
-								</a>
-							</li>
-							<li class="nav-item col-sm-4">
-								<a href="#" class="nav-link">
-									<span class="services-icon" style="background-position: 0 -138px;"></span>
-									<span class="services-text">Search</span>
-								</a>
-							</li>
-							<li class="nav-item col-sm-4">
-								<a href="#" class="nav-link">
-									<span class="services-icon" style="background-position: 0 -1035px;"></span>
-									<span class="services-text">Maps</span>
-								</a>
-							</li>
-							<li class="nav-item col-sm-4">
-								<a href="#" class="nav-link">
-									<span class="services-icon" style="background-position: 0 -1449px;"></span>
-									<span class="services-text">YouTube</span>
-								</a>
-							</li>
-							<li class="nav-item col-sm-4">
-								<a href="#" class="nav-link">
-									<span class="services-icon" style="background-position: 0 -759px;"></span>
-									<span class="services-text">Play</span>
-								</a>
-							</li>
-							<li class="nav-item col-sm-4">
-								<a href="#" class="nav-link">
-									<span class="services-icon" style="background-position: 0 -2208px;"></span>
-									<span class="services-text">News</span>
-								</a>
-							</li>
-							<li class="nav-item col-sm-4">
-								<a href="#" class="nav-link">
-									<span class="services-icon" style="background-position: 0 -2139px;"></span>
-									<span class="services-text">Gmail</span>
-								</a>
-							</li>
-							<li class="nav-item col-sm-4">
-								<a href="#" class="nav-link">
-									<span class="services-icon" style="background-position: 0 -2622px;"></span>
-									<span class="services-text">Contacts</span>
-								</a>
-							</li>
-							<li class="nav-item col-sm-4">
-								<a href="#" class="nav-link">
-									<span class="services-icon" style="background-position: 0 0;"></span>
-									<span class="services-text">Drive</span>
-								</a>
-							</li>
-							<li class="nav-item col-sm-4">
-								<a href="#" class="nav-link">
-									<span class="services-icon" style="background-position: 0 -1794px;"></span>
-									<span class="services-text">Calendar</span>
-								</a>
-							</li>
-							<li class="nav-item col-sm-4">
-								<a href="#" class="nav-link">
-									<span class="services-icon" style="background-position: 0 -1587px;"></span>
-									<span class="services-text">Translate</span>
-								</a>
-							</li>
-							<li class="nav-item col-sm-4">
-								<a href="#" class="nav-link">
-									<span class="services-icon" style="background-position: 0 -2070px;"></span>
-									<span class="services-text">Photos</span>
-								</a>
-							</li>
-							<li class="nav-item col-sm-4">
-								<a href="#" class="nav-link">
-									<span class="services-icon" style="background-position: 0 -69px;"></span>
-									<span class="services-text">Shopping</span>
-								</a>
-							</li>
-							<li class="nav-item col-sm-4">
-								<a href="#" class="nav-link">
-									<span class="services-icon" style="background-position: 0 -1242px;"></span>
-									<span class="services-text">Duo</span>
-								</a>
-							</li>
-						</ul>
-					</div>
+				<a class="nav-item nav-link" href="owner.php">Owner</a>
+				<a class="nav-item nav-link" href="corporate.php">Corporate</a>
+				<a class="btn btn-sm btn-primary rounded-pill shadow-sm mx-3 bg-orange-500-hover border-orange-500-hover" target="_blank" href="http://book.svlglobal.com/">Book Now</a>
+				<div class="ml-2 mr-2 allServices" type="button">
+					<img src="assets/img/services.svg" alt="" uk-svg>
+				</div>
+				<div class="uk-width-large allServicesDropdown" uk-dropdown="mode: click; offset: 10">
+					<ul class="uk-nav uk-dropdown-nav text-center uk-grid-column-collapse uk-grid-row-small uk-child-width-1-5" uk-grid>
+						<li>
+							<a href="#">
+								<span class="services-icon" style="background-position: 0 -290px;"></span>
+								<span class="services-text">Account</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span class="services-icon" style="background-position: 0 -115px;"></span>
+								<span class="services-text">Search</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span class="services-icon" style="background-position: 0 -874px;"></span>
+								<span class="services-text">Maps</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span class="services-icon" style="background-position: 0 -1222px;"></span>
+								<span class="services-text">YouTube</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span class="services-icon" style="background-position: 0 -640px;"></span>
+								<span class="services-text">Play</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span class="services-icon" style="background-position: 0 -1862px;"></span>
+								<span class="services-text">News</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span class="services-icon" style="background-position: 0 -1802px;"></span>
+								<span class="services-text">Gmail</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span class="services-icon" style="background-position: 0 -2212px;"></span>
+								<span class="services-text">Contacts</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span class="services-icon" style="background-position: 0 0;"></span>
+								<span class="services-text">Drive</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span class="services-icon" style="background-position: 0 -1513px;"></span>
+								<span class="services-text">Calendar</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span class="services-icon" style="background-position: 0 -1338px;"></span>
+								<span class="services-text">Translate</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span class="services-icon" style="background-position: 0 -1746px;"></span>
+								<span class="services-text">Photos</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span class="services-icon" style="background-position: 0 -58px;"></span>
+								<span class="services-text">Shopping</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span class="services-icon" style="background-position: 0 -1047px;"></span>
+								<span class="services-text">Duo</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span class="services-icon" style="background-position: 0 -290px;"></span>
+								<span class="services-text">Account</span>
+							</a>
+						</li>
+					</ul>
 				</div>
 			</div>
 		</div>

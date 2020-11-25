@@ -1,0 +1,6 @@
+[16-May-2020 11:06:42 UTC] PHP Warning:  include(footer.php): failed to open stream: No such file or directory in /home/jm2atm1j6nta/public_html/staging.tpilots.com/index.php on line 2079
+[16-May-2020 11:06:42 UTC] PHP Warning:  include(): Failed opening 'footer.php' for inclusion (include_path='.:/opt/alt/php72/usr/share/pear') in /home/jm2atm1j6nta/public_html/staging.tpilots.com/index.php on line 2079
+[16-May-2020 11:06:53 UTC] PHP Warning:  include(footer.php): failed to open stream: No such file or directory in /home/jm2atm1j6nta/public_html/staging.tpilots.com/index.php on line 2079
+[16-May-2020 11:06:53 UTC] PHP Warning:  include(): Failed opening 'footer.php' for inclusion (include_path='.:/opt/alt/php72/usr/share/pear') in /home/jm2atm1j6nta/public_html/staging.tpilots.com/index.php on line 2079
+[16-May-2020 11:06:58 UTC] PHP Warning:  include(footer.php): failed to open stream: No such file or directory in /home/jm2atm1j6nta/public_html/staging.tpilots.com/index.php on line 2079
+[16-May-2020 11:06:58 UTC] PHP Warning:  include(): Failed opening 'footer.php' for inclusion (include_path='.:/opt/alt/php72/usr/share/pear') in /home/jm2atm1j6nta/public_html/staging.tpilots.com/index.php on line 2079
